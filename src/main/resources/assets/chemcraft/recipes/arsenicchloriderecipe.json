@@ -1,0 +1,19 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "chemcraft:hydrochloricacid"
+    },
+    {
+      "item": "chemcraft:beaker"
+    },
+    {
+      "item": "chemcraft:arsenictrioxide"
+    }
+  ],
+  "result": {
+    "item": "chemcraft:arsenictrichloride",
+    "count": 1
+  }
+}

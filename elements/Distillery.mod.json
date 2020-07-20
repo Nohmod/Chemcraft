@@ -1,0 +1,172 @@
+{
+  "_fv": 6,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 352,
+    "height": 332,
+    "renderBgLayer": true,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Distillery",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Distillery",
+          "x": 261,
+          "y": 96
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 0,
+          "name": "Slot #0",
+          "x": 271,
+          "y": 128
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 1,
+          "name": "Slot #1",
+          "x": 367,
+          "y": 108
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 2,
+          "name": "Slot #2",
+          "x": 415,
+          "y": 108
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 3,
+          "name": "Slot #3",
+          "x": 463,
+          "y": 108
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 4,
+          "name": "Slot #4",
+          "x": 511,
+          "y": 108
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 5,
+          "name": "Slot #5",
+          "x": 559,
+          "y": 108
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Distil",
+          "onClick": {
+            "name": "Dist"
+          },
+          "width": 160,
+          "height": 40,
+          "name": "Distil",
+          "x": 387,
+          "y": 192
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 6,
+          "name": "Slot #6",
+          "x": 271,
+          "y": 168
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "aro.png",
+          "name": "aro.png",
+          "x": 319,
+          "y": 128
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Fractions",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Fractions",
+          "x": 414,
+          "y": 83
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 7,
+          "name": "Slot #7",
+          "x": 367,
+          "y": 148
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 8,
+          "name": "Slot #8",
+          "x": 415,
+          "y": 148
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 9,
+          "name": "Slot #9",
+          "x": 463,
+          "y": 148
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 10,
+          "name": "Slot #10",
+          "x": 511,
+          "y": 148
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 11,
+          "name": "Slot #11",
+          "x": 559,
+          "y": 148
+        }
+      }
+    ]
+  }
+}

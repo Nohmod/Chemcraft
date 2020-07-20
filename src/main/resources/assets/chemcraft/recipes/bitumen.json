@@ -1,0 +1,42 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "chemcraft:coalpile"
+    },
+    "1": {
+      "item": "chemcraft:coalpile"
+    },
+    "2": {
+      "item": "chemcraft:coalpile"
+    },
+    "3": {
+      "item": "chemcraft:coalpile"
+    },
+    "4": {
+      "item": "chemcraft:coalpile"
+    },
+    "5": {
+      "item": "chemcraft:coalpile"
+    },
+    "6": {
+      "item": "chemcraft:coalpile"
+    },
+    "7": {
+      "item": "chemcraft:coalpile"
+    },
+    "8": {
+      "item": "chemcraft:coalpile"
+    }
+  },
+  "result": {
+    "item": "chemcraft:bitominouscoalblock",
+    "count": 1
+  }
+}

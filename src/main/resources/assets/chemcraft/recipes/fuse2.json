@@ -1,0 +1,19 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "chemcraft:kno3"
+    },
+    {
+      "item": "minecraft:sugar"
+    }
+  ],
+  "result": {
+    "item": "chemcraft:fuse",
+    "count": 5
+  }
+}

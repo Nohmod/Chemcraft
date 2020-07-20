@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "chemcraft:distiler"
+    },
+    "facing=north": {
+      "model": "chemcraft:distiler"
+    },
+    "facing=east": {
+      "model": "chemcraft:distiler",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "chemcraft:distiler",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "chemcraft:distiler",
+      "y": 270
+    }
+  }
+}

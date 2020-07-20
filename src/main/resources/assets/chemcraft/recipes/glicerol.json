@@ -1,0 +1,19 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "chemcraft:beaker"
+    },
+    {
+      "item": "chemcraft:etoh"
+    },
+    {
+      "item": "chemcraft:oil"
+    }
+  ],
+  "result": {
+    "item": "chemcraft:glicerin",
+    "count": 1
+  }
+}

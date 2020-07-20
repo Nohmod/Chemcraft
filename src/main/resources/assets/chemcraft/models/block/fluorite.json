@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "chemcraft:blocks/fluorite",
+    "up": "chemcraft:blocks/fluorite",
+    "north": "chemcraft:blocks/fluorite",
+    "east": "chemcraft:blocks/fluorite",
+    "south": "chemcraft:blocks/fluorite",
+    "west": "chemcraft:blocks/fluorite",
+    "particle": "chemcraft:blocks/fluorite"
+  }
+}

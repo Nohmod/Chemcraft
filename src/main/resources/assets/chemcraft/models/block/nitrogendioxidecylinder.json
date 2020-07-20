@@ -1,0 +1,8 @@
+{
+  "parent": "chemcraft:custom/gascanisterblue",
+  "textures": {
+    "all": "chemcraft:blocks/gasb",
+    "particle": "chemcraft:blocks/gasb",
+    "5": "chemcraft:blocks/gasb"
+  }
+}

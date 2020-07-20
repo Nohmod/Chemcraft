@@ -1,0 +1,16 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "chemcraft:ammoniasolution"
+    },
+    {
+      "item": "chemcraft:tnp"
+    }
+  ],
+  "result": {
+    "item": "chemcraft:ammoniumpicrate",
+    "count": 1
+  }
+}

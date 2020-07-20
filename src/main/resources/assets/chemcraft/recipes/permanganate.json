@@ -1,0 +1,22 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "chemcraft:potassiummanganate"
+    },
+    {
+      "item": "chemcraft:beaker"
+    },
+    {
+      "item": "chemcraft:hydrochloricacid"
+    },
+    {
+      "item": "chemcraft:disstiledwater"
+    }
+  ],
+  "result": {
+    "item": "chemcraft:potassiumpermanganate",
+    "count": 1
+  }
+}

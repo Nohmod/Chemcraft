@@ -1,0 +1,19 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "chemcraft:beaker"
+    },
+    {
+      "item": "chemcraft:naperoxide"
+    },
+    {
+      "item": "chemcraft:disstiledwater"
+    }
+  ],
+  "result": {
+    "item": "chemcraft:hydrogenperoxide",
+    "count": 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "chemcraft:blocks/borax",
+    "up": "chemcraft:blocks/borax",
+    "north": "chemcraft:blocks/borax",
+    "east": "chemcraft:blocks/borax",
+    "south": "chemcraft:blocks/borax",
+    "west": "chemcraft:blocks/borax",
+    "particle": "chemcraft:blocks/borax"
+  }
+}

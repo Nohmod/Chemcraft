@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "chemcraft:blocks/vanadinite",
+    "up": "chemcraft:blocks/vanadinite",
+    "north": "chemcraft:blocks/vanadinite",
+    "east": "chemcraft:blocks/vanadinite",
+    "south": "chemcraft:blocks/vanadinite",
+    "west": "chemcraft:blocks/vanadinite",
+    "particle": "chemcraft:blocks/vanadinite"
+  }
+}

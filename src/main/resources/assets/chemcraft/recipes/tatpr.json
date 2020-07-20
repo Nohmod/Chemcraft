@@ -1,0 +1,22 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "chemcraft:acetone"
+    },
+    {
+      "item": "chemcraft:hydrochloricacid"
+    },
+    {
+      "item": "chemcraft:hydrogenperoxide"
+    },
+    {
+      "item": "chemcraft:beaker"
+    }
+  ],
+  "result": {
+    "item": "chemcraft:tatp",
+    "count": 1
+  }
+}

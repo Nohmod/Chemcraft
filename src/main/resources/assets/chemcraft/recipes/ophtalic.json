@@ -1,0 +1,28 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "chemcraft:potassiumpermanganate"
+    },
+    {
+      "item": "chemcraft:condenser"
+    },
+    {
+      "item": "chemcraft:xyleno"
+    },
+    {
+      "item": "chemcraft:enylnmayerflask"
+    },
+    {
+      "item": "chemcraft:disstiledwater"
+    },
+    {
+      "item": "chemcraft:beaker"
+    }
+  ],
+  "result": {
+    "item": "chemcraft:phtalicacid",
+    "count": 1
+  }
+}

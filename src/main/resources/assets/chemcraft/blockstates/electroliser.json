@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "chemcraft:electroliser"
+    },
+    "facing=north": {
+      "model": "chemcraft:electroliser"
+    },
+    "facing=east": {
+      "model": "chemcraft:electroliser",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "chemcraft:electroliser",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "chemcraft:electroliser",
+      "y": 270
+    }
+  }
+}

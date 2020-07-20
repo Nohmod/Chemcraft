@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "chemcraft:fermenter"
+    },
+    "facing=north": {
+      "model": "chemcraft:fermenter"
+    },
+    "facing=east": {
+      "model": "chemcraft:fermenter",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "chemcraft:fermenter",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "chemcraft:fermenter",
+      "y": 270
+    }
+  }
+}

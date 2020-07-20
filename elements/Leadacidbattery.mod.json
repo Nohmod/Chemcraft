@@ -1,0 +1,26 @@
+{
+  "_fv": 6,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "leadacidbattery",
+    "customModelName": "Normal",
+    "name": "Lead acid battery",
+    "creativeTab": {
+      "value": "CUSTOM:Machines"
+    },
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 10,
+    "toolType": 1.9000000000000001,
+    "damageCount": 50600,
+    "destroyAnyBlock": true,
+    "stayInGridWhenCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInfo": [
+      "Provides power"
+    ],
+    "hasGlow": false
+  }
+}

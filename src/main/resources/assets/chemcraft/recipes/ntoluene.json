@@ -1,0 +1,22 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "chemcraft:hno3"
+    },
+    {
+      "item": "chemcraft:h2s04"
+    },
+    {
+      "item": "chemcraft:toluene"
+    },
+    {
+      "item": "chemcraft:beaker"
+    }
+  ],
+  "result": {
+    "item": "chemcraft:trinitrotoluene",
+    "count": 1
+  }
+}

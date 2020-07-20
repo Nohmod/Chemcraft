@@ -1,0 +1,45 @@
+{
+  "_fv": 6,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "recipeRetstackSize": 2,
+    "group": "",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Condenser"
+      },
+      {
+        "value": "CUSTOM:XyleneP"
+      },
+      {
+        "value": "CUSTOM:Potassiumpermanganate"
+      },
+      {
+        "value": "CUSTOM:Enylnmayerflask"
+      },
+      {
+        "value": "CUSTOM:Beaker"
+      },
+      {
+        "value": "CUSTOM:Disstiledwater"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Terephtalicacid"
+    },
+    "name": "tphtalic",
+    "namespace": "mod"
+  }
+}

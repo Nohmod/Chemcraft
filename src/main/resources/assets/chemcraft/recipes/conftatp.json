@@ -1,0 +1,42 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:iron_ingot"
+    },
+    "1": {
+      "item": "chemcraft:pbpicrate"
+    },
+    "2": {
+      "item": "chemcraft:fuse"
+    },
+    "3": {
+      "item": "chemcraft:tatp"
+    },
+    "4": {
+      "item": "chemcraft:tatp"
+    },
+    "5": {
+      "item": "chemcraft:tatp"
+    },
+    "6": {
+      "item": "chemcraft:tatp"
+    },
+    "7": {
+      "item": "chemcraft:tatp"
+    },
+    "8": {
+      "item": "chemcraft:tatp"
+    }
+  },
+  "result": {
+    "item": "chemcraft:confinedtatp",
+    "count": 1
+  }
+}

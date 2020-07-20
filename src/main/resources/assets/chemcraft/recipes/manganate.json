@@ -1,0 +1,22 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "chemcraft:potassiumhydroxide"
+    },
+    {
+      "item": "chemcraft:kno3"
+    },
+    {
+      "item": "chemcraft:manganesedioxide"
+    },
+    {
+      "item": "chemcraft:crucible"
+    }
+  ],
+  "result": {
+    "item": "chemcraft:potassiummanganate",
+    "count": 1
+  }
+}

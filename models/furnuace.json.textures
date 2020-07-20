@@ -1,0 +1,13 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "furnuc22",
+        "furnuc22": "1.22",
+        "2,22": "222",
+        "sideoffurnuace22": "uzde"
+      },
+      "name": "default"
+    }
+  }
+}

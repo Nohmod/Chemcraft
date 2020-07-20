@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "chemcraft:blocks/sideblast3",
+    "up": "chemcraft:blocks/topblast",
+    "north": "chemcraft:blocks/sideblast",
+    "east": "chemcraft:blocks/sideblast3",
+    "south": "chemcraft:blocks/sideblast3",
+    "west": "chemcraft:blocks/sideblast3",
+    "particle": "chemcraft:blocks/sideblast3"
+  }
+}

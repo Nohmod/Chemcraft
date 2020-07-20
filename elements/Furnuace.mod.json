@@ -1,0 +1,103 @@
+{
+  "_fv": 6,
+  "_type": "block",
+  "definition": {
+    "texture": "sideblast3",
+    "textureTop": "topblast",
+    "textureLeft": "sideblast3",
+    "textureFront": "sideblast",
+    "textureRight": "sideblast3",
+    "textureBack": "sideblast3",
+    "renderType": 10,
+    "customModelName": "Normal",
+    "rotationMode": 1,
+    "hasTransparency": false,
+    "transparencyType": "SOLID",
+    "mx": 0.0,
+    "my": 0.0,
+    "mz": 0.0,
+    "Mx": 1.0,
+    "My": 1.0,
+    "Mz": 1.0,
+    "faceShape": "SOLID",
+    "name": "Blast furnuace",
+    "specialInfo": [],
+    "hardness": 1.0,
+    "resistance": 10.0,
+    "hasGravity": false,
+    "creativeTab": {
+      "value": "CUSTOM:Machines"
+    },
+    "destroyTool": "pickaxe",
+    "affectedBySilkTouch": true,
+    "customDrop": {
+      "value": ""
+    },
+    "dropAmount": 1,
+    "isBeaconBase": false,
+    "enchantPowerBonus": 0.0,
+    "plantsGrowOn": false,
+    "canProvidePower": true,
+    "lightOpacity": 255,
+    "material": {
+      "value": "ROCK"
+    },
+    "tickRate": 1,
+    "tickRandomly": false,
+    "isReplaceable": true,
+    "colorOnMap": "DEFAULT",
+    "creativePickItem": {
+      "value": ""
+    },
+    "flammability": 0,
+    "fireSpreadSpeed": 0,
+    "isLadder": false,
+    "slipperiness": 0.6,
+    "reactionToPushing": "BLOCK",
+    "isNotColidable": false,
+    "soundOnStep": {
+      "value": "STONE"
+    },
+    "luminance": 0.0,
+    "unbreakable": false,
+    "breakHarvestLevel": 1,
+    "spawnParticles": false,
+    "particleToSpawn": {
+      "value": "CAMPFIRE_SIGNAL_SMOKE"
+    },
+    "particleSpawningShape": "Top",
+    "particleSpawningRadious": 0.5,
+    "particleAmount": 6,
+    "particleSpawningCondition": "ALWAYS",
+    "hasInventory": true,
+    "guiBoundTo": "Blast",
+    "openGUIOnRightClick": true,
+    "inventorySize": 3,
+    "inventoryStackSize": 64,
+    "inventoryDropWhenDestroyed": true,
+    "inventoryComparatorPower": true,
+    "inventoryOutSlotIDs": [
+      2
+    ],
+    "onRightClicked": {
+      "name": "FurnuaceOnBlockRightClicked"
+    },
+    "onTickUpdate": {
+      "name": "Balsttick"
+    },
+    "onRandomUpdateEvent": {
+      "name": "Displaytick"
+    },
+    "spawnWorldTypes": [],
+    "restrictionBiomes": [],
+    "blocksToReplace": [
+      {
+        "value": "Blocks.STONE"
+      }
+    ],
+    "frequencyPerChunks": 10,
+    "frequencyOnChunk": 16,
+    "minGenerateHeight": 0,
+    "maxGenerateHeight": 64
+  }
+}

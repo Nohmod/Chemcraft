@@ -1,0 +1,19 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "chemcraft:leadfluorosilicate"
+    },
+    {
+      "item": "chemcraft:disstiledwater"
+    },
+    {
+      "item": "chemcraft:beaker"
+    }
+  ],
+  "result": {
+    "item": "chemcraft:pbsif6",
+    "count": 1
+  }
+}

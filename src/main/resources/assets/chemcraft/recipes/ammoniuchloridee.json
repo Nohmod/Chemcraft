@@ -1,0 +1,19 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "chemcraft:beaker"
+    },
+    {
+      "item": "chemcraft:hydrochloricacid"
+    },
+    {
+      "item": "chemcraft:ammoniasolution"
+    }
+  ],
+  "result": {
+    "item": "chemcraft:ammoniumchloride",
+    "count": 1
+  }
+}

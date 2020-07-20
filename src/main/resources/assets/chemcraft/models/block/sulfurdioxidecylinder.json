@@ -1,0 +1,8 @@
+{
+  "parent": "chemcraft:custom/gascanistergreen",
+  "textures": {
+    "all": "chemcraft:blocks/gasg",
+    "particle": "chemcraft:blocks/gasg",
+    "3": "chemcraft:blocks/gasg"
+  }
+}

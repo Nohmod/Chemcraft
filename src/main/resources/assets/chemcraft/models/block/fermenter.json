@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "chemcraft:blocks/fermenterside",
+    "up": "chemcraft:blocks/glass",
+    "north": "chemcraft:blocks/fermenterside2",
+    "east": "chemcraft:blocks/fermenterside",
+    "south": "chemcraft:blocks/fermenterside",
+    "west": "chemcraft:blocks/fermenterside",
+    "particle": "chemcraft:blocks/fermenterside"
+  }
+}

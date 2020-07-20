@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "chemcraft:blocks/marcasite",
+    "up": "chemcraft:blocks/marcasite",
+    "north": "chemcraft:blocks/marcasite",
+    "east": "chemcraft:blocks/marcasite",
+    "south": "chemcraft:blocks/marcasite",
+    "west": "chemcraft:blocks/marcasite",
+    "particle": "chemcraft:blocks/marcasite"
+  }
+}

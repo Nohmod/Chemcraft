@@ -1,0 +1,24 @@
+{
+  "_fv": 6,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "platinumcoatedelectrode",
+    "customModelName": "Normal",
+    "name": "Platinum coated electrode",
+    "creativeTab": {
+      "value": "CUSTOM:Glassware"
+    },
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 4,
+    "toolType": 1.9000000000000001,
+    "damageCount": 90088,
+    "destroyAnyBlock": false,
+    "stayInGridWhenCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInfo": [],
+    "hasGlow": false
+  }
+}

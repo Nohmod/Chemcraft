@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "chemcraft:blocks/sulfurod",
+    "up": "chemcraft:blocks/sulfurod",
+    "north": "chemcraft:blocks/sulfurod",
+    "east": "chemcraft:blocks/sulfurod",
+    "south": "chemcraft:blocks/sulfurod",
+    "west": "chemcraft:blocks/sulfurod",
+    "particle": "chemcraft:blocks/sulfurod"
+  }
+}

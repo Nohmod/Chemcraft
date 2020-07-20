@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "4": "chlorinecylinder2",
+        "5": "chlorine",
+        "6": "firediamondchlorincylinder"
+      },
+      "name": "default"
+    }
+  }
+}

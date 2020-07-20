@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "chemcraft:blocks/crate",
+    "up": "chemcraft:blocks/cratefuse",
+    "north": "chemcraft:blocks/crate",
+    "east": "chemcraft:blocks/crate",
+    "south": "chemcraft:blocks/crate",
+    "west": "chemcraft:blocks/crate",
+    "particle": "chemcraft:blocks/crate"
+  }
+}

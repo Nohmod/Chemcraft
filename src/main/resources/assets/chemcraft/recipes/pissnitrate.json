@@ -1,0 +1,19 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "chemcraft:beaker"
+    },
+    {
+      "item": "chemcraft:urea"
+    },
+    {
+      "item": "chemcraft:hno3"
+    }
+  ],
+  "result": {
+    "item": "chemcraft:ureanitrate",
+    "count": 1
+  }
+}

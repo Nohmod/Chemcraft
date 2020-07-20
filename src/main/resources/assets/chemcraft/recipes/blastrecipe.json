@@ -1,0 +1,39 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:brick_block"
+    },
+    "1": {
+      "item": "minecraft:brick_block"
+    },
+    "2": {
+      "item": "minecraft:brick_block"
+    },
+    "3": {
+      "item": "minecraft:brick_block"
+    },
+    "5": {
+      "item": "minecraft:brick_block"
+    },
+    "6": {
+      "item": "minecraft:brick_block"
+    },
+    "7": {
+      "item": "minecraft:brick_block"
+    },
+    "8": {
+      "item": "minecraft:brick_block"
+    }
+  },
+  "result": {
+    "item": "chemcraft:furnuace",
+    "count": 1
+  }
+}

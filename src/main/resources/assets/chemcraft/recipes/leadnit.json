@@ -1,0 +1,19 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "chemcraft:beaker"
+    },
+    {
+      "item": "chemcraft:hno3"
+    },
+    {
+      "item": "chemcraft:lead"
+    }
+  ],
+  "result": {
+    "item": "chemcraft:pbnitrate",
+    "count": 1
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:log",
+      "data": 2
+    },
+    {
+      "item": "minecraft:log",
+      "data": 2
+    },
+    {
+      "item": "chemcraft:disstiledwater"
+    },
+    {
+      "item": "minecraft:log",
+      "data": 2
+    },
+    {
+      "item": "minecraft:log",
+      "data": 2
+    },
+    {
+      "item": "minecraft:log",
+      "data": 2
+    },
+    {
+      "item": "minecraft:log",
+      "data": 2
+    },
+    {
+      "item": "minecraft:log",
+      "data": 2
+    },
+    {
+      "item": "minecraft:log",
+      "data": 2
+    }
+  ],
+  "result": {
+    "item": "chemcraft:salicilicacid",
+    "count": 1
+  }
+}

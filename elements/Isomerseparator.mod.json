@@ -1,0 +1,87 @@
+{
+  "_fv": 6,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 352,
+    "height": 332,
+    "renderBgLayer": true,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 0,
+          "name": "Slot #0",
+          "x": 301,
+          "y": 110
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "aro.png",
+          "name": "aro.png",
+          "x": 344,
+          "y": 108
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 1,
+          "name": "Slot #1",
+          "x": 387,
+          "y": 110
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 2,
+          "name": "Slot #2",
+          "x": 427,
+          "y": 110
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 3,
+          "name": "Slot #3",
+          "x": 468,
+          "y": 110
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "separate",
+          "onClick": {
+            "name": "ISOMERSEP"
+          },
+          "width": 160,
+          "height": 40,
+          "name": "separate",
+          "x": 299,
+          "y": 165
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Isomer separator",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Isomer separator",
+          "x": 332,
+          "y": 75
+        }
+      }
+    ]
+  }
+}

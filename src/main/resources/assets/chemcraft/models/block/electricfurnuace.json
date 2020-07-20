@@ -1,0 +1,11 @@
+{
+  "parent": "chemcraft:custom/furnuace",
+  "textures": {
+    "all": "chemcraft:blocks/furnuc22",
+    "particle": "chemcraft:blocks/furnuc22",
+    "1": "chemcraft:blocks/furnuc22",
+    "furnuc22": "chemcraft:blocks/1.22",
+    "2,22": "chemcraft:blocks/222",
+    "sideoffurnuace22": "chemcraft:blocks/uzde"
+  }
+}

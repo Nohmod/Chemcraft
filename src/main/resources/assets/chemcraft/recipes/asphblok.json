@@ -1,0 +1,42 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "chemcraft:asphalt"
+    },
+    "1": {
+      "item": "chemcraft:asphalt"
+    },
+    "2": {
+      "item": "chemcraft:asphalt"
+    },
+    "3": {
+      "item": "chemcraft:asphalt"
+    },
+    "4": {
+      "item": "chemcraft:asphalt"
+    },
+    "5": {
+      "item": "chemcraft:asphalt"
+    },
+    "6": {
+      "item": "chemcraft:asphalt"
+    },
+    "7": {
+      "item": "chemcraft:asphalt"
+    },
+    "8": {
+      "item": "chemcraft:asphalt"
+    }
+  },
+  "result": {
+    "item": "chemcraft:asphaltblock",
+    "count": 1
+  }
+}

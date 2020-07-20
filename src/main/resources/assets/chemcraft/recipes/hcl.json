@@ -1,0 +1,19 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "chemcraft:enylnmayerflask"
+    },
+    {
+      "item": "chemcraft:h2s04"
+    },
+    {
+      "item": "chemcraft:salt"
+    }
+  ],
+  "result": {
+    "item": "chemcraft:hydrochloricacid",
+    "count": 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "chemcraft:blocks/cokeblock",
+    "up": "chemcraft:blocks/cokeblock",
+    "north": "chemcraft:blocks/cokeblock",
+    "east": "chemcraft:blocks/cokeblock",
+    "south": "chemcraft:blocks/cokeblock",
+    "west": "chemcraft:blocks/cokeblock",
+    "particle": "chemcraft:blocks/cokeblock"
+  }
+}

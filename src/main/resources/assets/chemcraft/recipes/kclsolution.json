@@ -1,0 +1,19 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "chemcraft:potassiumchloride"
+    },
+    {
+      "item": "chemcraft:beaker"
+    },
+    {
+      "item": "chemcraft:disstiledwater"
+    }
+  ],
+  "result": {
+    "item": "chemcraft:potassiumchloridesolution",
+    "count": 1
+  }
+}

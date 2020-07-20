@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "distbak": "disttop",
+        "Distillery": "dist",
+        "distside2": "distside2"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "electrode": "electrode",
+        "electroside": "electroside",
+        "topelectroliser": "topelectroliser",
+        "voltamperregulator": "voltamperregulator",
+        "electroside2": "electroside2"
+      },
+      "name": "default"
+    }
+  }
+}

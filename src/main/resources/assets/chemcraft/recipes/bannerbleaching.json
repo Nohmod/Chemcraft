@@ -1,0 +1,17 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:banner",
+      "data": 32767
+    },
+    {
+      "item": "chemcraft:bleach"
+    }
+  ],
+  "result": {
+    "item": "minecraft:air",
+    "count": 1
+  }
+}

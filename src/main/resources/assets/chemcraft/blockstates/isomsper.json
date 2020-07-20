@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "chemcraft:isomsper"
+    },
+    "facing=north": {
+      "model": "chemcraft:isomsper"
+    },
+    "facing=east": {
+      "model": "chemcraft:isomsper",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "chemcraft:isomsper",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "chemcraft:isomsper",
+      "y": 270
+    }
+  }
+}

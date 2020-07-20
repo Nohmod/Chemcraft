@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "7": "gasr_1"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "_fv": 6,
+  "_type": "tab",
+  "definition": {
+    "name": "Organic",
+    "icon": {
+      "value": "CUSTOM:Naphtalene"
+    },
+    "showSearch": false
+  }
+}

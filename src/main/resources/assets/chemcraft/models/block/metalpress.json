@@ -1,0 +1,11 @@
+{
+  "parent": "chemcraft:custom/metalpressmodel",
+  "textures": {
+    "all": "chemcraft:blocks/pressmetal1",
+    "particle": "chemcraft:blocks/pressmetal1",
+    "pressmetal3": "chemcraft:blocks/pressmetal3",
+    "pressmetal2": "chemcraft:blocks/pressmetal2",
+    "pressmetal1": "chemcraft:blocks/pressmetal1",
+    "pressmetal4": "chemcraft:blocks/pressmetal4"
+  }
+}

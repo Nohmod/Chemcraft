@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "chemcraft:blocks/bituminous",
+    "up": "chemcraft:blocks/bituminous",
+    "north": "chemcraft:blocks/bituminous",
+    "east": "chemcraft:blocks/bituminous",
+    "south": "chemcraft:blocks/bituminous",
+    "west": "chemcraft:blocks/bituminous",
+    "particle": "chemcraft:blocks/bituminous"
+  }
+}

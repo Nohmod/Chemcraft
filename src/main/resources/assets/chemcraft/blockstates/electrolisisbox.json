@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "chemcraft:electrolisisbox"
+    },
+    "facing=north": {
+      "model": "chemcraft:electrolisisbox"
+    },
+    "facing=east": {
+      "model": "chemcraft:electrolisisbox",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "chemcraft:electrolisisbox",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "chemcraft:electrolisisbox",
+      "y": 270
+    }
+  }
+}

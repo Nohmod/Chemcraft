@@ -1,0 +1,90 @@
+{
+  "_fv": 6,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 352,
+    "height": 332,
+    "renderBgLayer": true,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 0,
+          "name": "Slot #0",
+          "x": 390,
+          "y": 114
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 1,
+          "name": "Slot #1",
+          "x": 444,
+          "y": 114
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "yes.png",
+          "name": "yes.png",
+          "x": 480,
+          "y": 114
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 2,
+          "name": "Slot #2",
+          "x": 498,
+          "y": 150
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Synthesise",
+          "onClick": {
+            "name": "Gasphasesynthesis"
+          },
+          "width": 200,
+          "height": 40,
+          "name": "Synthesise",
+          "x": 282,
+          "y": 168
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Gas phase synthesiser",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Gas phase synthesiser",
+          "x": 264,
+          "y": 78
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 3,
+          "name": "Slot #3",
+          "x": 300,
+          "y": 114
+        }
+      }
+    ]
+  }
+}

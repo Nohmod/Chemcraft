@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "chemcraft:blocks/ore1",
+    "up": "chemcraft:blocks/ore1",
+    "north": "chemcraft:blocks/ore1",
+    "east": "chemcraft:blocks/ore1",
+    "south": "chemcraft:blocks/ore1",
+    "west": "chemcraft:blocks/ore1",
+    "particle": "chemcraft:blocks/ore1"
+  }
+}

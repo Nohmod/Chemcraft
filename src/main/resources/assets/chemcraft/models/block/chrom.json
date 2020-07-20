@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "chemcraft:blocks/chromite",
+    "up": "chemcraft:blocks/chromite",
+    "north": "chemcraft:blocks/chromite",
+    "east": "chemcraft:blocks/chromite",
+    "south": "chemcraft:blocks/chromite",
+    "west": "chemcraft:blocks/chromite",
+    "particle": "chemcraft:blocks/chromite"
+  }
+}

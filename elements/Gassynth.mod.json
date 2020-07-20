@@ -1,0 +1,118 @@
+{
+  "_fv": 6,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 352,
+    "height": 332,
+    "renderBgLayer": true,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 0,
+          "name": "Slot #0",
+          "x": 288,
+          "y": 96
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 1,
+          "name": "Slot #1",
+          "x": 370,
+          "y": 96
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Synthesise",
+          "onClick": {
+            "name": "Gassnth"
+          },
+          "width": 200,
+          "height": 40,
+          "name": "Synthesise",
+          "x": 272,
+          "y": 189
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Gas synthesiser",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Gas synthesiser",
+          "x": 435,
+          "y": 96
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 3,
+          "name": "Slot #3",
+          "x": 517,
+          "y": 144
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Cylinder",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Cylinder",
+          "x": 496,
+          "y": 184
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 2,
+          "name": "Slot #2",
+          "x": 370,
+          "y": 143
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "aro.png",
+          "name": "aro.png",
+          "x": 327,
+          "y": 95
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 4,
+          "name": "Slot #4",
+          "x": 288,
+          "y": 142
+        }
+      }
+    ]
+  }
+}

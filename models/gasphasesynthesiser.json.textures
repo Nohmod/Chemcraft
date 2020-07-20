@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "electroliser": "electroliser",
+        "topelectroliser": "topelectroliser",
+        "gasphase": "gasphase"
+      },
+      "name": "default"
+    }
+  }
+}

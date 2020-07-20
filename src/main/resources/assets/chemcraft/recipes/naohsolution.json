@@ -1,0 +1,19 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "chemcraft:sodiumhydroxide"
+    },
+    {
+      "item": "chemcraft:beaker"
+    },
+    {
+      "item": "chemcraft:disstiledwater"
+    }
+  ],
+  "result": {
+    "item": "chemcraft:sodiumhydroxidesolution",
+    "count": 1
+  }
+}

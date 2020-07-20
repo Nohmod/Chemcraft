@@ -1,0 +1,33 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "   ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "chemcraft:copper"
+    },
+    "1": {
+      "item": "chemcraft:copper"
+    },
+    "2": {
+      "item": "chemcraft:copper"
+    },
+    "6": {
+      "item": "chemcraft:copper"
+    },
+    "7": {
+      "item": "chemcraft:copper"
+    },
+    "8": {
+      "item": "chemcraft:copper"
+    }
+  },
+  "result": {
+    "item": "chemcraft:copperpipe",
+    "count": 10
+  }
+}

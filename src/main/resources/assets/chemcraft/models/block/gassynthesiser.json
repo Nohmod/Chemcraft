@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "chemcraft:blocks/gasmakerside",
+    "up": "chemcraft:blocks/gasmakerside",
+    "north": "chemcraft:blocks/gassynthmain",
+    "east": "chemcraft:blocks/gasmaker",
+    "south": "chemcraft:blocks/gasmakerside",
+    "west": "chemcraft:blocks/gassynthside2",
+    "particle": "chemcraft:blocks/gasmakerside"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "_fv": 6,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "recipeRetstackSize": 10,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Copper"
+      },
+      {
+        "value": "CUSTOM:Copper"
+      },
+      {
+        "value": "CUSTOM:Copper"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Copper"
+      },
+      {
+        "value": "CUSTOM:Copper"
+      },
+      {
+        "value": "CUSTOM:Copper"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Copperpipe"
+    },
+    "name": "coppipes",
+    "namespace": "mod"
+  }
+}

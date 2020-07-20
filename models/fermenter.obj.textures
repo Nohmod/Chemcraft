@@ -1,0 +1,13 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "fermentertop",
+        "1": "fermenterside",
+        "2": "fermenterside2",
+        "3": "glass"
+      },
+      "name": "default"
+    }
+  }
+}

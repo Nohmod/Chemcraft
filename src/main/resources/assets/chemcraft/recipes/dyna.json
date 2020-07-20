@@ -1,0 +1,45 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:planks",
+      "data": 32767
+    },
+    "1": {
+      "item": "chemcraft:fuse"
+    },
+    "2": {
+      "item": "minecraft:planks",
+      "data": 32767
+    },
+    "3": {
+      "item": "chemcraft:nitroglicerin"
+    },
+    "4": {
+      "item": "chemcraft:nitroglicerin"
+    },
+    "5": {
+      "item": "chemcraft:nitroglicerin"
+    },
+    "6": {
+      "item": "chemcraft:nitroglicerin"
+    },
+    "7": {
+      "item": "minecraft:sand",
+      "data": 32767
+    },
+    "8": {
+      "item": "chemcraft:nitroglicerin"
+    }
+  },
+  "result": {
+    "item": "chemcraft:dynamite",
+    "count": 1
+  }
+}

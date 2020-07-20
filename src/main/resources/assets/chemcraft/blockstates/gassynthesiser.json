@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "chemcraft:gassynthesiser"
+    },
+    "facing=north": {
+      "model": "chemcraft:gassynthesiser"
+    },
+    "facing=east": {
+      "model": "chemcraft:gassynthesiser",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "chemcraft:gassynthesiser",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "chemcraft:gassynthesiser",
+      "y": 270
+    }
+  }
+}

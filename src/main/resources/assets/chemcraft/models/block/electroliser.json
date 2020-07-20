@@ -1,0 +1,10 @@
+{
+  "parent": "chemcraft:custom/gasphasesynthesiser",
+  "textures": {
+    "all": "chemcraft:blocks/electroliser",
+    "particle": "chemcraft:blocks/electroliser",
+    "electroliser": "chemcraft:blocks/electroliser",
+    "topelectroliser": "chemcraft:blocks/topelectroliser",
+    "gasphase": "chemcraft:blocks/gasphase"
+  }
+}

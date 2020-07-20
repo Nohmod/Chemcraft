@@ -1,0 +1,70 @@
+{
+  "_fv": 6,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 352,
+    "height": 332,
+    "renderBgLayer": true,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "aro.png",
+          "name": "aro.png",
+          "x": 336,
+          "y": 132
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 0,
+          "name": "Slot #0",
+          "x": 282,
+          "y": 114
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Blast Furnuace",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Blast Furnuace",
+          "x": 438,
+          "y": 97
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 1,
+          "onSlotChanged": {
+            "name": "FurnuaceOnBlockRightClicked"
+          },
+          "name": "Slot #1",
+          "x": 282,
+          "y": 168
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 2,
+          "name": "Slot #2",
+          "x": 408,
+          "y": 132
+        }
+      }
+    ]
+  }
+}

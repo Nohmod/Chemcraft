@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "chemcraft:furnuace"
+    },
+    "facing=north": {
+      "model": "chemcraft:furnuace"
+    },
+    "facing=east": {
+      "model": "chemcraft:furnuace",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "chemcraft:furnuace",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "chemcraft:furnuace",
+      "y": 270
+    }
+  }
+}

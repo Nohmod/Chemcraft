@@ -1,0 +1,22 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "chemcraft:agno3"
+    },
+    {
+      "item": "chemcraft:etoh"
+    },
+    {
+      "item": "chemcraft:hno3"
+    },
+    {
+      "item": "chemcraft:beaker"
+    }
+  ],
+  "result": {
+    "item": "chemcraft:silverfulminate",
+    "count": 1
+  }
+}

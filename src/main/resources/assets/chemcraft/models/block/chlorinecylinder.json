@@ -1,0 +1,11 @@
+{
+  "parent": "chemcraft:custom/finallyrightcylinder",
+  "textures": {
+    "all": "chemcraft:blocks/cylinderchlorine",
+    "particle": "chemcraft:blocks/cylinderchlorine",
+    "firediamondchlorincylinder": "chemcraft:blocks/firediamondchlorincylinder",
+    "cylinderchlorine": "chemcraft:blocks/cylinderchlorine",
+    "chlorineside2": "chemcraft:blocks/chlorineside2",
+    "chlorine": "chemcraft:blocks/chlorine"
+  }
+}

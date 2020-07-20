@@ -1,0 +1,11 @@
+{
+  "_fv": 6,
+  "_type": "tab",
+  "definition": {
+    "name": "Minerals",
+    "icon": {
+      "value": "CUSTOM:Calc"
+    },
+    "showSearch": false
+  }
+}

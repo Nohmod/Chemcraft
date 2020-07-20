@@ -1,0 +1,22 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "chemcraft:disstiledwater"
+    },
+    {
+      "item": "chemcraft:pbnitrate"
+    },
+    {
+      "item": "chemcraft:nan3"
+    },
+    {
+      "item": "chemcraft:beaker"
+    }
+  ],
+  "result": {
+    "item": "chemcraft:pbn3",
+    "count": 1
+  }
+}

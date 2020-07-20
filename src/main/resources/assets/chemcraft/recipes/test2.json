@@ -1,0 +1,42 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:iron_ingot"
+    },
+    "1": {
+      "item": "chemcraft:pbpicrate"
+    },
+    "2": {
+      "item": "chemcraft:fuse"
+    },
+    "3": {
+      "item": "chemcraft:ureanitrate"
+    },
+    "4": {
+      "item": "chemcraft:ureanitrate"
+    },
+    "5": {
+      "item": "chemcraft:ureanitrate"
+    },
+    "6": {
+      "item": "chemcraft:ureanitrate"
+    },
+    "7": {
+      "item": "chemcraft:ureanitrate"
+    },
+    "8": {
+      "item": "chemcraft:ureanitrate"
+    }
+  },
+  "result": {
+    "item": "chemcraft:test",
+    "count": 1
+  }
+}

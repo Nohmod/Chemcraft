@@ -1,0 +1,94 @@
+{
+  "_fv": 6,
+  "_type": "block",
+  "definition": {
+    "texture": "bituminouscoalrm",
+    "textureTop": "bituminouscoalrm",
+    "textureLeft": "bituminouscoalrm",
+    "textureFront": "bituminouscoalrm",
+    "textureRight": "bituminouscoalrm",
+    "textureBack": "bituminouscoalrm",
+    "renderType": 10,
+    "customModelName": "Normal",
+    "rotationMode": 0,
+    "hasTransparency": false,
+    "transparencyType": "SOLID",
+    "mx": 0.0,
+    "my": 0.0,
+    "mz": 0.0,
+    "Mx": 1.0,
+    "My": 1.0,
+    "Mz": 1.0,
+    "faceShape": "SOLID",
+    "name": "Bituminous coal",
+    "specialInfo": [],
+    "hardness": 0.95,
+    "resistance": 11.0,
+    "hasGravity": false,
+    "creativeTab": {
+      "value": "CUSTOM:Minerals"
+    },
+    "destroyTool": "Not specified",
+    "affectedBySilkTouch": true,
+    "customDrop": {
+      "value": "CUSTOM:Coalpile"
+    },
+    "dropAmount": 1,
+    "isBeaconBase": false,
+    "enchantPowerBonus": 0.0,
+    "plantsGrowOn": false,
+    "canProvidePower": false,
+    "lightOpacity": 255,
+    "material": {
+      "value": "ROCK"
+    },
+    "tickRate": 10,
+    "tickRandomly": false,
+    "isReplaceable": false,
+    "colorOnMap": "DEFAULT",
+    "creativePickItem": {
+      "value": ""
+    },
+    "flammability": 0,
+    "fireSpreadSpeed": 0,
+    "isLadder": false,
+    "slipperiness": 0.6,
+    "reactionToPushing": "NORMAL",
+    "isNotColidable": false,
+    "soundOnStep": {
+      "value": "STONE"
+    },
+    "luminance": 0.0,
+    "unbreakable": false,
+    "breakHarvestLevel": 1,
+    "spawnParticles": false,
+    "particleToSpawn": {
+      "value": "EXPLOSION_NORMAL"
+    },
+    "particleSpawningShape": "Spread",
+    "particleSpawningRadious": 0.5,
+    "particleAmount": 4,
+    "particleSpawningCondition": "ALWAYS",
+    "hasInventory": false,
+    "guiBoundTo": "<NONE>",
+    "openGUIOnRightClick": false,
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "inventoryDropWhenDestroyed": true,
+    "inventoryComparatorPower": true,
+    "inventoryOutSlotIDs": [],
+    "spawnWorldTypes": [
+      "Surface"
+    ],
+    "restrictionBiomes": [],
+    "blocksToReplace": [
+      {
+        "value": "Blocks.STONE"
+      }
+    ],
+    "frequencyPerChunks": 3,
+    "frequencyOnChunk": 12,
+    "minGenerateHeight": 50,
+    "maxGenerateHeight": 61
+  }
+}

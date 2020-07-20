@@ -1,0 +1,42 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:iron_ingot"
+    },
+    "1": {
+      "item": "chemcraft:pbn3"
+    },
+    "2": {
+      "item": "chemcraft:fuse"
+    },
+    "3": {
+      "item": "chemcraft:ammoniumpicrate"
+    },
+    "4": {
+      "item": "chemcraft:ammoniumpicrate"
+    },
+    "5": {
+      "item": "chemcraft:ammoniumpicrate"
+    },
+    "6": {
+      "item": "chemcraft:ammoniumpicrate"
+    },
+    "7": {
+      "item": "chemcraft:ammoniumpicrate"
+    },
+    "8": {
+      "item": "chemcraft:ammoniumpicrate"
+    }
+  },
+  "result": {
+    "item": "chemcraft:confined",
+    "count": 1
+  }
+}

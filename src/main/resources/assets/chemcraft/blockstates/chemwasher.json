@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "chemcraft:chemwasher"
+    },
+    "facing=north": {
+      "model": "chemcraft:chemwasher"
+    },
+    "facing=east": {
+      "model": "chemcraft:chemwasher",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "chemcraft:chemwasher",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "chemcraft:chemwasher",
+      "y": 270
+    }
+  }
+}

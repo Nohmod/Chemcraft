@@ -1,0 +1,153 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (https://mrcrayfish.com/tools?id=mc)",
+    "textures": {
+        "1": "minecraft:blocks/1",
+        "furnuc22": "minecraft:blocks/furnuc22",
+        "2,22": "minecraft:blocks/2,22",
+        "sideoffurnuace22": "minecraft:blocks/sideoffurnuace22"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 30, 45, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.625, 0.625, 0.625 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.25, 0.25, 0.25 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "head": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 75, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        }
+    },
+    "elements": [
+        {
+            "name": "Cube",
+            "from": [ 1, 0, 1 ], 
+            "to": [ 15, 9, 15 ], 
+            "faces": {
+                "north": { "texture": "#1", "uv": [ 0, 0, 14, 9 ] },
+                "east": { "texture": "#1", "uv": [ 0, 0, 14, 9 ] },
+                "south": { "texture": "#1", "uv": [ 0, 0, 14, 9 ] },
+                "west": { "texture": "#2,22", "uv": [ 0, 4, 14, 13 ] },
+                "up": { "texture": "#furnuc22", "uv": [ 0, 0, 14, 14 ], "rotation": 90 }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 3, 9, 3 ], 
+            "to": [ 13, 23, 13 ], 
+            "faces": {
+                "north": { "texture": "#sideoffurnuace22", "uv": [ 0, 0, 10, 14 ] },
+                "east": { "texture": "#sideoffurnuace22", "uv": [ 0, 0, 10, 14 ] },
+                "south": { "texture": "#sideoffurnuace22", "uv": [ 0, 0, 10, 14 ] },
+                "west": { "texture": "#sideoffurnuace22", "uv": [ 0, 4, 10, 16 ] },
+                "up": { "texture": "#sideoffurnuace22", "uv": [ 0, 0, 10, 10 ], "rotation": 90 }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 4, 23, 4 ], 
+            "to": [ 12, 25, 12 ], 
+            "faces": {
+                "north": { "texture": "#furnuc22", "uv": [ 0, 0, 8, 2 ] },
+                "east": { "texture": "#furnuc22", "uv": [ 0, 0, 8, 2 ] },
+                "south": { "texture": "#furnuc22", "uv": [ 0, 0, 8, 2 ] },
+                "west": { "texture": "#furnuc22", "uv": [ 0, 4, 8, 6 ] },
+                "up": { "texture": "#furnuc22", "uv": [ 0, 0, 8, 8 ], "rotation": 90 }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 7, 25, 5 ], 
+            "to": [ 9, 29, 7 ], 
+            "faces": {
+                "north": { "texture": "#furnuc22", "uv": [ 0, 0, 2, 4 ] },
+                "east": { "texture": "#furnuc22", "uv": [ 0, 0, 2, 4 ] },
+                "south": { "texture": "#furnuc22", "uv": [ 0, 0, 2, 4 ] },
+                "west": { "texture": "#furnuc22", "uv": [ 0, 4, 2, 8 ] },
+                "up": { "texture": "#furnuc22", "uv": [ 0, 0, 2, 2 ], "rotation": 90 }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 7, 28, 7 ], 
+            "to": [ 9, 29, 9 ], 
+            "faces": {
+                "east": { "texture": "#furnuc22", "uv": [ 0, 0, 2, 1 ] },
+                "west": { "texture": "#furnuc22", "uv": [ 0, 4, 2, 5 ] },
+                "up": { "texture": "#furnuc22", "uv": [ 0, 0, 2, 2 ], "rotation": 90 }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 7, 28, 9 ], 
+            "to": [ 9, 29, 11 ], 
+            "faces": {
+                "east": { "texture": "#furnuc22", "uv": [ 0, 0, 2, 1 ] },
+                "south": { "texture": "#furnuc22", "uv": [ 0, 0, 2, 1 ] },
+                "west": { "texture": "#furnuc22", "uv": [ 0, 4, 2, 5 ] },
+                "up": { "texture": "#furnuc22", "uv": [ 0, 0, 2, 2 ], "rotation": 90 }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 7, 23, 12 ], 
+            "to": [ 9, 24, 13 ], 
+            "faces": {
+                "east": { "texture": "#furnuc22", "uv": [ 0, 0, 1, 1 ] },
+                "south": { "texture": "#furnuc22", "uv": [ 0, 0, 2, 1 ] },
+                "west": { "texture": "#furnuc22", "uv": [ 0, 4, 1, 5 ] },
+                "up": { "texture": "#furnuc22", "uv": [ 0, 0, 1, 2 ], "rotation": 90 }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 2, 9, 2 ], 
+            "to": [ 14, 10, 3 ], 
+            "faces": {
+                "north": { "texture": "#furnuc22", "uv": [ 0, 0, 12, 1 ] },
+                "east": { "texture": "#furnuc22", "uv": [ 0, 0, 1, 1 ] },
+                "south": { "texture": "#furnuc22", "uv": [ 0, 0, 12, 1 ] },
+                "west": { "texture": "#furnuc22", "uv": [ 0, 4, 1, 5 ] },
+                "up": { "texture": "#furnuc22", "uv": [ 0, 0, 1, 12 ], "rotation": 90 }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 13, 9, 3 ], 
+            "to": [ 14, 10, 13 ], 
+            "faces": {
+                "east": { "texture": "#furnuc22", "uv": [ 0, 0, 10, 1 ] },
+                "up": { "texture": "#furnuc22", "uv": [ 0, 0, 1, 10 ], "rotation": 90 }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 2, 9, 3 ], 
+            "to": [ 3, 10, 13 ], 
+            "faces": {
+                "west": { "texture": "#furnuc22", "uv": [ 0, 4, 10, 5 ] },
+                "up": { "texture": "#furnuc22", "uv": [ 0, 0, 1, 10 ], "rotation": 90 }
+            }
+        }
+    ]
+}

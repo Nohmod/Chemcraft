@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "chemcraft:metalpress"
+    },
+    "facing=north": {
+      "model": "chemcraft:metalpress"
+    },
+    "facing=east": {
+      "model": "chemcraft:metalpress",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "chemcraft:metalpress",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "chemcraft:metalpress",
+      "y": 270
+    }
+  }
+}

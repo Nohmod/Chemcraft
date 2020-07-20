@@ -1,0 +1,13 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "powerinput": "powerinput",
+        "electroliser": "electroliser",
+        "topelectroliser": "topelectroliser",
+        "voltamperregulator": "voltamperregulator"
+      },
+      "name": "default"
+    }
+  }
+}

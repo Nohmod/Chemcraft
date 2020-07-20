@@ -1,0 +1,42 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "chemcraft:coke"
+    },
+    "1": {
+      "item": "chemcraft:coke"
+    },
+    "2": {
+      "item": "chemcraft:coke"
+    },
+    "3": {
+      "item": "chemcraft:coke"
+    },
+    "4": {
+      "item": "chemcraft:coke"
+    },
+    "5": {
+      "item": "chemcraft:coke"
+    },
+    "6": {
+      "item": "chemcraft:coke"
+    },
+    "7": {
+      "item": "chemcraft:coke"
+    },
+    "8": {
+      "item": "chemcraft:coke"
+    }
+  },
+  "result": {
+    "item": "chemcraft:cokeblock",
+    "count": 1
+  }
+}

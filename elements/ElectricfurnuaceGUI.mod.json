@@ -1,0 +1,65 @@
+{
+  "_fv": 6,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 352,
+    "height": 332,
+    "renderBgLayer": true,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 0,
+          "name": "Slot #0",
+          "x": 390,
+          "y": 96
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 1,
+          "name": "Slot #1",
+          "x": 336,
+          "y": 96
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 2,
+          "name": "Slot #2",
+          "x": 498,
+          "y": 96
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "",
+          "width": 240,
+          "height": 40,
+          "name": "Temperature",
+          "x": 318,
+          "y": 186
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "aro.png",
+          "name": "aro.png",
+          "x": 444,
+          "y": 96
+        }
+      }
+    ]
+  }
+}

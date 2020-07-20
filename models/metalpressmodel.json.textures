@@ -1,0 +1,13 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "pressmetal3": "pressmetal3",
+        "pressmetal2": "pressmetal2",
+        "pressmetal1": "pressmetal1",
+        "pressmetal4": "pressmetal4"
+      },
+      "name": "default"
+    }
+  }
+}

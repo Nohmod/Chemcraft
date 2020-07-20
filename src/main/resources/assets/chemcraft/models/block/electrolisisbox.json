@@ -1,0 +1,12 @@
+{
+  "parent": "chemcraft:custom/electroliser2",
+  "textures": {
+    "all": "chemcraft:blocks/topelectroliser",
+    "particle": "chemcraft:blocks/topelectroliser",
+    "electrode": "chemcraft:blocks/electrode",
+    "electroside": "chemcraft:blocks/electroside",
+    "topelectroliser": "chemcraft:blocks/topelectroliser",
+    "voltamperregulator": "chemcraft:blocks/voltamperregulator",
+    "electroside2": "chemcraft:blocks/electroside2"
+  }
+}

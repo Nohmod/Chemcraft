@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "chemcraft:blocks/malachite",
+    "up": "chemcraft:blocks/malachite",
+    "north": "chemcraft:blocks/malachite",
+    "east": "chemcraft:blocks/malachite",
+    "south": "chemcraft:blocks/malachite",
+    "west": "chemcraft:blocks/malachite",
+    "particle": "chemcraft:blocks/malachite"
+  }
+}

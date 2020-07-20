@@ -1,0 +1,22 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "chemcraft:hydrogenperoxide"
+    },
+    {
+      "item": "chemcraft:beaker"
+    },
+    {
+      "item": "chemcraft:h2s04"
+    },
+    {
+      "item": "chemcraft:copper"
+    }
+  ],
+  "result": {
+    "item": "chemcraft:coppersulfate",
+    "count": 1
+  }
+}

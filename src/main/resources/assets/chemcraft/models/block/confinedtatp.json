@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "chemcraft:blocks/confined",
+    "up": "chemcraft:blocks/exp2",
+    "north": "chemcraft:blocks/confined",
+    "east": "chemcraft:blocks/confined",
+    "south": "chemcraft:blocks/confined",
+    "west": "chemcraft:blocks/confined",
+    "particle": "chemcraft:blocks/confined"
+  }
+}

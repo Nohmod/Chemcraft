@@ -1,0 +1,28 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "chemcraft:condenser"
+    },
+    {
+      "item": "chemcraft:xylenep"
+    },
+    {
+      "item": "chemcraft:potassiumpermanganate"
+    },
+    {
+      "item": "chemcraft:enylnmayerflask"
+    },
+    {
+      "item": "chemcraft:beaker"
+    },
+    {
+      "item": "chemcraft:disstiledwater"
+    }
+  ],
+  "result": {
+    "item": "chemcraft:terephtalicacid",
+    "count": 2
+  }
+}

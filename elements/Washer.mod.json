@@ -1,0 +1,121 @@
+{
+  "_fv": 6,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 352,
+    "height": 332,
+    "renderBgLayer": true,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "text": "wash",
+          "onClick": {
+            "name": "Chemwash"
+          },
+          "width": 80,
+          "height": 40,
+          "name": "wash",
+          "x": 294,
+          "y": 175
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 0,
+          "name": "Slot #0",
+          "x": 294,
+          "y": 117
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 1,
+          "name": "Slot #1",
+          "x": 403,
+          "y": 174
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Chemical washer",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Chemical washer",
+          "x": 331,
+          "y": 77
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Solvent",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Solvent",
+          "x": 460,
+          "y": 174
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "aro.png",
+          "name": "aro.png",
+          "x": 340,
+          "y": 115
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 2,
+          "name": "Slot #2",
+          "x": 388,
+          "y": 114
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 3,
+          "name": "Slot #3",
+          "x": 433,
+          "y": 114
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 4,
+          "name": "Slot #4",
+          "x": 477,
+          "y": 114
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 5,
+          "name": "Slot #5",
+          "x": 516,
+          "y": 114
+        }
+      }
+    ]
+  }
+}

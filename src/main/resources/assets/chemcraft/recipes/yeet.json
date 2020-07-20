@@ -1,0 +1,19 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "chemcraft:beaker"
+    },
+    {
+      "item": "chemcraft:kno3"
+    },
+    {
+      "item": "chemcraft:h2s04"
+    }
+  ],
+  "result": {
+    "item": "chemcraft:hno3",
+    "count": 1
+  }
+}

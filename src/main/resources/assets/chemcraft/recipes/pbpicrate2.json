@@ -1,0 +1,20 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:potion",
+      "data": 32767
+    },
+    {
+      "item": "chemcraft:tnp"
+    },
+    {
+      "item": "chemcraft:pbnitrate"
+    }
+  ],
+  "result": {
+    "item": "chemcraft:pbpicrate",
+    "count": 1
+  }
+}
