@@ -22,7 +22,7 @@ import net.minecraft.block.Block;
 
 import net.mcreator.explosivesrightthistime.procedure.ProcedureTestRedstoneOn;
 import net.mcreator.explosivesrightthistime.procedure.ProcedureTestBlockDestroyedByExplosion;
-import net.mcreator.explosivesrightthistime.creativetab.TabExplosivesandchemicals;
+import net.mcreator.explosivesrightthistime.creativetab.TabMiscellaneous;
 import net.mcreator.explosivesrightthistime.ElementsChemcraft;
 
 import java.util.List;
@@ -55,7 +55,7 @@ public class BlockConfined extends ElementsChemcraft.ModElement {
 			setResistance(10F);
 			setLightLevel(0F);
 			setLightOpacity(255);
-			setCreativeTab(TabExplosivesandchemicals.tab);
+			setCreativeTab(TabMiscellaneous.tab);
 		}
 
 		@Override

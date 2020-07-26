@@ -79,11 +79,11 @@
     "inventoryOutSlotIDs": [
       2
     ],
+    "onRightClicked": {
+      "name": "Furnuaceoffblock"
+    },
     "onTickUpdate": {
       "name": "Balsttick"
-    },
-    "onRandomUpdateEvent": {
-      "name": "Displaytick"
     },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],

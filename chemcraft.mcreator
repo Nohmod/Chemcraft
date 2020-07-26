@@ -2990,6 +2990,174 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "Copperoxide",
+      "type": "item",
+      "sortid": 293,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Cusulfate",
+      "type": "recipe",
+      "sortid": 294,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Cunitrate",
+      "type": "recipe",
+      "sortid": 295,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Copperpowder",
+      "type": "item",
+      "sortid": 296,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Copperpowderimpure",
+      "type": "item",
+      "sortid": 297,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Copperpowdertechnicalgrade",
+      "type": "item",
+      "sortid": 298,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Coppersulfatesolution",
+      "type": "item",
+      "sortid": 299,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Coppersulfatesolutio",
+      "type": "recipe",
+      "sortid": 300,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Coppernitratesolution",
+      "type": "item",
+      "sortid": 301,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Coppernitratesolutio",
+      "type": "recipe",
+      "sortid": 302,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Anode",
+      "type": "procedure",
+      "sortid": 303,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Furnuaceoffblock",
+      "type": "procedure",
+      "sortid": 304,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "COpperelectrodepure",
+      "type": "item",
+      "sortid": 305,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Copperelectrodetechnicalgrade",
+      "type": "item",
+      "sortid": 306,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Copperbasedanodemud",
+      "type": "item",
+      "sortid": 307,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Copperingotimpure",
+      "type": "item",
+      "sortid": 308,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Copperingottechnical",
+      "type": "item",
+      "sortid": 309,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
@@ -2998,8 +3166,8 @@
     "en_us": {
       "item.purelead.name": "Lead",
       "tile.hydrogenfluoride.name": "Hydrogen fluoride",
-      "itemGroup.tabmachines": "Machines",
       "item.ammoniasolution.name": "Ammonia solution ",
+      "itemGroup.tabmachines": "Machines",
       "item.coalpile.name": "Bituminous coal",
       "tile.calcite.name": "Calcite",
       "item.leadacidbattery.name": "Lead acid battery",
@@ -3012,6 +3180,7 @@
       "item.phenol.name": "Phenol",
       "item.leadtechnicalgrade.name": "Lead ingot",
       "item.leadiioxide.name": "Lead II oxide",
+      "item.copperelectrodepure.name": "Copper electrode",
       "item.arsenictrioxide.name": "Arsenic trioxide",
       "item.enylnmayerflask.name": "Erlenmeyer flask",
       "item.vinegar.name": "Vinegar",
@@ -3053,6 +3222,7 @@
       "item.sodiumchloridesolution.name": "Sodium chloride solution",
       "item.hydrofluoricacid.name": "Hydrofluoric acid",
       "item.pbsif6.name": "Lead hexafluorosilicate solution",
+      "item.copperpowderimpure.name": "Copper powder",
       "item.potassiumchloridesolution.name": "Potassium chloride solution",
       "item.pbnitrate.name": "Lead II nitrate",
       "tile.furnuace.name": "Blast furnuace",
@@ -3086,7 +3256,9 @@
       "item.borax.name": "Borax",
       "item.terephtalicacid.name": "Terephtalic acid",
       "item.leadpure.name": "Lead ingot",
+      "item.copperpowder.name": "Copper powder",
       "item.oil.name": "Oil",
+      "item.copperoxide.name": "Copper II oxide",
       "item.sulfurpowder.name": "Sulfur powder",
       "item.seleniumchlorides.name": "Selenium chlorides",
       "item.bismuthchloride.name": "Bismuth III chloride",
@@ -3107,8 +3279,11 @@
       "item.platinumcoatedelectrode.name": "Platinum coated electrode",
       "item.crucible.name": "Crucible",
       "item.vanadiumpentoxide.name": "Vanadium pentoxide",
+      "item.coppernitratesolution.name": "Copper nitrate solution",
       "item.sodiumbromide.name": "Sodium bromide",
+      "item.coppersulfatesolution.name": "Copper sulfate solution",
       "item.beaker.name": "Beaker",
+      "item.copperelectrodetechnicalgrade.name": "Copper electrode",
       "tile.test.name": "Confined explosive",
       "item.copper.name": "Copper Ingot",
       "item.sodiumcarbonate.name": "Sodium carbonate",
@@ -3127,6 +3302,7 @@
       "itemGroup.tabinorganic": "Inorganic",
       "item.leadfluorosilicate.name": "Lead hexafluorosilicate",
       "item.chlorinatedanodemud.name": "Chlorinated anode mud",
+      "item.copperpowdertechnicalgrade.name": "Copper powder",
       "item.disstiledwater.name": "Distilled water",
       "item.coppersulfate.name": "Copper sulfate pentahydrate",
       "item.ureanitrate.name": "Urea nitrate",
@@ -3135,12 +3311,15 @@
       "item.transitionmetalconcentrate.name": "Transition metal concentrate",
       "item.nitroglicerin.name": "Nitroglicerin",
       "item.mmoelectrode.name": "MMO electrode",
+      "item.copperbasedanodemud.name": "Anode mud",
       "tile.fluorite.name": "Fluorite",
       "item.leadelectrodetechnical.name": "Lead electrode",
+      "item.copperingottechnical.name": "Copper Ingot",
       "item.manganesedioxide.name": "Manganese dioxide",
       "tile.boraxinrock.name": "Borax",
       "itemGroup.tabmiscellaneous": "Miscellaneous",
       "item.pbn3.name": "Lead II azide",
+      "item.copperingotimpure.name": "Copper Ingot",
       "tile.ammoniacylinder.name": "Ammonia gas cylinder",
       "item.salt.name": "Sodium chloride",
       "item.agno3.name": "Silver I nitrate",

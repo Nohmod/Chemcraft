@@ -24,9 +24,9 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.gui.GuiButton;
 
-import net.mcreator.explosivesrightthistime.procedure.ProcedureElectrolissiprocedure;
 import net.mcreator.explosivesrightthistime.procedure.ProcedureElectrodes;
 import net.mcreator.explosivesrightthistime.procedure.ProcedureBattery;
+import net.mcreator.explosivesrightthistime.procedure.ProcedureAnode;
 import net.mcreator.explosivesrightthistime.ElementsChemcraft;
 import net.mcreator.explosivesrightthistime.Chemcraft;
 
@@ -66,11 +66,6 @@ public class GuiElectroliserGUI extends ElementsChemcraft.ModElement {
 			if (ent instanceof IInventory)
 				this.internal = (IInventory) ent;
 			this.customSlots.put(0, this.addSlotToContainer(new Slot(internal, 0, 32, 34) {
-				@Override
-				public void onSlotChanged() {
-					super.onSlotChanged();
-					GuiContainerMod.this.slotChanged(0, 0, 0);
-				}
 			}));
 			this.customSlots.put(1, this.addSlotToContainer(new Slot(internal, 1, 86, 34) {
 				@Override
@@ -460,16 +455,6 @@ public class GuiElectroliserGUI extends ElementsChemcraft.ModElement {
 		// security measure to prevent arbitrary chunk generation
 		if (!world.isBlockLoaded(new BlockPos(x, y, z)))
 			return;
-		if (slotID == 0 && changeType == 0) {
-			{
-				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				ProcedureElectrolissiprocedure.executeProcedure($_dependencies);
-			}
-		}
 		if (slotID == 4 && changeType == 0) {
 			{
 				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
@@ -488,7 +473,7 @@ public class GuiElectroliserGUI extends ElementsChemcraft.ModElement {
 			{
 				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
 				$_dependencies.put("entity", entity);
-				ProcedureElectrodes.executeProcedure($_dependencies);
+				ProcedureAnode.executeProcedure($_dependencies);
 			}
 		}
 	}

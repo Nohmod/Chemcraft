@@ -49,7 +49,7 @@ public class ItemGraphiteelectrode extends ElementsChemcraft.ModElement {
 
 		@Override
 		public int getMaxItemUseDuration(ItemStack itemstack) {
-			return 3;
+			return 10;
 		}
 
 		@Override

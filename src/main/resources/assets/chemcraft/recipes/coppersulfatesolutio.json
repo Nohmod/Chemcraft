@@ -1,0 +1,19 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "chemcraft:coppersulfate"
+    },
+    {
+      "item": "chemcraft:disstiledwater"
+    },
+    {
+      "item": "chemcraft:beaker"
+    }
+  ],
+  "result": {
+    "item": "chemcraft:coppersulfatesolution",
+    "count": 1
+  }
+}

@@ -44,7 +44,7 @@ import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.block.BlockHorizontal;
 import net.minecraft.block.Block;
 
-import net.mcreator.explosivesrightthistime.procedure.ProcedureDisplaytick;
+import net.mcreator.explosivesrightthistime.procedure.ProcedureFurnuaceoffblock;
 import net.mcreator.explosivesrightthistime.procedure.ProcedureBalsttick;
 import net.mcreator.explosivesrightthistime.gui.GuiBlast;
 import net.mcreator.explosivesrightthistime.ElementsChemcraft;
@@ -221,14 +221,6 @@ public class BlockFurnuaceOn extends ElementsChemcraft.ModElement {
 					double d2 = (double) ((float) k + 0.5) + (double) (random.nextFloat() - 0.5) * 0.6000000014901161D;
 					world.spawnParticle(EnumParticleTypes.SMOKE_NORMAL, d0, d1, d2, 0, 0, 0);
 				}
-			{
-				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				ProcedureDisplaytick.executeProcedure($_dependencies);
-			}
 		}
 
 		@Override
@@ -240,6 +232,15 @@ public class BlockFurnuaceOn extends ElementsChemcraft.ModElement {
 			int z = pos.getZ();
 			if (entity instanceof EntityPlayer) {
 				((EntityPlayer) entity).openGui(Chemcraft.instance, GuiBlast.GUIID, world, x, y, z);
+			}
+			{
+				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				ProcedureFurnuaceoffblock.executeProcedure($_dependencies);
 			}
 			return true;
 		}

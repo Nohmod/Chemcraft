@@ -26,6 +26,9 @@
             "value": ""
           },
           "id": 1,
+          "onSlotChanged": {
+            "name": "Electrofurnuaceprocedure2"
+          },
           "name": "Slot #1",
           "x": 336,
           "y": 96

@@ -7,6 +7,8 @@ import net.minecraft.init.Items;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.entity.Entity;
 
+import net.mcreator.explosivesrightthistime.item.ItemZincchloridesolution;
+import net.mcreator.explosivesrightthistime.item.ItemZincchloride;
 import net.mcreator.explosivesrightthistime.item.ItemXylen;
 import net.mcreator.explosivesrightthistime.item.ItemTransitionmetalconcentrate;
 import net.mcreator.explosivesrightthistime.item.ItemToluene;
@@ -162,7 +164,7 @@ public class ProcedureDist extends ElementsChemcraft.ModElement {
 				}
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack((int) (0))).getItem() == new ItemStack(ItemSodiumhydroxidesolution.block, (int) (1)).getItem())) || (((new Object() {
+		}.getItemStack((int) (0))).getItem() == new ItemStack(ItemSodiumhydroxidesolution.block, (int) (1)).getItem())) || ((((new Object() {
 			public ItemStack getItemStack(int sltid) {
 				if (entity instanceof EntityPlayerMP) {
 					Container _current = ((EntityPlayerMP) entity).openContainer;
@@ -188,7 +190,20 @@ public class ProcedureDist extends ElementsChemcraft.ModElement {
 				}
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack((int) (0))).getItem() == new ItemStack(ItemChlorinatedanodemud.block, (int) (1)).getItem())))))))))) {
+		}.getItemStack((int) (0))).getItem() == new ItemStack(ItemChlorinatedanodemud.block, (int) (1)).getItem())) || ((new Object() {
+			public ItemStack getItemStack(int sltid) {
+				if (entity instanceof EntityPlayerMP) {
+					Container _current = ((EntityPlayerMP) entity).openContainer;
+					if (_current instanceof Supplier) {
+						Object invobj = ((Supplier) _current).get();
+						if (invobj instanceof Map) {
+							return ((Slot) ((Map) invobj).get(sltid)).getStack();
+						}
+					}
+				}
+				return ItemStack.EMPTY;
+			}
+		}.getItemStack((int) (0))).getItem() == new ItemStack(ItemZincchloridesolution.block, (int) (1)).getItem())))))))))) {
 			if (((new Object() {
 				public ItemStack getItemStack(int sltid) {
 					if (entity instanceof EntityPlayerMP) {
@@ -1138,6 +1153,85 @@ public class ProcedureDist extends ElementsChemcraft.ModElement {
 								}
 							}.getAmount((int) (4))) + 1));
 							((Slot) ((Map) invobj).get((int) (4))).putStack(_setstack);
+							_current.detectAndSendChanges();
+						}
+					}
+				}
+			}
+			if (((new Object() {
+				public ItemStack getItemStack(int sltid) {
+					if (entity instanceof EntityPlayerMP) {
+						Container _current = ((EntityPlayerMP) entity).openContainer;
+						if (_current instanceof Supplier) {
+							Object invobj = ((Supplier) _current).get();
+							if (invobj instanceof Map) {
+								return ((Slot) ((Map) invobj).get(sltid)).getStack();
+							}
+						}
+					}
+					return ItemStack.EMPTY;
+				}
+			}.getItemStack((int) (0))).getItem() == new ItemStack(ItemZincchloridesolution.block, (int) (1)).getItem())) {
+				if (entity instanceof EntityPlayerMP) {
+					Container _current = ((EntityPlayerMP) entity).openContainer;
+					if (_current instanceof Supplier) {
+						Object invobj = ((Supplier) _current).get();
+						if (invobj instanceof Map) {
+							((Slot) ((Map) invobj).get((int) (0))).decrStackSize((int) (1));
+							_current.detectAndSendChanges();
+						}
+					}
+				}
+				if (entity instanceof EntityPlayerMP) {
+					Container _current = ((EntityPlayerMP) entity).openContainer;
+					if (_current instanceof Supplier) {
+						Object invobj = ((Supplier) _current).get();
+						if (invobj instanceof Map) {
+							ItemStack _setstack = new ItemStack(ItemZincchloride.block, (int) (1));
+							_setstack.setCount(((new Object() {
+								public int getAmount(int sltid) {
+									if (entity instanceof EntityPlayerMP) {
+										Container _current = ((EntityPlayerMP) entity).openContainer;
+										if (_current instanceof Supplier) {
+											Object invobj = ((Supplier) _current).get();
+											if (invobj instanceof Map) {
+												ItemStack stack = ((Slot) ((Map) invobj).get(sltid)).getStack();;
+												if (stack != null)
+													return stack.getCount();
+											}
+										}
+									}
+									return 0;
+								}
+							}.getAmount((int) (1))) + 1));
+							((Slot) ((Map) invobj).get((int) (1))).putStack(_setstack);
+							_current.detectAndSendChanges();
+						}
+					}
+				}
+				if (entity instanceof EntityPlayerMP) {
+					Container _current = ((EntityPlayerMP) entity).openContainer;
+					if (_current instanceof Supplier) {
+						Object invobj = ((Supplier) _current).get();
+						if (invobj instanceof Map) {
+							ItemStack _setstack = new ItemStack(ItemDisstiledwater.block, (int) (1));
+							_setstack.setCount(((new Object() {
+								public int getAmount(int sltid) {
+									if (entity instanceof EntityPlayerMP) {
+										Container _current = ((EntityPlayerMP) entity).openContainer;
+										if (_current instanceof Supplier) {
+											Object invobj = ((Supplier) _current).get();
+											if (invobj instanceof Map) {
+												ItemStack stack = ((Slot) ((Map) invobj).get(sltid)).getStack();;
+												if (stack != null)
+													return stack.getCount();
+											}
+										}
+									}
+									return 0;
+								}
+							}.getAmount((int) (2))) + 1));
+							((Slot) ((Map) invobj).get((int) (2))).putStack(_setstack);
 							_current.detectAndSendChanges();
 						}
 					}

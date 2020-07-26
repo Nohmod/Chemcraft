@@ -14,7 +14,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.Block;
 
-import net.mcreator.explosivesrightthistime.creativetab.TabExplosivesandchemicals;
+import net.mcreator.explosivesrightthistime.creativetab.TabMiscellaneous;
 import net.mcreator.explosivesrightthistime.ElementsChemcraft;
 
 @ElementsChemcraft.ModElement.Tag
@@ -46,7 +46,7 @@ public class BlockAsphaltblock extends ElementsChemcraft.ModElement {
 			setResistance(9F);
 			setLightLevel(0F);
 			setLightOpacity(255);
-			setCreativeTab(TabExplosivesandchemicals.tab);
+			setCreativeTab(TabMiscellaneous.tab);
 			setBlockUnbreakable();
 		}
 	}

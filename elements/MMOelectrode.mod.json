@@ -11,7 +11,7 @@
     },
     "stackSize": 1,
     "enchantability": 0,
-    "useDuration": 4,
+    "useDuration": 10,
     "toolType": 1.9000000000000001,
     "damageCount": 99990,
     "destroyAnyBlock": false,

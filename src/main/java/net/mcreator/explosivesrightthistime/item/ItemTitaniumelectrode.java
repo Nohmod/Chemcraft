@@ -35,7 +35,7 @@ public class ItemTitaniumelectrode extends ElementsChemcraft.ModElement {
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			setMaxDamage(10000);
+			setMaxDamage(100900);
 			maxStackSize = 1;
 			setUnlocalizedName("titaniumelectrode");
 			setRegistryName("titaniumelectrode");
@@ -49,7 +49,7 @@ public class ItemTitaniumelectrode extends ElementsChemcraft.ModElement {
 
 		@Override
 		public int getMaxItemUseDuration(ItemStack itemstack) {
-			return 3;
+			return 10;
 		}
 
 		@Override

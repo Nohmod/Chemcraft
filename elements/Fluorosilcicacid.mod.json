@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "fluorosilicacid",
+    "texture": "hexafluoricacid",
     "customModelName": "Normal",
     "name": "Fluorosilicic acid",
     "creativeTab": {

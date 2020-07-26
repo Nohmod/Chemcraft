@@ -49,7 +49,7 @@ public class ItemPlatinumcoatedelectrode extends ElementsChemcraft.ModElement {
 
 		@Override
 		public int getMaxItemUseDuration(ItemStack itemstack) {
-			return 4;
+			return 10;
 		}
 
 		@Override

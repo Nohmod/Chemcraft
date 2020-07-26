@@ -18,7 +18,9 @@
     "stayInGridWhenCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "specialInfo": [],
+    "specialInfo": [
+      "Pure"
+    ],
     "hasGlow": false
   }
 }

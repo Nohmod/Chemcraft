@@ -24,7 +24,6 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.gui.GuiButton;
 
-import net.mcreator.explosivesrightthistime.procedure.ProcedureFurnuaceOnBlockRightClicked;
 import net.mcreator.explosivesrightthistime.ElementsChemcraft;
 import net.mcreator.explosivesrightthistime.Chemcraft;
 
@@ -66,11 +65,6 @@ public class GuiBlast extends ElementsChemcraft.ModElement {
 			this.customSlots.put(0, this.addSlotToContainer(new Slot(internal, 0, 17, 21) {
 			}));
 			this.customSlots.put(1, this.addSlotToContainer(new Slot(internal, 1, 17, 48) {
-				@Override
-				public void onSlotChanged() {
-					super.onSlotChanged();
-					GuiContainerMod.this.slotChanged(1, 0, 0);
-				}
 			}));
 			this.customSlots.put(2, this.addSlotToContainer(new Slot(internal, 2, 80, 30) {
 				@Override
@@ -420,15 +414,5 @@ public class GuiBlast extends ElementsChemcraft.ModElement {
 		// security measure to prevent arbitrary chunk generation
 		if (!world.isBlockLoaded(new BlockPos(x, y, z)))
 			return;
-		if (slotID == 1 && changeType == 0) {
-			{
-				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				ProcedureFurnuaceOnBlockRightClicked.executeProcedure($_dependencies);
-			}
-		}
 	}
 }

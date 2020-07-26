@@ -7,13 +7,17 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 
+import net.minecraft.world.World;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
+import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.block.state.IBlockState;
 
 import net.mcreator.explosivesrightthistime.creativetab.TabInorganic;
 import net.mcreator.explosivesrightthistime.ElementsChemcraft;
+
+import java.util.List;
 
 @ElementsChemcraft.ModElement.Tag
 public class ItemCopper extends ElementsChemcraft.ModElement {
@@ -55,6 +59,12 @@ public class ItemCopper extends ElementsChemcraft.ModElement {
 		@Override
 		public float getDestroySpeed(ItemStack par1ItemStack, IBlockState par2Block) {
 			return 1F;
+		}
+
+		@Override
+		public void addInformation(ItemStack itemstack, World world, List<String> list, ITooltipFlag flag) {
+			super.addInformation(itemstack, world, list, flag);
+			list.add("Pure");
 		}
 	}
 }

@@ -48,9 +48,6 @@
             "value": ""
           },
           "id": 1,
-          "onSlotChanged": {
-            "name": "FurnuaceOnBlockRightClicked"
-          },
           "name": "Slot #1",
           "x": 282,
           "y": 168

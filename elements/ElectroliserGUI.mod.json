@@ -14,9 +14,6 @@
             "value": ""
           },
           "id": 0,
-          "onSlotChanged": {
-            "name": "Electrolissiprocedure"
-          },
           "name": "Slot #0",
           "x": 282,
           "y": 114
@@ -173,7 +170,7 @@
           },
           "id": 7,
           "onSlotChanged": {
-            "name": "Electrodes"
+            "name": "Anode"
           },
           "name": "Slot #7",
           "x": 318,

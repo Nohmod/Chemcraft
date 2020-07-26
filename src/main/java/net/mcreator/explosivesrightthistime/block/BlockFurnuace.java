@@ -32,7 +32,6 @@ import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
-import net.minecraft.client.Minecraft;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.block.properties.PropertyDirection;
 import net.minecraft.block.properties.IProperty;
@@ -44,7 +43,6 @@ import net.minecraft.block.BlockHorizontal;
 import net.minecraft.block.Block;
 
 import net.mcreator.explosivesrightthistime.procedure.ProcedureFurnuaceOnBlockRightClicked;
-import net.mcreator.explosivesrightthistime.procedure.ProcedureDisplaytick;
 import net.mcreator.explosivesrightthistime.procedure.ProcedureBalsttick;
 import net.mcreator.explosivesrightthistime.gui.GuiBlast;
 import net.mcreator.explosivesrightthistime.creativetab.TabMachines;
@@ -207,24 +205,6 @@ public class BlockFurnuace extends ElementsChemcraft.ModElement {
 				ProcedureBalsttick.executeProcedure($_dependencies);
 			}
 			world.scheduleUpdate(new BlockPos(x, y, z), this, this.tickRate(world));
-		}
-
-		@SideOnly(Side.CLIENT)
-		@Override
-		public void randomDisplayTick(IBlockState state, World world, BlockPos pos, Random random) {
-			super.randomDisplayTick(state, world, pos, random);
-			EntityPlayer entity = Minecraft.getMinecraft().player;
-			int x = pos.getX();
-			int y = pos.getY();
-			int z = pos.getZ();
-			{
-				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				ProcedureDisplaytick.executeProcedure($_dependencies);
-			}
 		}
 
 		@Override

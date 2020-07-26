@@ -25,6 +25,7 @@ import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.gui.GuiTextField;
 import net.minecraft.client.gui.GuiButton;
 
+import net.mcreator.explosivesrightthistime.procedure.ProcedureElectrofurnuaceprocedure2;
 import net.mcreator.explosivesrightthistime.ElementsChemcraft;
 import net.mcreator.explosivesrightthistime.Chemcraft;
 
@@ -66,6 +67,11 @@ public class GuiElectricfurnuaceGUI extends ElementsChemcraft.ModElement {
 			this.customSlots.put(0, this.addSlotToContainer(new Slot(internal, 0, 71, 12) {
 			}));
 			this.customSlots.put(1, this.addSlotToContainer(new Slot(internal, 1, 44, 12) {
+				@Override
+				public void onSlotChanged() {
+					super.onSlotChanged();
+					GuiContainerMod.this.slotChanged(1, 0, 0);
+				}
 			}));
 			this.customSlots.put(2, this.addSlotToContainer(new Slot(internal, 2, 125, 12) {
 				@Override
@@ -425,5 +431,16 @@ public class GuiElectricfurnuaceGUI extends ElementsChemcraft.ModElement {
 		// security measure to prevent arbitrary chunk generation
 		if (!world.isBlockLoaded(new BlockPos(x, y, z)))
 			return;
+		if (slotID == 1 && changeType == 0) {
+			{
+				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("guistate", guistate);
+				$_dependencies.put("world", world);
+				ProcedureElectrofurnuaceprocedure2.executeProcedure($_dependencies);
+			}
+		}
 	}
 }

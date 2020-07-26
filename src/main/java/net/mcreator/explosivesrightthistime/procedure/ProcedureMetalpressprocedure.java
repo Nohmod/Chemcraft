@@ -13,7 +13,11 @@ import net.mcreator.explosivesrightthistime.item.ItemLeadelectrodepure;
 import net.mcreator.explosivesrightthistime.item.ItemLeadelectrode;
 import net.mcreator.explosivesrightthistime.item.ItemLead;
 import net.mcreator.explosivesrightthistime.item.ItemElectrode;
+import net.mcreator.explosivesrightthistime.item.ItemCopperingottechnical;
+import net.mcreator.explosivesrightthistime.item.ItemCopperingotimpure;
+import net.mcreator.explosivesrightthistime.item.ItemCopperelectrodetechnicalgrade;
 import net.mcreator.explosivesrightthistime.item.ItemCopper;
+import net.mcreator.explosivesrightthistime.item.ItemCOpperelectrodepure;
 import net.mcreator.explosivesrightthistime.ElementsChemcraft;
 
 import java.util.function.Supplier;
@@ -72,7 +76,7 @@ public class ProcedureMetalpressprocedure extends ElementsChemcraft.ModElement {
 				}
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack((int) (0))).getItem() == new ItemStack(ItemLeadpure.block, (int) (1)).getItem())) || ((new Object() {
+		}.getItemStack((int) (0))).getItem() == new ItemStack(ItemLeadpure.block, (int) (1)).getItem())) || (((new Object() {
 			public ItemStack getItemStack(int sltid) {
 				if (entity instanceof EntityPlayerMP) {
 					Container _current = ((EntityPlayerMP) entity).openContainer;
@@ -85,7 +89,33 @@ public class ProcedureMetalpressprocedure extends ElementsChemcraft.ModElement {
 				}
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack((int) (0))).getItem() == new ItemStack(ItemCopper.block, (int) (1)).getItem())))) {
+		}.getItemStack((int) (0))).getItem() == new ItemStack(ItemCopper.block, (int) (1)).getItem()) || (((new Object() {
+			public ItemStack getItemStack(int sltid) {
+				if (entity instanceof EntityPlayerMP) {
+					Container _current = ((EntityPlayerMP) entity).openContainer;
+					if (_current instanceof Supplier) {
+						Object invobj = ((Supplier) _current).get();
+						if (invobj instanceof Map) {
+							return ((Slot) ((Map) invobj).get(sltid)).getStack();
+						}
+					}
+				}
+				return ItemStack.EMPTY;
+			}
+		}.getItemStack((int) (0))).getItem() == new ItemStack(ItemCopperingotimpure.block, (int) (1)).getItem()) || ((new Object() {
+			public ItemStack getItemStack(int sltid) {
+				if (entity instanceof EntityPlayerMP) {
+					Container _current = ((EntityPlayerMP) entity).openContainer;
+					if (_current instanceof Supplier) {
+						Object invobj = ((Supplier) _current).get();
+						if (invobj instanceof Map) {
+							return ((Slot) ((Map) invobj).get(sltid)).getStack();
+						}
+					}
+				}
+				return ItemStack.EMPTY;
+			}
+		}.getItemStack((int) (0))).getItem() == new ItemStack(ItemCopperingottechnical.block, (int) (1)).getItem())))))) {
 			if (((new Object() {
 				public ItemStack getItemStack(int sltid) {
 					if (entity instanceof EntityPlayerMP) {
@@ -189,7 +219,7 @@ public class ProcedureMetalpressprocedure extends ElementsChemcraft.ModElement {
 					if (_current instanceof Supplier) {
 						Object invobj = ((Supplier) _current).get();
 						if (invobj instanceof Map) {
-							ItemStack _setstack = new ItemStack(ItemElectrode.block, (int) (1));
+							ItemStack _setstack = new ItemStack(ItemCOpperelectrodepure.block, (int) (1));
 							_setstack.setCount(1);
 							((Slot) ((Map) invobj).get((int) (1))).putStack(_setstack);
 							_current.detectAndSendChanges();
@@ -227,6 +257,80 @@ public class ProcedureMetalpressprocedure extends ElementsChemcraft.ModElement {
 						Object invobj = ((Supplier) _current).get();
 						if (invobj instanceof Map) {
 							ItemStack _setstack = new ItemStack(ItemLeadelectrode.block, (int) (1));
+							_setstack.setCount(1);
+							((Slot) ((Map) invobj).get((int) (1))).putStack(_setstack);
+							_current.detectAndSendChanges();
+						}
+					}
+				}
+			}
+			if (((new Object() {
+				public ItemStack getItemStack(int sltid) {
+					if (entity instanceof EntityPlayerMP) {
+						Container _current = ((EntityPlayerMP) entity).openContainer;
+						if (_current instanceof Supplier) {
+							Object invobj = ((Supplier) _current).get();
+							if (invobj instanceof Map) {
+								return ((Slot) ((Map) invobj).get(sltid)).getStack();
+							}
+						}
+					}
+					return ItemStack.EMPTY;
+				}
+			}.getItemStack((int) (0))).getItem() == new ItemStack(ItemCopperingotimpure.block, (int) (1)).getItem())) {
+				if (entity instanceof EntityPlayerMP) {
+					Container _current = ((EntityPlayerMP) entity).openContainer;
+					if (_current instanceof Supplier) {
+						Object invobj = ((Supplier) _current).get();
+						if (invobj instanceof Map) {
+							((Slot) ((Map) invobj).get((int) (0))).decrStackSize((int) (1));
+							_current.detectAndSendChanges();
+						}
+					}
+				}
+				if (entity instanceof EntityPlayerMP) {
+					Container _current = ((EntityPlayerMP) entity).openContainer;
+					if (_current instanceof Supplier) {
+						Object invobj = ((Supplier) _current).get();
+						if (invobj instanceof Map) {
+							ItemStack _setstack = new ItemStack(ItemElectrode.block, (int) (1));
+							_setstack.setCount(1);
+							((Slot) ((Map) invobj).get((int) (1))).putStack(_setstack);
+							_current.detectAndSendChanges();
+						}
+					}
+				}
+			}
+			if (((new Object() {
+				public ItemStack getItemStack(int sltid) {
+					if (entity instanceof EntityPlayerMP) {
+						Container _current = ((EntityPlayerMP) entity).openContainer;
+						if (_current instanceof Supplier) {
+							Object invobj = ((Supplier) _current).get();
+							if (invobj instanceof Map) {
+								return ((Slot) ((Map) invobj).get(sltid)).getStack();
+							}
+						}
+					}
+					return ItemStack.EMPTY;
+				}
+			}.getItemStack((int) (0))).getItem() == new ItemStack(ItemCopperingottechnical.block, (int) (1)).getItem())) {
+				if (entity instanceof EntityPlayerMP) {
+					Container _current = ((EntityPlayerMP) entity).openContainer;
+					if (_current instanceof Supplier) {
+						Object invobj = ((Supplier) _current).get();
+						if (invobj instanceof Map) {
+							((Slot) ((Map) invobj).get((int) (0))).decrStackSize((int) (1));
+							_current.detectAndSendChanges();
+						}
+					}
+				}
+				if (entity instanceof EntityPlayerMP) {
+					Container _current = ((EntityPlayerMP) entity).openContainer;
+					if (_current instanceof Supplier) {
+						Object invobj = ((Supplier) _current).get();
+						if (invobj instanceof Map) {
+							ItemStack _setstack = new ItemStack(ItemCopperelectrodetechnicalgrade.block, (int) (1));
 							_setstack.setCount(1);
 							((Slot) ((Map) invobj).get((int) (1))).putStack(_setstack);
 							_current.detectAndSendChanges();

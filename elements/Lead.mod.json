@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "lead_ingot",
+    "texture": "lead_unpure",
     "customModelName": "Normal",
     "name": "Lead ingot",
     "creativeTab": {

@@ -124,6 +124,11 @@ public class BlockFermenter extends ElementsChemcraft.ModElement {
 		}
 
 		@Override
+		public boolean isOpaqueCube(IBlockState state) {
+			return false;
+		}
+
+		@Override
 		public EnumPushReaction getMobilityFlag(IBlockState state) {
 			return EnumPushReaction.BLOCK;
 		}

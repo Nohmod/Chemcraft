@@ -76,7 +76,7 @@ public class BlockChrom extends ElementsChemcraft.ModElement {
 			super(Material.ROCK);
 			setUnlocalizedName("chrom");
 			setSoundType(SoundType.STONE);
-			setHarvestLevel("pickaxe", 3);
+			setHarvestLevel("pickaxe", 2);
 			setHardness(1.8F);
 			setResistance(22.5F);
 			setLightLevel(0F);

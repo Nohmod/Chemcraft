@@ -85,9 +85,6 @@
     "onTickUpdate": {
       "name": "Balsttick"
     },
-    "onRandomUpdateEvent": {
-      "name": "Displaytick"
-    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [

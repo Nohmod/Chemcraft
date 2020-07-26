@@ -12,9 +12,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.block.properties.IProperty;
 
-import net.mcreator.explosivesrightthistime.item.ItemCoke;
 import net.mcreator.explosivesrightthistime.block.BlockFurnuaceOn;
-import net.mcreator.explosivesrightthistime.block.BlockFurnuace;
 import net.mcreator.explosivesrightthistime.ElementsChemcraft;
 
 import java.util.function.Supplier;
@@ -52,48 +50,7 @@ public class ProcedureFurnuaceOnBlockRightClicked extends ElementsChemcraft.ModE
 		int y = (int) dependencies.get("y");
 		int z = (int) dependencies.get("z");
 		World world = (World) dependencies.get("world");
-		if (((new Object() {
-			public ItemStack getItemStack(int sltid) {
-				if (entity instanceof EntityPlayerMP) {
-					Container _current = ((EntityPlayerMP) entity).openContainer;
-					if (_current instanceof Supplier) {
-						Object invobj = ((Supplier) _current).get();
-						if (invobj instanceof Map) {
-							return ((Slot) ((Map) invobj).get(sltid)).getStack();
-						}
-					}
-				}
-				return ItemStack.EMPTY;
-			}
-		}.getItemStack((int) (1))).getItem() == new ItemStack(ItemCoke.block, (int) (1)).getItem())) {
-			{
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-				IBlockState _bs = BlockFurnuaceOn.block.getDefaultState();
-				IBlockState _bso = world.getBlockState(_bp);
-				for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getProperties().entrySet()) {
-					IProperty _property = entry.getKey();
-					if (_bs.getPropertyKeys().contains(_property))
-						_bs = _bs.withProperty(_property, (Comparable) entry.getValue());
-				}
-				TileEntity _te = world.getTileEntity(_bp);
-				NBTTagCompound _bnbt = null;
-				if (_te != null) {
-					_bnbt = _te.writeToNBT(new NBTTagCompound());
-					_te.invalidate();
-				}
-				world.setBlockState(_bp, _bs, 3);
-				if (_bnbt != null) {
-					_te = world.getTileEntity(_bp);
-					if (_te != null) {
-						try {
-							_te.readFromNBT(_bnbt);
-						} catch (Exception ignored) {
-						}
-					}
-				}
-			}
-		}
-		if (((new Object() {
+		if ((((new Object() {
 			public int getAmount(int sltid) {
 				if (entity instanceof EntityPlayerMP) {
 					Container _current = ((EntityPlayerMP) entity).openContainer;
@@ -108,10 +65,25 @@ public class ProcedureFurnuaceOnBlockRightClicked extends ElementsChemcraft.ModE
 				}
 				return 0;
 			}
-		}.getAmount((int) (2))) >= 60)) {
+		}.getAmount((int) (1))) > 0) && ((new Object() {
+			public int getAmount(int sltid) {
+				if (entity instanceof EntityPlayerMP) {
+					Container _current = ((EntityPlayerMP) entity).openContainer;
+					if (_current instanceof Supplier) {
+						Object invobj = ((Supplier) _current).get();
+						if (invobj instanceof Map) {
+							ItemStack stack = ((Slot) ((Map) invobj).get(sltid)).getStack();;
+							if (stack != null)
+								return stack.getCount();
+						}
+					}
+				}
+				return 0;
+			}
+		}.getAmount((int) (0))) > 0))) {
 			{
 				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-				IBlockState _bs = BlockFurnuace.block.getDefaultState();
+				IBlockState _bs = BlockFurnuaceOn.block.getDefaultState();
 				IBlockState _bso = world.getBlockState(_bp);
 				for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getProperties().entrySet()) {
 					IProperty _property = entry.getKey();

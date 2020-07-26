@@ -7,7 +7,7 @@
     "customModelName": "Normal",
     "name": "Copper pipeing",
     "creativeTab": {
-      "value": "CUSTOM:Explosivesandchemicals"
+      "value": "CUSTOM:Miscellaneous"
     },
     "stackSize": 64,
     "enchantability": 0,

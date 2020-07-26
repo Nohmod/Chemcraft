@@ -39,7 +39,7 @@ public class ProcedureElectrodes extends ElementsChemcraft.ModElement {
 				}
 				return 0;
 			}
-		}.getAmount((int) (0))) > 0) && ((new Object() {
+		}.getAmount((int) (0))) > 0) && (((new Object() {
 			public int getAmount(int sltid) {
 				if (entity instanceof EntityPlayerMP) {
 					Container _current = ((EntityPlayerMP) entity).openContainer;
@@ -54,29 +54,58 @@ public class ProcedureElectrodes extends ElementsChemcraft.ModElement {
 				}
 				return 0;
 			}
-		}.getAmount((int) (6))) == 1))) {
+		}.getAmount((int) (6))) == 1) && (((new Object() {
+			public int getAmount(int sltid) {
+				if (entity instanceof EntityPlayerMP) {
+					Container _current = ((EntityPlayerMP) entity).openContainer;
+					if (_current instanceof Supplier) {
+						Object invobj = ((Supplier) _current).get();
+						if (invobj instanceof Map) {
+							ItemStack stack = ((Slot) ((Map) invobj).get(sltid)).getStack();;
+							if (stack != null)
+								return stack.getCount();
+						}
+					}
+				}
+				return 0;
+			}
+		}.getAmount((int) (7))) == 1) && (((new Object() {
+			public int getAmount(int sltid) {
+				if (entity instanceof EntityPlayerMP) {
+					Container _current = ((EntityPlayerMP) entity).openContainer;
+					if (_current instanceof Supplier) {
+						Object invobj = ((Supplier) _current).get();
+						if (invobj instanceof Map) {
+							ItemStack stack = ((Slot) ((Map) invobj).get(sltid)).getStack();;
+							if (stack != null)
+								return stack.getCount();
+						}
+					}
+				}
+				return 0;
+			}
+		}.getAmount((int) (4))) == 1) && ((new Object() {
+			public int getAmount(int sltid) {
+				if (entity instanceof EntityPlayerMP) {
+					Container _current = ((EntityPlayerMP) entity).openContainer;
+					if (_current instanceof Supplier) {
+						Object invobj = ((Supplier) _current).get();
+						if (invobj instanceof Map) {
+							ItemStack stack = ((Slot) ((Map) invobj).get(sltid)).getStack();;
+							if (stack != null)
+								return stack.getCount();
+						}
+					}
+				}
+				return 0;
+			}
+		}.getAmount((int) (5))) >= 1)))))) {
 			if (entity instanceof EntityPlayerMP) {
 				Container _current = ((EntityPlayerMP) entity).openContainer;
 				if (_current instanceof Supplier) {
 					Object invobj = ((Supplier) _current).get();
 					if (invobj instanceof Map) {
 						ItemStack stack = ((Slot) ((Map) invobj).get((int) (4))).getStack();
-						if (stack != null) {
-							if (stack.attemptDamageItem((int) 1, new Random(), null)) {
-								stack.shrink(1);
-								stack.setItemDamage(0);
-							}
-							_current.detectAndSendChanges();
-						}
-					}
-				}
-			}
-			if (entity instanceof EntityPlayerMP) {
-				Container _current = ((EntityPlayerMP) entity).openContainer;
-				if (_current instanceof Supplier) {
-					Object invobj = ((Supplier) _current).get();
-					if (invobj instanceof Map) {
-						ItemStack stack = ((Slot) ((Map) invobj).get((int) (6))).getStack();
 						if (stack != null) {
 							if (stack.attemptDamageItem((int) 1, new Random(), null)) {
 								stack.shrink(1);
