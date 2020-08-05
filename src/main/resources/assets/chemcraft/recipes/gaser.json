@@ -4,7 +4,7 @@
   "pattern": [
     "012",
     "345",
-    "678"
+    "6 8"
   ],
   "key": {
     "0": {
@@ -17,22 +17,19 @@
       "item": "minecraft:stone_button"
     },
     "3": {
-      "item": "minecraft:iron_ingot"
+      "item": "chemcraft:stainlesssteelplate"
     },
     "4": {
       "item": "chemcraft:copperpipe"
     },
     "5": {
-      "item": "minecraft:iron_ingot"
+      "item": "chemcraft:stainlesssteelplate"
     },
     "6": {
-      "item": "minecraft:iron_ingot"
-    },
-    "7": {
-      "item": "chemcraft:emptygascylinder2"
+      "item": "chemcraft:stainlesssteelplate"
     },
     "8": {
-      "item": "minecraft:iron_ingot"
+      "item": "chemcraft:stainlesssteelplate"
     }
   },
   "result": {

@@ -2,8 +2,12 @@ package net.mcreator.explosivesrightthistime.procedure;
 
 import net.minecraft.world.World;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.item.ItemStack;
 import net.minecraft.init.Blocks;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.Entity;
 
+import net.mcreator.explosivesrightthistime.item.ItemSodiummetal;
 import net.mcreator.explosivesrightthistime.ElementsChemcraft;
 
 @ElementsChemcraft.ModElement.Tag
@@ -13,6 +17,10 @@ public class ProcedureProc extends ElementsChemcraft.ModElement {
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {
+		if (dependencies.get("entity") == null) {
+			System.err.println("Failed to load dependency entity for procedure Proc!");
+			return;
+		}
 		if (dependencies.get("x") == null) {
 			System.err.println("Failed to load dependency x for procedure Proc!");
 			return;
@@ -29,6 +37,7 @@ public class ProcedureProc extends ElementsChemcraft.ModElement {
 			System.err.println("Failed to load dependency world for procedure Proc!");
 			return;
 		}
+		Entity entity = (Entity) dependencies.get("entity");
 		int x = (int) dependencies.get("x");
 		int y = (int) dependencies.get("y");
 		int z = (int) dependencies.get("z");
@@ -48,7 +57,9 @@ public class ProcedureProc extends ElementsChemcraft.ModElement {
 		}
 		if ((Blocks.FLOWING_WATER.getDefaultState().getBlock() == (world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock())) {
 			if ((Math.random() < 0.4)) {
-				world.setBlockToAir(new BlockPos((int) x, (int) y, (int) z));
+				if (entity instanceof EntityPlayer)
+					((EntityPlayer) entity).inventory.clearMatchingItems(new ItemStack(ItemSodiummetal.block, (int) (1)).getItem(), -1, (int) 1,
+							null);
 				if (!world.isRemote) {
 					world.createExplosion(null, (int) x, (int) y, (int) z, (float) 3, true);
 				}
@@ -60,8 +71,10 @@ public class ProcedureProc extends ElementsChemcraft.ModElement {
 				|| ((Blocks.WATER.getDefaultState().getBlock() == (world.getBlockState(new BlockPos((int) x, (int) y, (int) (z + 1)))).getBlock())
 						|| (Blocks.WATER.getDefaultState().getBlock() == (world.getBlockState(new BlockPos((int) x, (int) y, (int) (z - 1))))
 								.getBlock())))) {
-			if ((Math.random() < 0.4)) {
-				world.setBlockToAir(new BlockPos((int) x, (int) y, (int) z));
+			if ((Math.random() < 0.5)) {
+				if (entity instanceof EntityPlayer)
+					((EntityPlayer) entity).inventory.clearMatchingItems(new ItemStack(ItemSodiummetal.block, (int) (1)).getItem(), -1, (int) 1,
+							null);
 				if (!world.isRemote) {
 					world.createExplosion(null, (int) x, (int) y, (int) z, (float) 2, true);
 				}
@@ -74,7 +87,9 @@ public class ProcedureProc extends ElementsChemcraft.ModElement {
 						|| (Blocks.WATER.getDefaultState().getBlock() == (world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) z)))
 								.getBlock())))) {
 			if ((Math.random() < 0.4)) {
-				world.setBlockToAir(new BlockPos((int) x, (int) y, (int) z));
+				if (entity instanceof EntityPlayer)
+					((EntityPlayer) entity).inventory.clearMatchingItems(new ItemStack(ItemSodiummetal.block, (int) (1)).getItem(), -1, (int) 1,
+							null);
 				if (!world.isRemote) {
 					world.createExplosion(null, (int) x, (int) y, (int) z, (float) 2, true);
 				}

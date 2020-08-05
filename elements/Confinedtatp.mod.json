@@ -85,6 +85,9 @@
     "onStartToDestroy": {
       "name": "ConfinedtatpPlayerStartsToDestroy"
     },
+    "onEntityWalksOn": {
+      "name": "ConfinedtatpEntityWalksOnTheBlock"
+    },
     "onRedstoneOn": {
       "name": "ConfinedtatpRedstoneOn"
     },

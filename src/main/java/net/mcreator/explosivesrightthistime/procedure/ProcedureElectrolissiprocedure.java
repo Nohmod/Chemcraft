@@ -21,6 +21,11 @@ import net.mcreator.explosivesrightthistime.item.ItemLeadelectrodetechnical;
 import net.mcreator.explosivesrightthistime.item.ItemLeadelectrodepure;
 import net.mcreator.explosivesrightthistime.item.ItemLeadelectrode;
 import net.mcreator.explosivesrightthistime.item.ItemLeadacidbattery;
+import net.mcreator.explosivesrightthistime.item.ItemIronsulfatesolution;
+import net.mcreator.explosivesrightthistime.item.ItemIronpowder;
+import net.mcreator.explosivesrightthistime.item.ItemIronelectrodetechnicalgrade;
+import net.mcreator.explosivesrightthistime.item.ItemIronelectrodepure;
+import net.mcreator.explosivesrightthistime.item.ItemIronelectrodeimpure;
 import net.mcreator.explosivesrightthistime.item.ItemGraphiteelectrode;
 import net.mcreator.explosivesrightthistime.item.ItemElectrolityccopper;
 import net.mcreator.explosivesrightthistime.item.ItemElectrode;
@@ -29,6 +34,7 @@ import net.mcreator.explosivesrightthistime.item.ItemCoppernitratesolution;
 import net.mcreator.explosivesrightthistime.item.ItemCopperelectrodetechnicalgrade;
 import net.mcreator.explosivesrightthistime.item.ItemCopperbasedanodemud;
 import net.mcreator.explosivesrightthistime.item.ItemCOpperelectrodepure;
+import net.mcreator.explosivesrightthistime.item.ItemAnodemudironabseed;
 import net.mcreator.explosivesrightthistime.block.BlockEmptygascylinder2;
 import net.mcreator.explosivesrightthistime.block.BlockChlorinecylinder;
 import net.mcreator.explosivesrightthistime.block.BlockCanisterred;
@@ -737,6 +743,154 @@ public class ProcedureElectrolissiprocedure extends ElementsChemcraft.ModElement
 					_tileEntity.getTileData().setDouble("recipe", 3);
 				world.notifyBlockUpdate(_bp, _bs, _bs, 3);
 			}
+		} else if (((((new Object() {
+			public ItemStack getItemStack(BlockPos pos, int sltid) {
+				TileEntity inv = world.getTileEntity(pos);
+				if (inv instanceof TileEntityLockableLoot)
+					return ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
+				return ItemStack.EMPTY;
+			}
+		}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (0))).getItem() == new ItemStack(ItemIronsulfatesolution.block, (int) (1))
+				.getItem()) && (((new Object() {
+					public ItemStack getItemStack(BlockPos pos, int sltid) {
+						TileEntity inv = world.getTileEntity(pos);
+						if (inv instanceof TileEntityLockableLoot)
+							return ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (4)))
+						.getItem() == new ItemStack(ItemIronelectrodeimpure.block, (int) (1)).getItem()) && ((((new Object() {
+							public ItemStack getItemStack(BlockPos pos, int sltid) {
+								TileEntity inv = world.getTileEntity(pos);
+								if (inv instanceof TileEntityLockableLoot)
+									return ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
+								return ItemStack.EMPTY;
+							}
+						}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (7)))
+								.getItem() == new ItemStack(ItemIronelectrodepure.block, (int) (1)).getItem()) || ((new Object() {
+									public ItemStack getItemStack(BlockPos pos, int sltid) {
+										TileEntity inv = world.getTileEntity(pos);
+										if (inv instanceof TileEntityLockableLoot)
+											return ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
+										return ItemStack.EMPTY;
+									}
+								}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (7)))
+										.getItem() == new ItemStack(ItemIronelectrodetechnicalgrade.block, (int) (1)).getItem()))
+								&& ((new Object() {
+									public ItemStack getItemStack(BlockPos pos, int sltid) {
+										TileEntity inv = world.getTileEntity(pos);
+										if (inv instanceof TileEntityLockableLoot)
+											return ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
+										return ItemStack.EMPTY;
+									}
+								}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (6)))
+										.getItem() == new ItemStack(ItemLeadacidbattery.block, (int) (1)).getItem()))))
+				&& (((((new Object() {
+					public ItemStack getItemStack(BlockPos pos, int sltid) {
+						TileEntity inv = world.getTileEntity(pos);
+						if (inv instanceof TileEntityLockableLoot)
+							return ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (1)))
+						.getItem() == new ItemStack(ItemAnodemudironabseed.block, (int) (1)).getItem()) && ((new Object() {
+							public ItemStack getItemStack(BlockPos pos, int sltid) {
+								TileEntity inv = world.getTileEntity(pos);
+								if (inv instanceof TileEntityLockableLoot)
+									return ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
+								return ItemStack.EMPTY;
+							}
+						}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (2)))
+								.getItem() == new ItemStack(ItemIronpowder.block, (int) (1)).getItem()))
+						&& (((((new Object() {
+							public int getAmount(BlockPos pos, int sltid) {
+								TileEntity inv = world.getTileEntity(pos);
+								if (inv instanceof TileEntityLockableLoot) {
+									ItemStack stack = ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
+									if (stack != null)
+										return stack.getCount();
+								}
+								return 0;
+							}
+						}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (0))) >= 2) && ((new Object() {
+							public int getAmount(BlockPos pos, int sltid) {
+								TileEntity inv = world.getTileEntity(pos);
+								if (inv instanceof TileEntityLockableLoot) {
+									ItemStack stack = ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
+									if (stack != null)
+										return stack.getCount();
+								}
+								return 0;
+							}
+						}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (4))) <= 63)) && ((new Object() {
+							public int getAmount(BlockPos pos, int sltid) {
+								TileEntity inv = world.getTileEntity(pos);
+								if (inv instanceof TileEntityLockableLoot) {
+									ItemStack stack = ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
+									if (stack != null)
+										return stack.getCount();
+								}
+								return 0;
+							}
+						}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (5))) == 0)) && (((new Object() {
+							public int getAmount(BlockPos pos, int sltid) {
+								TileEntity inv = world.getTileEntity(pos);
+								if (inv instanceof TileEntityLockableLoot) {
+									ItemStack stack = ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
+									if (stack != null)
+										return stack.getCount();
+								}
+								return 0;
+							}
+						}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (6))) == 1) && ((new Object() {
+							public int getAmount(BlockPos pos, int sltid) {
+								TileEntity inv = world.getTileEntity(pos);
+								if (inv instanceof TileEntityLockableLoot) {
+									ItemStack stack = ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
+									if (stack != null)
+										return stack.getCount();
+								}
+								return 0;
+							}
+						}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (7))) == 1)))) || (((new Object() {
+							public int getAmount(BlockPos pos, int sltid) {
+								TileEntity inv = world.getTileEntity(pos);
+								if (inv instanceof TileEntityLockableLoot) {
+									ItemStack stack = ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
+									if (stack != null)
+										return stack.getCount();
+								}
+								return 0;
+							}
+						}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (1))) == 0) || (((new Object() {
+							public int getAmount(BlockPos pos, int sltid) {
+								TileEntity inv = world.getTileEntity(pos);
+								if (inv instanceof TileEntityLockableLoot) {
+									ItemStack stack = ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
+									if (stack != null)
+										return stack.getCount();
+								}
+								return 0;
+							}
+						}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (2))) == 0) || ((new Object() {
+							public int getAmount(BlockPos pos, int sltid) {
+								TileEntity inv = world.getTileEntity(pos);
+								if (inv instanceof TileEntityLockableLoot) {
+									ItemStack stack = ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
+									if (stack != null)
+										return stack.getCount();
+								}
+								return 0;
+							}
+						}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (3))) == 0)))))) {
+			if (!world.isRemote) {
+				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+				TileEntity _tileEntity = world.getTileEntity(_bp);
+				IBlockState _bs = world.getBlockState(_bp);
+				if (_tileEntity != null)
+					_tileEntity.getTileData().setDouble("recipe", 4);
+				world.notifyBlockUpdate(_bp, _bs, _bs, 3);
+			}
 		} else {
 			if (!world.isRemote) {
 				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
@@ -779,7 +933,7 @@ public class ProcedureElectrolissiprocedure extends ElementsChemcraft.ModElement
 						return tileEntity.getTileData().getDouble(tag);
 					return -1;
 				}
-			}.getValue(new BlockPos((int) x, (int) y, (int) z), "timer")) >= 200)) {
+			}.getValue(new BlockPos((int) x, (int) y, (int) z), "timer")) >= 500)) {
 				if (((new Object() {
 					public double getValue(BlockPos pos, String tag) {
 						TileEntity tileEntity = world.getTileEntity(pos);
@@ -936,7 +1090,7 @@ public class ProcedureElectrolissiprocedure extends ElementsChemcraft.ModElement
 									}
 									return 0;
 								}
-							}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (1))) + 2));
+							}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (1))) + 1));
 							((TileEntityLockableLoot) inv).setInventorySlotContents((int) (1), _setstack);
 						}
 					}
@@ -980,7 +1134,7 @@ public class ProcedureElectrolissiprocedure extends ElementsChemcraft.ModElement
 									}
 									return 0;
 								}
-							}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (1))) + 2));
+							}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (1))) + 1));
 							((TileEntityLockableLoot) inv).setInventorySlotContents((int) (1), _setstack);
 						}
 					}
@@ -988,6 +1142,50 @@ public class ProcedureElectrolissiprocedure extends ElementsChemcraft.ModElement
 						TileEntity inv = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
 						if (inv != null && (inv instanceof TileEntityLockableLoot)) {
 							ItemStack _setstack = new ItemStack(ItemElectrolityccopper.block, (int) (1));
+							_setstack.setCount(((new Object() {
+								public int getAmount(BlockPos pos, int sltid) {
+									TileEntity inv = world.getTileEntity(pos);
+									if (inv instanceof TileEntityLockableLoot) {
+										ItemStack stack = ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
+										if (stack != null)
+											return stack.getCount();
+									}
+									return 0;
+								}
+							}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (2))) + 1));
+							((TileEntityLockableLoot) inv).setInventorySlotContents((int) (2), _setstack);
+						}
+					}
+				} else if (((new Object() {
+					public double getValue(BlockPos pos, String tag) {
+						TileEntity tileEntity = world.getTileEntity(pos);
+						if (tileEntity != null)
+							return tileEntity.getTileData().getDouble(tag);
+						return -1;
+					}
+				}.getValue(new BlockPos((int) x, (int) y, (int) z), "recipe")) == 4)) {
+					{
+						TileEntity inv = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
+						if (inv != null && (inv instanceof TileEntityLockableLoot)) {
+							ItemStack _setstack = new ItemStack(ItemAnodemudironabseed.block, (int) (1));
+							_setstack.setCount(((new Object() {
+								public int getAmount(BlockPos pos, int sltid) {
+									TileEntity inv = world.getTileEntity(pos);
+									if (inv instanceof TileEntityLockableLoot) {
+										ItemStack stack = ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
+										if (stack != null)
+											return stack.getCount();
+									}
+									return 0;
+								}
+							}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (1))) + 1));
+							((TileEntityLockableLoot) inv).setInventorySlotContents((int) (1), _setstack);
+						}
+					}
+					{
+						TileEntity inv = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
+						if (inv != null && (inv instanceof TileEntityLockableLoot)) {
+							ItemStack _setstack = new ItemStack(ItemIronpowder.block, (int) (1));
 							_setstack.setCount(((new Object() {
 								public int getAmount(BlockPos pos, int sltid) {
 									TileEntity inv = world.getTileEntity(pos);
@@ -1080,7 +1278,7 @@ public class ProcedureElectrolissiprocedure extends ElementsChemcraft.ModElement
 							TileEntity _tileEntity = world.getTileEntity(_bp);
 							IBlockState _bs = world.getBlockState(_bp);
 							if (_tileEntity != null)
-								_tileEntity.getTileData().setDouble("fuel", 200);
+								_tileEntity.getTileData().setDouble("fuel", 500);
 							world.notifyBlockUpdate(_bp, _bs, _bs, 3);
 						}
 						if (!world.isRemote) {
@@ -1088,7 +1286,7 @@ public class ProcedureElectrolissiprocedure extends ElementsChemcraft.ModElement
 							TileEntity _tileEntity = world.getTileEntity(_bp);
 							IBlockState _bs = world.getBlockState(_bp);
 							if (_tileEntity != null)
-								_tileEntity.getTileData().setDouble("maxFuel", 200);
+								_tileEntity.getTileData().setDouble("maxFuel", 500);
 							world.notifyBlockUpdate(_bp, _bs, _bs, 3);
 						}
 					} else if (((new Object() {
@@ -1110,7 +1308,7 @@ public class ProcedureElectrolissiprocedure extends ElementsChemcraft.ModElement
 							TileEntity _tileEntity = world.getTileEntity(_bp);
 							IBlockState _bs = world.getBlockState(_bp);
 							if (_tileEntity != null)
-								_tileEntity.getTileData().setDouble("fuel", 200);
+								_tileEntity.getTileData().setDouble("fuel", 500);
 							world.notifyBlockUpdate(_bp, _bs, _bs, 3);
 						}
 						if (!world.isRemote) {
@@ -1118,7 +1316,7 @@ public class ProcedureElectrolissiprocedure extends ElementsChemcraft.ModElement
 							TileEntity _tileEntity = world.getTileEntity(_bp);
 							IBlockState _bs = world.getBlockState(_bp);
 							if (_tileEntity != null)
-								_tileEntity.getTileData().setDouble("maxFuel", 200);
+								_tileEntity.getTileData().setDouble("maxFuel", 500);
 							world.notifyBlockUpdate(_bp, _bs, _bs, 3);
 						}
 					} else if (((new Object() {
@@ -1140,7 +1338,7 @@ public class ProcedureElectrolissiprocedure extends ElementsChemcraft.ModElement
 							TileEntity _tileEntity = world.getTileEntity(_bp);
 							IBlockState _bs = world.getBlockState(_bp);
 							if (_tileEntity != null)
-								_tileEntity.getTileData().setDouble("fuel", 200);
+								_tileEntity.getTileData().setDouble("fuel", 500);
 							world.notifyBlockUpdate(_bp, _bs, _bs, 3);
 						}
 						if (!world.isRemote) {
@@ -1148,7 +1346,37 @@ public class ProcedureElectrolissiprocedure extends ElementsChemcraft.ModElement
 							TileEntity _tileEntity = world.getTileEntity(_bp);
 							IBlockState _bs = world.getBlockState(_bp);
 							if (_tileEntity != null)
-								_tileEntity.getTileData().setDouble("maxFuel", 200);
+								_tileEntity.getTileData().setDouble("maxFuel", 500);
+							world.notifyBlockUpdate(_bp, _bs, _bs, 3);
+						}
+					} else if (((new Object() {
+						public ItemStack getItemStack(BlockPos pos, int sltid) {
+							TileEntity inv = world.getTileEntity(pos);
+							if (inv instanceof TileEntityLockableLoot)
+								return ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
+							return ItemStack.EMPTY;
+						}
+					}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (4)))
+							.getItem() == new ItemStack(ItemIronelectrodeimpure.block, (int) (1)).getItem())) {
+						{
+							TileEntity inv = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
+							if (inv instanceof TileEntityLockableLoot)
+								((TileEntityLockableLoot) inv).decrStackSize((int) (4), (int) (1));
+						}
+						if (!world.isRemote) {
+							BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+							TileEntity _tileEntity = world.getTileEntity(_bp);
+							IBlockState _bs = world.getBlockState(_bp);
+							if (_tileEntity != null)
+								_tileEntity.getTileData().setDouble("fuel", 500);
+							world.notifyBlockUpdate(_bp, _bs, _bs, 3);
+						}
+						if (!world.isRemote) {
+							BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+							TileEntity _tileEntity = world.getTileEntity(_bp);
+							IBlockState _bs = world.getBlockState(_bp);
+							if (_tileEntity != null)
+								_tileEntity.getTileData().setDouble("maxFuel", 500);
 							world.notifyBlockUpdate(_bp, _bs, _bs, 3);
 						}
 					}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "chemcraft:blocks/platinum",
+    "up": "chemcraft:blocks/platinum",
+    "north": "chemcraft:blocks/platinum",
+    "east": "chemcraft:blocks/platinum",
+    "south": "chemcraft:blocks/platinum",
+    "west": "chemcraft:blocks/platinum",
+    "particle": "chemcraft:blocks/platinum"
+  }
+}

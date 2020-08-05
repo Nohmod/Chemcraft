@@ -14,6 +14,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.Item;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.Entity;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.block.state.IBlockState;
@@ -23,6 +24,7 @@ import net.minecraft.block.Block;
 
 import net.mcreator.explosivesrightthistime.procedure.ProcedureConfinedtatpRedstoneOn;
 import net.mcreator.explosivesrightthistime.procedure.ProcedureConfinedtatpPlayerStartsToDestroy;
+import net.mcreator.explosivesrightthistime.procedure.ProcedureConfinedtatpEntityWalksOnTheBlock;
 import net.mcreator.explosivesrightthistime.procedure.ProcedureConfinedtatpBlockDestroyedByExplosion;
 import net.mcreator.explosivesrightthistime.creativetab.TabMiscellaneous;
 import net.mcreator.explosivesrightthistime.ElementsChemcraft;
@@ -114,6 +116,22 @@ public class BlockConfinedtatp extends ElementsChemcraft.ModElement {
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
 				ProcedureConfinedtatpPlayerStartsToDestroy.executeProcedure($_dependencies);
+			}
+		}
+
+		@Override
+		public void onEntityWalk(World world, BlockPos pos, Entity entity) {
+			super.onEntityWalk(world, pos, entity);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			{
+				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				ProcedureConfinedtatpEntityWalksOnTheBlock.executeProcedure($_dependencies);
 			}
 		}
 	}

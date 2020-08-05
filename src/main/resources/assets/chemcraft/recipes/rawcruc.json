@@ -1,0 +1,23 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    " 4 "
+  ],
+  "key": {
+    "0": {
+      "item": "chemcraft:al2o3"
+    },
+    "2": {
+      "item": "chemcraft:al2o3"
+    },
+    "4": {
+      "item": "chemcraft:al2o3"
+    }
+  },
+  "result": {
+    "item": "chemcraft:rawcruicable",
+    "count": 1
+  }
+}

@@ -40,10 +40,12 @@ public class ProcedureNitroglicerinRightClickedOnBlock extends ElementsChemcraft
 		int y = (int) dependencies.get("y");
 		int z = (int) dependencies.get("z");
 		World world = (World) dependencies.get("world");
-		if (!world.isRemote) {
-			world.createExplosion(null, (int) x, (int) y, (int) z, (float) 2.2, true);
+		if ((Math.random() < 0.8)) {
+			if (!world.isRemote) {
+				world.createExplosion(null, (int) x, (int) y, (int) z, (float) 2.2, true);
+			}
+			if (entity instanceof EntityPlayer)
+				((EntityPlayer) entity).inventory.clearMatchingItems(new ItemStack(ItemNitroglicerin.block, (int) (1)).getItem(), -1, (int) 1, null);
 		}
-		if (entity instanceof EntityPlayer)
-			((EntityPlayer) entity).inventory.clearMatchingItems(new ItemStack(ItemNitroglicerin.block, (int) (1)).getItem(), -1, (int) 1, null);
 	}
 }

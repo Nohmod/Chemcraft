@@ -22,6 +22,7 @@ import net.minecraft.block.state.IBlockState;
 
 import net.mcreator.explosivesrightthistime.procedure.ProcedureSilverfulminateRightClickedOnBlock;
 import net.mcreator.explosivesrightthistime.procedure.ProcedureSilverfulminateMobIsHitWithItem;
+import net.mcreator.explosivesrightthistime.procedure.ProcedureSilverfulminateItemIsCraftedsmelted;
 import net.mcreator.explosivesrightthistime.creativetab.TabInorganic;
 import net.mcreator.explosivesrightthistime.ElementsChemcraft;
 
@@ -112,6 +113,22 @@ public class ItemSilverfulminate extends ElementsChemcraft.ModElement {
 				ProcedureSilverfulminateMobIsHitWithItem.executeProcedure($_dependencies);
 			}
 			return true;
+		}
+
+		@Override
+		public void onCreated(ItemStack itemstack, World world, EntityPlayer entity) {
+			super.onCreated(itemstack, world, entity);
+			int x = (int) entity.posX;
+			int y = (int) entity.posY;
+			int z = (int) entity.posZ;
+			{
+				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				ProcedureSilverfulminateItemIsCraftedsmelted.executeProcedure($_dependencies);
+			}
 		}
 	}
 }

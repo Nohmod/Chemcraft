@@ -8,8 +8,10 @@ import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 
 import net.minecraft.world.World;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.EnumHand;
-import net.minecraft.util.ActionResult;
+import net.minecraft.util.EnumFacing;
+import net.minecraft.util.EnumActionResult;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.entity.player.EntityPlayer;
@@ -18,8 +20,9 @@ import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.block.state.IBlockState;
 
-import net.mcreator.explosivesrightthistime.procedure.ProcedureTatpRightClickedInAir;
+import net.mcreator.explosivesrightthistime.procedure.ProcedureTatpRightClickedOnBlock3;
 import net.mcreator.explosivesrightthistime.procedure.ProcedureTatpMobIsHitWithItem;
+import net.mcreator.explosivesrightthistime.procedure.ProcedureTatpItemIsCraftedsmelted;
 import net.mcreator.explosivesrightthistime.creativetab.TabExplosivesandchemicals;
 import net.mcreator.explosivesrightthistime.ElementsChemcraft;
 
@@ -74,12 +77,13 @@ public class ItemTatp extends ElementsChemcraft.ModElement {
 		}
 
 		@Override
-		public ActionResult<ItemStack> onItemRightClick(World world, EntityPlayer entity, EnumHand hand) {
-			ActionResult<ItemStack> ar = super.onItemRightClick(world, entity, hand);
-			ItemStack itemstack = ar.getResult();
-			int x = (int) entity.posX;
-			int y = (int) entity.posY;
-			int z = (int) entity.posZ;
+		public EnumActionResult onItemUseFirst(EntityPlayer entity, World world, BlockPos pos, EnumFacing direction, float hitX, float hitY,
+				float hitZ, EnumHand hand) {
+			EnumActionResult retval = super.onItemUseFirst(entity, world, pos, direction, hitX, hitY, hitZ, hand);
+			ItemStack itemstack = entity.getHeldItem(hand);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
 			{
 				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
 				$_dependencies.put("entity", entity);
@@ -87,9 +91,9 @@ public class ItemTatp extends ElementsChemcraft.ModElement {
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				ProcedureTatpRightClickedInAir.executeProcedure($_dependencies);
+				ProcedureTatpRightClickedOnBlock3.executeProcedure($_dependencies);
 			}
-			return ar;
+			return retval;
 		}
 
 		@Override
@@ -108,6 +112,22 @@ public class ItemTatp extends ElementsChemcraft.ModElement {
 				ProcedureTatpMobIsHitWithItem.executeProcedure($_dependencies);
 			}
 			return true;
+		}
+
+		@Override
+		public void onCreated(ItemStack itemstack, World world, EntityPlayer entity) {
+			super.onCreated(itemstack, world, entity);
+			int x = (int) entity.posX;
+			int y = (int) entity.posY;
+			int z = (int) entity.posZ;
+			{
+				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				ProcedureTatpItemIsCraftedsmelted.executeProcedure($_dependencies);
+			}
 		}
 	}
 }

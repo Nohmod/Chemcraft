@@ -22,10 +22,8 @@ import net.minecraft.inventory.Container;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.client.gui.inventory.GuiContainer;
-import net.minecraft.client.gui.GuiTextField;
 import net.minecraft.client.gui.GuiButton;
 
-import net.mcreator.explosivesrightthistime.procedure.ProcedureElectrofurnuaceprocedure2;
 import net.mcreator.explosivesrightthistime.ElementsChemcraft;
 import net.mcreator.explosivesrightthistime.Chemcraft;
 
@@ -36,11 +34,11 @@ import java.util.HashMap;
 import java.io.IOException;
 
 @ElementsChemcraft.ModElement.Tag
-public class GuiElectricfurnuaceGUI extends ElementsChemcraft.ModElement {
-	public static int GUIID = 9;
+public class GuiGuiofeclec extends ElementsChemcraft.ModElement {
+	public static int GUIID = 12;
 	public static HashMap guistate = new HashMap();
-	public GuiElectricfurnuaceGUI(ElementsChemcraft instance) {
-		super(instance, 276);
+	public GuiGuiofeclec(ElementsChemcraft instance) {
+		super(instance, 310);
 	}
 
 	@Override
@@ -64,16 +62,11 @@ public class GuiElectricfurnuaceGUI extends ElementsChemcraft.ModElement {
 			TileEntity ent = world.getTileEntity(new BlockPos(x, y, z));
 			if (ent instanceof IInventory)
 				this.internal = (IInventory) ent;
-			this.customSlots.put(0, this.addSlotToContainer(new Slot(internal, 0, 71, 12) {
+			this.customSlots.put(0, this.addSlotToContainer(new Slot(internal, 0, 62, 21) {
 			}));
-			this.customSlots.put(1, this.addSlotToContainer(new Slot(internal, 1, 44, 12) {
-				@Override
-				public void onSlotChanged() {
-					super.onSlotChanged();
-					GuiContainerMod.this.slotChanged(1, 0, 0);
-				}
+			this.customSlots.put(1, this.addSlotToContainer(new Slot(internal, 1, 62, 48) {
 			}));
-			this.customSlots.put(2, this.addSlotToContainer(new Slot(internal, 2, 125, 12) {
+			this.customSlots.put(2, this.addSlotToContainer(new Slot(internal, 2, 116, 30) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return false;
@@ -237,7 +230,6 @@ public class GuiElectricfurnuaceGUI extends ElementsChemcraft.ModElement {
 		private World world;
 		private int x, y, z;
 		private EntityPlayer entity;
-		GuiTextField Temperature;
 		public GuiWindow(World world, int x, int y, int z, EntityPlayer entity) {
 			super(new GuiContainerMod(world, x, y, z, entity));
 			this.world = world;
@@ -248,7 +240,7 @@ public class GuiElectricfurnuaceGUI extends ElementsChemcraft.ModElement {
 			this.xSize = 176;
 			this.ySize = 166;
 		}
-		private static final ResourceLocation texture = new ResourceLocation("chemcraft:textures/electricfurnuacegui.png");
+		private static final ResourceLocation texture = new ResourceLocation("chemcraft:textures/guiofeclec.png");
 		@Override
 		public void drawScreen(int mouseX, int mouseY, float partialTicks) {
 			this.drawDefaultBackground();
@@ -265,32 +257,34 @@ public class GuiElectricfurnuaceGUI extends ElementsChemcraft.ModElement {
 			this.drawTexturedModalRect(k, l, 0, 0, this.xSize, this.ySize);
 			zLevel = 100.0F;
 			this.mc.renderEngine.bindTexture(new ResourceLocation("chemcraft:textures/aro.png"));
-			this.drawTexturedModalRect(this.guiLeft + 97, this.guiTop + 11, 0, 0, 256, 256);
+			this.drawTexturedModalRect(this.guiLeft + 88, this.guiTop + 29, 0, 0, 256, 256);
 		}
 
 		@Override
 		public void updateScreen() {
 			super.updateScreen();
-			Temperature.updateCursorCounter();
 		}
 
 		@Override
 		protected void mouseClicked(int mouseX, int mouseY, int mouseButton) throws IOException {
-			Temperature.mouseClicked(mouseX - guiLeft, mouseY - guiTop, mouseButton);
 			super.mouseClicked(mouseX, mouseY, mouseButton);
 		}
 
 		@Override
 		protected void keyTyped(char typedChar, int keyCode) throws IOException {
-			Temperature.textboxKeyTyped(typedChar, keyCode);
-			if (Temperature.isFocused())
-				return;
 			super.keyTyped(typedChar, keyCode);
 		}
 
 		@Override
 		protected void drawGuiContainerForegroundLayer(int par1, int par2) {
-			Temperature.drawTextBox();
+			this.fontRenderer.drawString("Temperature" + ((int) new Object() {
+				public double getValue(BlockPos pos, String tag) {
+					TileEntity tileEntity = world.getTileEntity(pos);
+					if (tileEntity != null)
+						return tileEntity.getTileData().getDouble(tag);
+					return 0;
+				}
+			}.getValue(new BlockPos((int) x, (int) y, (int) z), "Temp")) + "\u00B0C", 7, 65, -16777216);
 		}
 
 		@Override
@@ -306,10 +300,6 @@ public class GuiElectricfurnuaceGUI extends ElementsChemcraft.ModElement {
 			this.guiTop = (this.height - 166) / 2;
 			Keyboard.enableRepeatEvents(true);
 			this.buttonList.clear();
-			Temperature = new GuiTextField(0, this.fontRenderer, 34, 56, 120, 20);
-			guistate.put("text:Temperature", Temperature);
-			Temperature.setMaxStringLength(32767);
-			Temperature.setText("");
 		}
 
 		@Override
@@ -431,16 +421,5 @@ public class GuiElectricfurnuaceGUI extends ElementsChemcraft.ModElement {
 		// security measure to prevent arbitrary chunk generation
 		if (!world.isBlockLoaded(new BlockPos(x, y, z)))
 			return;
-		if (slotID == 1 && changeType == 0) {
-			{
-				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("guistate", guistate);
-				$_dependencies.put("world", world);
-				ProcedureElectrofurnuaceprocedure2.executeProcedure($_dependencies);
-			}
-		}
 	}
 }

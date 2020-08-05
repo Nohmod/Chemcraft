@@ -37,11 +37,11 @@ import net.minecraft.block.Block;
 import net.mcreator.explosivesrightthistime.gui.GuiWasher;
 import net.mcreator.explosivesrightthistime.gui.GuiMetalpressGUI;
 import net.mcreator.explosivesrightthistime.gui.GuiIsomerseparator;
+import net.mcreator.explosivesrightthistime.gui.GuiGuiofeclec;
 import net.mcreator.explosivesrightthistime.gui.GuiGassynth;
 import net.mcreator.explosivesrightthistime.gui.GuiGasphasesynthesiser;
 import net.mcreator.explosivesrightthistime.gui.GuiFermenterGUI;
 import net.mcreator.explosivesrightthistime.gui.GuiElectroliserGUI;
-import net.mcreator.explosivesrightthistime.gui.GuiElectricfurnuaceGUI;
 import net.mcreator.explosivesrightthistime.gui.GuiDistillery;
 import net.mcreator.explosivesrightthistime.gui.GuiBlast;
 
@@ -149,10 +149,10 @@ public class ElementsChemcraft implements IFuelHandler, IWorldGenerator {
 				return new GuiElectroliserGUI.GuiContainerMod(world, x, y, z, player);
 			if (id == GuiFermenterGUI.GUIID)
 				return new GuiFermenterGUI.GuiContainerMod(world, x, y, z, player);
-			if (id == GuiElectricfurnuaceGUI.GUIID)
-				return new GuiElectricfurnuaceGUI.GuiContainerMod(world, x, y, z, player);
 			if (id == GuiMetalpressGUI.GUIID)
 				return new GuiMetalpressGUI.GuiContainerMod(world, x, y, z, player);
+			if (id == GuiGuiofeclec.GUIID)
+				return new GuiGuiofeclec.GuiContainerMod(world, x, y, z, player);
 			return null;
 		}
 
@@ -174,10 +174,10 @@ public class ElementsChemcraft implements IFuelHandler, IWorldGenerator {
 				return new GuiElectroliserGUI.GuiWindow(world, x, y, z, player);
 			if (id == GuiFermenterGUI.GUIID)
 				return new GuiFermenterGUI.GuiWindow(world, x, y, z, player);
-			if (id == GuiElectricfurnuaceGUI.GUIID)
-				return new GuiElectricfurnuaceGUI.GuiWindow(world, x, y, z, player);
 			if (id == GuiMetalpressGUI.GUIID)
 				return new GuiMetalpressGUI.GuiWindow(world, x, y, z, player);
+			if (id == GuiGuiofeclec.GUIID)
+				return new GuiGuiofeclec.GuiWindow(world, x, y, z, player);
 			return null;
 		}
 	}

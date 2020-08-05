@@ -1,0 +1,13 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "firediamondchlorincylinder": "firediamondchlorincylinder",
+        "hclcylind": "hclcylind",
+        "cylinderchlorine": "cylinderchlorine",
+        "hclcylinde": "hclcylinde"
+      },
+      "name": "default"
+    }
+  }
+}

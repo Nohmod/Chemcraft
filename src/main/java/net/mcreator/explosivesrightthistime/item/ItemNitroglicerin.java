@@ -20,6 +20,7 @@ import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.block.state.IBlockState;
 
+import net.mcreator.explosivesrightthistime.procedure.ProcedureNitroglicerinRightClickedOnBlocItemIsCraftedsmelted;
 import net.mcreator.explosivesrightthistime.procedure.ProcedureNitroglicerinRightClickedOnBloc;
 import net.mcreator.explosivesrightthistime.procedure.ProcedureNitroglicerinMobIsHitWithItem;
 import net.mcreator.explosivesrightthistime.creativetab.TabExplosivesandchemicals;
@@ -112,6 +113,22 @@ public class ItemNitroglicerin extends ElementsChemcraft.ModElement {
 				ProcedureNitroglicerinMobIsHitWithItem.executeProcedure($_dependencies);
 			}
 			return true;
+		}
+
+		@Override
+		public void onCreated(ItemStack itemstack, World world, EntityPlayer entity) {
+			super.onCreated(itemstack, world, entity);
+			int x = (int) entity.posX;
+			int y = (int) entity.posY;
+			int z = (int) entity.posZ;
+			{
+				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				ProcedureNitroglicerinRightClickedOnBlocItemIsCraftedsmelted.executeProcedure($_dependencies);
+			}
 		}
 	}
 }

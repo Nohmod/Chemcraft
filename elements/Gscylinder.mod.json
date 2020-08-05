@@ -18,22 +18,22 @@
         "value": ""
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "CUSTOM:Acidproofsteel"
       },
       {
-        "value": ""
+        "value": "CUSTOM:Stainlesssteelplate"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "CUSTOM:Acidproofsteel"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "CUSTOM:Acidproofsteel"
       },
       {
-        "value": ""
+        "value": "CUSTOM:Stainlesssteelplate"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "CUSTOM:Acidproofsteel"
       }
     ],
     "recipeReturnStack": {

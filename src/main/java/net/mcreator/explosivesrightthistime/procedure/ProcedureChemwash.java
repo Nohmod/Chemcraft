@@ -15,6 +15,7 @@ import net.mcreator.explosivesrightthistime.item.ItemTransitionmetalconcentrate;
 import net.mcreator.explosivesrightthistime.item.ItemSodiumcarbonate;
 import net.mcreator.explosivesrightthistime.item.ItemSilverchloride;
 import net.mcreator.explosivesrightthistime.item.ItemSiliconedioxide;
+import net.mcreator.explosivesrightthistime.item.ItemMetalhydroxides;
 import net.mcreator.explosivesrightthistime.item.ItemLeadchloride;
 import net.mcreator.explosivesrightthistime.item.ItemLeadIIoxide;
 import net.mcreator.explosivesrightthistime.item.ItemHydrochloricacid;
@@ -25,6 +26,8 @@ import net.mcreator.explosivesrightthistime.item.ItemCaF2;
 import net.mcreator.explosivesrightthistime.item.ItemBorax;
 import net.mcreator.explosivesrightthistime.item.ItemBismuthchloride;
 import net.mcreator.explosivesrightthistime.item.ItemAluminumsilcates;
+import net.mcreator.explosivesrightthistime.item.ItemAluminumhydroxide;
+import net.mcreator.explosivesrightthistime.item.ItemAl2o3;
 import net.mcreator.explosivesrightthistime.block.BlockFluorite;
 import net.mcreator.explosivesrightthistime.block.BlockBoraxinrock;
 import net.mcreator.explosivesrightthistime.ElementsChemcraft;
@@ -215,7 +218,7 @@ public class ProcedureChemwash extends ElementsChemcraft.ModElement {
 				}
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack((int) (1))).getItem() == new ItemStack(ItemHydrochloricacid.block, (int) (1)).getItem())) || (((new Object() {
+		}.getItemStack((int) (1))).getItem() == new ItemStack(ItemHydrochloricacid.block, (int) (1)).getItem())) || ((((new Object() {
 			public ItemStack getItemStack(int sltid) {
 				if (entity instanceof EntityPlayerMP) {
 					Container _current = ((EntityPlayerMP) entity).openContainer;
@@ -241,7 +244,33 @@ public class ProcedureChemwash extends ElementsChemcraft.ModElement {
 				}
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack((int) (1))).getItem() == new ItemStack(ItemHydrochloricacid.block, (int) (1)).getItem())))))))))) {
+		}.getItemStack((int) (1))).getItem() == new ItemStack(ItemHydrochloricacid.block, (int) (1)).getItem())) || (((new Object() {
+			public ItemStack getItemStack(int sltid) {
+				if (entity instanceof EntityPlayerMP) {
+					Container _current = ((EntityPlayerMP) entity).openContainer;
+					if (_current instanceof Supplier) {
+						Object invobj = ((Supplier) _current).get();
+						if (invobj instanceof Map) {
+							return ((Slot) ((Map) invobj).get(sltid)).getStack();
+						}
+					}
+				}
+				return ItemStack.EMPTY;
+			}
+		}.getItemStack((int) (0))).getItem() == new ItemStack(ItemMetalhydroxides.block, (int) (1)).getItem()) && ((new Object() {
+			public ItemStack getItemStack(int sltid) {
+				if (entity instanceof EntityPlayerMP) {
+					Container _current = ((EntityPlayerMP) entity).openContainer;
+					if (_current instanceof Supplier) {
+						Object invobj = ((Supplier) _current).get();
+						if (invobj instanceof Map) {
+							return ((Slot) ((Map) invobj).get(sltid)).getStack();
+						}
+					}
+				}
+				return ItemStack.EMPTY;
+			}
+		}.getItemStack((int) (1))).getItem() == new ItemStack(ItemDisstiledwater.block, (int) (1)).getItem()))))))))))) {
 			if ((((new Object() {
 				public ItemStack getItemStack(int sltid) {
 					if (entity instanceof EntityPlayerMP) {
@@ -414,6 +443,33 @@ public class ProcedureChemwash extends ElementsChemcraft.ModElement {
 								}
 							}.getAmount((int) (3))) + 1));
 							((Slot) ((Map) invobj).get((int) (3))).putStack(_setstack);
+							_current.detectAndSendChanges();
+						}
+					}
+				}
+				if (entity instanceof EntityPlayerMP) {
+					Container _current = ((EntityPlayerMP) entity).openContainer;
+					if (_current instanceof Supplier) {
+						Object invobj = ((Supplier) _current).get();
+						if (invobj instanceof Map) {
+							ItemStack _setstack = new ItemStack(ItemAl2o3.block, (int) (1));
+							_setstack.setCount(((new Object() {
+								public int getAmount(int sltid) {
+									if (entity instanceof EntityPlayerMP) {
+										Container _current = ((EntityPlayerMP) entity).openContainer;
+										if (_current instanceof Supplier) {
+											Object invobj = ((Supplier) _current).get();
+											if (invobj instanceof Map) {
+												ItemStack stack = ((Slot) ((Map) invobj).get(sltid)).getStack();;
+												if (stack != null)
+													return stack.getCount();
+											}
+										}
+									}
+									return 0;
+								}
+							}.getAmount((int) (3))) + 1));
+							((Slot) ((Map) invobj).get((int) (4))).putStack(_setstack);
 							_current.detectAndSendChanges();
 						}
 					}
@@ -897,6 +953,81 @@ public class ProcedureChemwash extends ElementsChemcraft.ModElement {
 								}
 							}.getAmount((int) (5))) + 5));
 							((Slot) ((Map) invobj).get((int) (5))).putStack(_setstack);
+							_current.detectAndSendChanges();
+						}
+					}
+				}
+			}
+			if ((((new Object() {
+				public ItemStack getItemStack(int sltid) {
+					if (entity instanceof EntityPlayerMP) {
+						Container _current = ((EntityPlayerMP) entity).openContainer;
+						if (_current instanceof Supplier) {
+							Object invobj = ((Supplier) _current).get();
+							if (invobj instanceof Map) {
+								return ((Slot) ((Map) invobj).get(sltid)).getStack();
+							}
+						}
+					}
+					return ItemStack.EMPTY;
+				}
+			}.getItemStack((int) (0))).getItem() == new ItemStack(ItemMetalhydroxides.block, (int) (1)).getItem()) && ((new Object() {
+				public ItemStack getItemStack(int sltid) {
+					if (entity instanceof EntityPlayerMP) {
+						Container _current = ((EntityPlayerMP) entity).openContainer;
+						if (_current instanceof Supplier) {
+							Object invobj = ((Supplier) _current).get();
+							if (invobj instanceof Map) {
+								return ((Slot) ((Map) invobj).get(sltid)).getStack();
+							}
+						}
+					}
+					return ItemStack.EMPTY;
+				}
+			}.getItemStack((int) (1))).getItem() == new ItemStack(ItemDisstiledwater.block, (int) (1)).getItem()))) {
+				if (entity instanceof EntityPlayerMP) {
+					Container _current = ((EntityPlayerMP) entity).openContainer;
+					if (_current instanceof Supplier) {
+						Object invobj = ((Supplier) _current).get();
+						if (invobj instanceof Map) {
+							((Slot) ((Map) invobj).get((int) (0))).decrStackSize((int) (1));
+							_current.detectAndSendChanges();
+						}
+					}
+				}
+				if (entity instanceof EntityPlayerMP) {
+					Container _current = ((EntityPlayerMP) entity).openContainer;
+					if (_current instanceof Supplier) {
+						Object invobj = ((Supplier) _current).get();
+						if (invobj instanceof Map) {
+							((Slot) ((Map) invobj).get((int) (1))).decrStackSize((int) (1));
+							_current.detectAndSendChanges();
+						}
+					}
+				}
+				if (entity instanceof EntityPlayerMP) {
+					Container _current = ((EntityPlayerMP) entity).openContainer;
+					if (_current instanceof Supplier) {
+						Object invobj = ((Supplier) _current).get();
+						if (invobj instanceof Map) {
+							ItemStack _setstack = new ItemStack(ItemAluminumhydroxide.block, (int) (1));
+							_setstack.setCount(((new Object() {
+								public int getAmount(int sltid) {
+									if (entity instanceof EntityPlayerMP) {
+										Container _current = ((EntityPlayerMP) entity).openContainer;
+										if (_current instanceof Supplier) {
+											Object invobj = ((Supplier) _current).get();
+											if (invobj instanceof Map) {
+												ItemStack stack = ((Slot) ((Map) invobj).get(sltid)).getStack();;
+												if (stack != null)
+													return stack.getCount();
+											}
+										}
+									}
+									return 0;
+								}
+							}.getAmount((int) (2))) + 1));
+							((Slot) ((Map) invobj).get((int) (2))).putStack(_setstack);
 							_current.detectAndSendChanges();
 						}
 					}

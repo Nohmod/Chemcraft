@@ -70,7 +70,7 @@
     "particleAmount": 4,
     "particleSpawningCondition": "ALWAYS",
     "hasInventory": true,
-    "guiBoundTo": "ElectricfurnuaceGUI",
+    "guiBoundTo": "Guiofeclec",
     "openGUIOnRightClick": true,
     "inventorySize": 3,
     "inventoryStackSize": 64,

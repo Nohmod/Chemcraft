@@ -1,0 +1,16 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "chemcraft:dilutesulfuricacid"
+    },
+    {
+      "item": "chemcraft:ironpowder"
+    }
+  ],
+  "result": {
+    "item": "chemcraft:ironiisulfate",
+    "count": 1
+  }
+}

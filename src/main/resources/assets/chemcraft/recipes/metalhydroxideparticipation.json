@@ -1,0 +1,16 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "chemcraft:metalchlorides"
+    },
+    {
+      "item": "chemcraft:sodiumhydroxidesolution"
+    }
+  ],
+  "result": {
+    "item": "chemcraft:metalhydroxides",
+    "count": 1
+  }
+}

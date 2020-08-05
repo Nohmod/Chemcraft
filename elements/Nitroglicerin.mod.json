@@ -25,6 +25,9 @@
     "onRightClickedOnBlock": {
       "name": "NitroglicerinRightClickedOnBloc"
     },
+    "onCrafted": {
+      "name": "NitroglicerinRightClickedOnBlocItemIsCraftedsmelted"
+    },
     "onEntityHitWith": {
       "name": "NitroglicerinMobIsHitWithItem"
     }

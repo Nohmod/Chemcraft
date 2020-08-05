@@ -42,7 +42,7 @@ import net.minecraft.block.BlockHorizontal;
 import net.minecraft.block.Block;
 
 import net.mcreator.explosivesrightthistime.procedure.ProcedureElectrofurnuaceprocedure;
-import net.mcreator.explosivesrightthistime.gui.GuiElectricfurnuaceGUI;
+import net.mcreator.explosivesrightthistime.gui.GuiGuiofeclec;
 import net.mcreator.explosivesrightthistime.creativetab.TabMachines;
 import net.mcreator.explosivesrightthistime.ElementsChemcraft;
 import net.mcreator.explosivesrightthistime.Chemcraft;
@@ -208,7 +208,7 @@ public class BlockElectricfurnuace extends ElementsChemcraft.ModElement {
 			int y = pos.getY();
 			int z = pos.getZ();
 			if (entity instanceof EntityPlayer) {
-				((EntityPlayer) entity).openGui(Chemcraft.instance, GuiElectricfurnuaceGUI.GUIID, world, x, y, z);
+				((EntityPlayer) entity).openGui(Chemcraft.instance, GuiGuiofeclec.GUIID, world, x, y, z);
 			}
 			return true;
 		}
@@ -294,8 +294,7 @@ public class BlockElectricfurnuace extends ElementsChemcraft.ModElement {
 
 		@Override
 		public Container createContainer(InventoryPlayer playerInventory, EntityPlayer playerIn) {
-			return new GuiElectricfurnuaceGUI.GuiContainerMod(this.getWorld(), this.getPos().getX(), this.getPos().getY(), this.getPos().getZ(),
-					playerIn);
+			return new GuiGuiofeclec.GuiContainerMod(this.getWorld(), this.getPos().getX(), this.getPos().getY(), this.getPos().getZ(), playerIn);
 		}
 
 		@Override

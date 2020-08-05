@@ -18,22 +18,22 @@
         "value": "Blocks.STONE_BUTTON"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "CUSTOM:Stainlesssteelplate"
       },
       {
         "value": "CUSTOM:Copperpipe"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "CUSTOM:Stainlesssteelplate"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "CUSTOM:Stainlesssteelplate"
       },
       {
-        "value": "CUSTOM:Emptygascylinder2"
+        "value": ""
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "CUSTOM:Stainlesssteelplate"
       }
     ],
     "recipeReturnStack": {

@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "chemcraft:hydrogenchloridecylinder"
+    },
+    "facing=north": {
+      "model": "chemcraft:hydrogenchloridecylinder"
+    },
+    "facing=east": {
+      "model": "chemcraft:hydrogenchloridecylinder",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "chemcraft:hydrogenchloridecylinder",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "chemcraft:hydrogenchloridecylinder",
+      "y": 270
+    }
+  }
+}

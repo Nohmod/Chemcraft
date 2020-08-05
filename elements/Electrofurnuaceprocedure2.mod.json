@@ -1,7 +1,0 @@
-{
-  "_fv": 6,
-  "_type": "procedure",
-  "definition": {
-    "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"event_trigger\" deletable=\"false\" x=\"138\" y=\"73\"><field name=\"trigger\">No additional trigger</field><next><block type=\"controls_if\"><value name=\"IF0\"><block type=\"text_binary_ops\"><value name=\"A\"><block type=\"gui_get_text_textfield\"><field name=\"textfield\">Temperature</field></block></value><value name=\"B\"><block type=\"text\"><field name=\"TEXT\">1000</field></block></value></block></value><statement name=\"DO0\"><block type=\"call_procedure\"><field name=\"procedure\">Electrofurnuaceprocedure</field></block></statement></block></next></block></xml>"
-  }
-}

@@ -4,8 +4,8 @@
       "map": {
         "firediamondchlorincylinder": "firediamondchlorincylinder",
         "cylinderchlorine": "cylinderchlorine",
-        "chlorineside2": "chlorineside2",
-        "chlorine": "chlorine"
+        "chlorineside2": "oxygencylind",
+        "chlorine": "hclcylind"
       },
       "name": "default"
     }

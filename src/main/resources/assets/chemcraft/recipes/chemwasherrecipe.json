@@ -8,13 +8,13 @@
   ],
   "key": {
     "0": {
-      "item": "minecraft:iron_ingot"
+      "item": "chemcraft:stainlesssteelplate"
     },
     "1": {
-      "item": "minecraft:iron_ingot"
+      "item": "chemcraft:stainlesssteelplate"
     },
     "2": {
-      "item": "minecraft:iron_ingot"
+      "item": "chemcraft:stainlesssteelplate"
     },
     "3": {
       "item": "minecraft:glass"
@@ -26,7 +26,7 @@
       "item": "minecraft:stone_button"
     },
     "7": {
-      "item": "minecraft:iron_ingot"
+      "item": "chemcraft:stainlesssteelplate"
     },
     "8": {
       "item": "minecraft:stone_button"

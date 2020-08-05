@@ -25,6 +25,9 @@
     "onRightClickedOnBlock": {
       "name": "SilverfulminateRightClickedOnBlock"
     },
+    "onCrafted": {
+      "name": "SilverfulminateItemIsCraftedsmelted"
+    },
     "onEntityHitWith": {
       "name": "SilverfulminateMobIsHitWithItem"
     }

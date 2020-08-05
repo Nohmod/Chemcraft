@@ -9,13 +9,13 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Items.IRON_INGOT"
+        "value": "CUSTOM:Stainlesssteelplate"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "CUSTOM:Stainlesssteelplate"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "CUSTOM:Stainlesssteelplate"
       },
       {
         "value": "Blocks.GLASS"
@@ -30,7 +30,7 @@
         "value": "Blocks.STONE_BUTTON"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "CUSTOM:Stainlesssteelplate"
       },
       {
         "value": "Blocks.STONE_BUTTON"

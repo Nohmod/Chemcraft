@@ -12,7 +12,7 @@ import net.minecraft.item.Item;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.block.state.IBlockState;
 
-import net.mcreator.explosivesrightthistime.creativetab.TabExplosivesandchemicals;
+import net.mcreator.explosivesrightthistime.creativetab.TabMiscellaneous;
 import net.mcreator.explosivesrightthistime.ElementsChemcraft;
 
 @ElementsChemcraft.ModElement.Tag
@@ -39,7 +39,7 @@ public class ItemCrystalinealuminosilicatematerial extends ElementsChemcraft.Mod
 			maxStackSize = 64;
 			setUnlocalizedName("crystalinealuminosilicatematerial");
 			setRegistryName("crystalinealuminosilicatematerial");
-			setCreativeTab(TabExplosivesandchemicals.tab);
+			setCreativeTab(TabMiscellaneous.tab);
 		}
 
 		@Override

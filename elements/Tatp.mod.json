@@ -22,8 +22,11 @@
       "The Chad of explosives"
     ],
     "hasGlow": false,
-    "onRightClickedInAir": {
-      "name": "TatpRightClickedInAir"
+    "onRightClickedOnBlock": {
+      "name": "TatpRightClickedOnBlock3"
+    },
+    "onCrafted": {
+      "name": "TatpItemIsCraftedsmelted"
     },
     "onEntityHitWith": {
       "name": "TatpMobIsHitWithItem"

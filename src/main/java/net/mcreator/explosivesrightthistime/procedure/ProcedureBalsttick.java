@@ -5,10 +5,10 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.tileentity.TileEntityLockableLoot;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.item.ItemStack;
-import net.minecraft.init.Items;
 import net.minecraft.block.state.IBlockState;
 
 import net.mcreator.explosivesrightthistime.item.ItemSiliconedioxide;
+import net.mcreator.explosivesrightthistime.item.ItemPigiron;
 import net.mcreator.explosivesrightthistime.item.ItemLeadcarbonate;
 import net.mcreator.explosivesrightthistime.item.ItemLeadIIoxidetechnicalgrade;
 import net.mcreator.explosivesrightthistime.item.ItemLeadIIoxide;
@@ -81,8 +81,8 @@ public class ProcedureBalsttick extends ElementsChemcraft.ModElement {
 							return ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
 						return ItemStack.EMPTY;
 					}
-				}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (2))).getItem() == new ItemStack(Items.IRON_INGOT, (int) (1)).getItem())
-						&& ((new Object() {
+				}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (2))).getItem() == new ItemStack(ItemPigiron.block, (int) (1))
+						.getItem()) && ((new Object() {
 							public int getAmount(BlockPos pos, int sltid) {
 								TileEntity inv = world.getTileEntity(pos);
 								if (inv instanceof TileEntityLockableLoot) {
@@ -333,7 +333,7 @@ public class ProcedureBalsttick extends ElementsChemcraft.ModElement {
 						return tileEntity.getTileData().getDouble(tag);
 					return -1;
 				}
-			}.getValue(new BlockPos((int) x, (int) y, (int) z), "timer")) >= 150)) {
+			}.getValue(new BlockPos((int) x, (int) y, (int) z), "timer")) >= 250)) {
 				if (((new Object() {
 					public double getValue(BlockPos pos, String tag) {
 						TileEntity tileEntity = world.getTileEntity(pos);
@@ -350,7 +350,7 @@ public class ProcedureBalsttick extends ElementsChemcraft.ModElement {
 					{
 						TileEntity inv = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
 						if (inv != null && (inv instanceof TileEntityLockableLoot)) {
-							ItemStack _setstack = new ItemStack(Items.IRON_INGOT, (int) (1));
+							ItemStack _setstack = new ItemStack(ItemPigiron.block, (int) (1));
 							_setstack.setCount(((new Object() {
 								public int getAmount(BlockPos pos, int sltid) {
 									TileEntity inv = world.getTileEntity(pos);

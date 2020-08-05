@@ -1,0 +1,11 @@
+{
+  "parent": "chemcraft:custom/hydrogenchloridecylindermodel",
+  "textures": {
+    "all": "chemcraft:blocks/cylinderchlorine",
+    "particle": "chemcraft:blocks/cylinderchlorine",
+    "firediamondchlorincylinder": "chemcraft:blocks/firediamondchlorincylinder",
+    "hclcylind": "chemcraft:blocks/hclcylind",
+    "cylinderchlorine": "chemcraft:blocks/cylinderchlorine",
+    "hclcylinde": "chemcraft:blocks/hclcylinde"
+  }
+}

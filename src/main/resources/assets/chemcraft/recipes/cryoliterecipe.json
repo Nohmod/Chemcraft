@@ -1,0 +1,19 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "chemcraft:al2o3"
+    },
+    {
+      "item": "chemcraft:hydrofluoricacid"
+    },
+    {
+      "item": "chemcraft:sodiumhydroxide"
+    }
+  ],
+  "result": {
+    "item": "chemcraft:cryolite",
+    "count": 1
+  }
+}
