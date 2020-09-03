@@ -1,0 +1,16 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "chemcraft:sodiumhydroxidesolution"
+    },
+    {
+      "item": "chemcraft:zinchydroxide"
+    }
+  ],
+  "result": {
+    "item": "chemcraft:sodiumzincate",
+    "count": 1
+  }
+}

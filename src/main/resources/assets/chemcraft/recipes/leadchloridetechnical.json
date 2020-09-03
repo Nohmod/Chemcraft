@@ -1,0 +1,19 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "chemcraft:beaker"
+    },
+    {
+      "item": "chemcraft:leadcarbonate"
+    },
+    {
+      "item": "chemcraft:hydrochloricacid"
+    }
+  ],
+  "result": {
+    "item": "chemcraft:leadchloride",
+    "count": 1
+  }
+}

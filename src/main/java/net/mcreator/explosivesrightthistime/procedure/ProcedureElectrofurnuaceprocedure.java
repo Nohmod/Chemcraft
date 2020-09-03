@@ -272,21 +272,14 @@ public class ProcedureElectrofurnuaceprocedure extends ElementsChemcraft.ModElem
 					return -1;
 				}
 			}.getValue(new BlockPos((int) x, (int) y, (int) z), "timer")) >= 200)) {
-				if ((((new Object() {
+				if (((new Object() {
 					public double getValue(BlockPos pos, String tag) {
 						TileEntity tileEntity = world.getTileEntity(pos);
 						if (tileEntity != null)
 							return tileEntity.getTileData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(new BlockPos((int) x, (int) y, (int) z), "Temp")) == 1000) && ((new Object() {
-					public double getValue(BlockPos pos, String tag) {
-						TileEntity tileEntity = world.getTileEntity(pos);
-						if (tileEntity != null)
-							return tileEntity.getTileData().getDouble(tag);
-						return -1;
-					}
-				}.getValue(new BlockPos((int) x, (int) y, (int) z), "recipe")) == 0))) {
+				}.getValue(new BlockPos((int) x, (int) y, (int) z), "recipe")) == 0)) {
 					{
 						TileEntity inv = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
 						if (inv != null && (inv instanceof TileEntityLockableLoot)) {
@@ -313,21 +306,14 @@ public class ProcedureElectrofurnuaceprocedure extends ElementsChemcraft.ModElem
 							((TileEntityLockableLoot) inv).setInventorySlotContents((int) (1), _setstack);
 						}
 					}
-				} else if ((((new Object() {
+				} else if (((new Object() {
 					public double getValue(BlockPos pos, String tag) {
 						TileEntity tileEntity = world.getTileEntity(pos);
 						if (tileEntity != null)
 							return tileEntity.getTileData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(new BlockPos((int) x, (int) y, (int) z), "Temp")) == 2000) && ((new Object() {
-					public double getValue(BlockPos pos, String tag) {
-						TileEntity tileEntity = world.getTileEntity(pos);
-						if (tileEntity != null)
-							return tileEntity.getTileData().getDouble(tag);
-						return -1;
-					}
-				}.getValue(new BlockPos((int) x, (int) y, (int) z), "recipe")) == 1))) {
+				}.getValue(new BlockPos((int) x, (int) y, (int) z), "recipe")) == 1)) {
 					{
 						TileEntity inv = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
 						if (inv != null && (inv instanceof TileEntityLockableLoot)) {
@@ -346,21 +332,14 @@ public class ProcedureElectrofurnuaceprocedure extends ElementsChemcraft.ModElem
 							((TileEntityLockableLoot) inv).setInventorySlotContents((int) (2), _setstack);
 						}
 					}
-				} else if ((((new Object() {
+				} else if (((new Object() {
 					public double getValue(BlockPos pos, String tag) {
 						TileEntity tileEntity = world.getTileEntity(pos);
 						if (tileEntity != null)
 							return tileEntity.getTileData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(new BlockPos((int) x, (int) y, (int) z), "Temp")) == 300) && ((new Object() {
-					public double getValue(BlockPos pos, String tag) {
-						TileEntity tileEntity = world.getTileEntity(pos);
-						if (tileEntity != null)
-							return tileEntity.getTileData().getDouble(tag);
-						return -1;
-					}
-				}.getValue(new BlockPos((int) x, (int) y, (int) z), "recipe")) == 2))) {
+				}.getValue(new BlockPos((int) x, (int) y, (int) z), "recipe")) == 2)) {
 					{
 						TileEntity inv = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
 						if (inv != null && (inv instanceof TileEntityLockableLoot)) {
@@ -379,23 +358,22 @@ public class ProcedureElectrofurnuaceprocedure extends ElementsChemcraft.ModElem
 							((TileEntityLockableLoot) inv).setInventorySlotContents((int) (2), _setstack);
 						}
 					}
-				} else {
-					if (!world.isRemote) {
-						BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-						TileEntity _tileEntity = world.getTileEntity(_bp);
-						IBlockState _bs = world.getBlockState(_bp);
-						if (_tileEntity != null)
-							_tileEntity.getTileData().setDouble("timer", 0);
-						world.notifyBlockUpdate(_bp, _bs, _bs, 3);
-					}
-					if (!world.isRemote) {
-						BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-						TileEntity _tileEntity = world.getTileEntity(_bp);
-						IBlockState _bs = world.getBlockState(_bp);
-						if (_tileEntity != null)
-							_tileEntity.getTileData().setDouble("Temp", 0);
-						world.notifyBlockUpdate(_bp, _bs, _bs, 3);
-					}
+				}
+				if (!world.isRemote) {
+					BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+					TileEntity _tileEntity = world.getTileEntity(_bp);
+					IBlockState _bs = world.getBlockState(_bp);
+					if (_tileEntity != null)
+						_tileEntity.getTileData().setDouble("timer", 0);
+					world.notifyBlockUpdate(_bp, _bs, _bs, 3);
+				}
+				if (!world.isRemote) {
+					BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+					TileEntity _tileEntity = world.getTileEntity(_bp);
+					IBlockState _bs = world.getBlockState(_bp);
+					if (_tileEntity != null)
+						_tileEntity.getTileData().setDouble("Temp", 0);
+					world.notifyBlockUpdate(_bp, _bs, _bs, 3);
 				}
 			}
 			if (((new Object() {
@@ -406,7 +384,7 @@ public class ProcedureElectrofurnuaceprocedure extends ElementsChemcraft.ModElem
 					return -1;
 				}
 			}.getValue(new BlockPos((int) x, (int) y, (int) z), "fuel")) == 0)) {
-				if ((((new Object() {
+				if (((new Object() {
 					public int getAmount(BlockPos pos, int sltid) {
 						TileEntity inv = world.getTileEntity(pos);
 						if (inv instanceof TileEntityLockableLoot) {
@@ -416,17 +394,7 @@ public class ProcedureElectrofurnuaceprocedure extends ElementsChemcraft.ModElem
 						}
 						return 0;
 					}
-				}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (0))) > 0) && ((new Object() {
-					public int getAmount(BlockPos pos, int sltid) {
-						TileEntity inv = world.getTileEntity(pos);
-						if (inv instanceof TileEntityLockableLoot) {
-							ItemStack stack = ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
-							if (stack != null)
-								return stack.getCount();
-						}
-						return 0;
-					}
-				}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (1))) != 0))) {
+				}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (0))) > 0)) {
 					if (((new Object() {
 						public ItemStack getItemStack(BlockPos pos, int sltid) {
 							TileEntity inv = world.getTileEntity(pos);

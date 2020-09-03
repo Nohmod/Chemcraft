@@ -1,0 +1,30 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "chemcraft:steel"
+    },
+    "1": {
+      "item": "chemcraft:steel"
+    },
+    "2": {
+      "item": "chemcraft:steel"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "7": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "chemcraft:steelpacpickaxe",
+    "count": 1
+  }
+}

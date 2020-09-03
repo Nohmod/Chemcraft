@@ -315,10 +315,10 @@ public class GuiElectroliserGUI extends ElementsChemcraft.ModElement {
 		protected void drawGuiContainerForegroundLayer(int par1, int par2) {
 			this.fontRenderer.drawString("Electroliser", 67, 4, -16777216);
 			this.fontRenderer.drawString("Electrolite", 13, 24, -16777216);
-			this.fontRenderer.drawString("Cathode", 4, 60, -16777216);
+			this.fontRenderer.drawString("Anode", 4, 60, -16777216);
 			this.fontRenderer.drawString("Cylinder", 85, 60, -16777216);
 			this.fontRenderer.drawString("Battery", 130, 60, -16777216);
-			this.fontRenderer.drawString("Anode", 49, 60, -16777216);
+			this.fontRenderer.drawString("Cathode", 41, 58, -16777216);
 		}
 
 		@Override

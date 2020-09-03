@@ -1,0 +1,10 @@
+{
+  "parent": "chemcraft:custom/moltensaltelectrolisis",
+  "textures": {
+    "all": "chemcraft:blocks/hte1",
+    "particle": "chemcraft:blocks/hte1",
+    "htcelectrode": "chemcraft:blocks/htcelectrode",
+    "hte1": "chemcraft:blocks/hte1",
+    "htc3": "chemcraft:blocks/htc3"
+  }
+}

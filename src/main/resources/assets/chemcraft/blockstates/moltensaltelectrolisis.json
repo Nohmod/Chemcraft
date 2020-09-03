@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "chemcraft:moltensaltelectrolisis"
+    },
+    "facing=north": {
+      "model": "chemcraft:moltensaltelectrolisis"
+    },
+    "facing=east": {
+      "model": "chemcraft:moltensaltelectrolisis",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "chemcraft:moltensaltelectrolisis",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "chemcraft:moltensaltelectrolisis",
+      "y": 270
+    }
+  }
+}

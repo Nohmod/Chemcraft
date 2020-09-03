@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "chemcraft:blocks/cinnabar",
+    "up": "chemcraft:blocks/cinnabar",
+    "north": "chemcraft:blocks/cinnabar",
+    "east": "chemcraft:blocks/cinnabar",
+    "south": "chemcraft:blocks/cinnabar",
+    "west": "chemcraft:blocks/cinnabar",
+    "particle": "chemcraft:blocks/cinnabar"
+  }
+}

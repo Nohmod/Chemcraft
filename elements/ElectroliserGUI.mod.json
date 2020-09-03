@@ -126,12 +126,12 @@
       {
         "type": "label",
         "data": {
-          "text": "Cathode",
+          "text": "Anode",
           "color": {
             "value": -16777216,
             "falpha": 0.0
           },
-          "name": "Cathode",
+          "name": "Anode",
           "x": 228,
           "y": 168
         }
@@ -180,14 +180,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Anode",
+          "text": "Cathode",
           "color": {
             "value": -16777216,
             "falpha": 0.0
           },
-          "name": "Anode",
-          "x": 318,
-          "y": 168
+          "name": "Cathode",
+          "x": 302,
+          "y": 164
         }
       }
     ]

@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "htcelectrode": "htcelectrode",
+        "hte1": "hte1",
+        "htc3": "htc3"
+      },
+      "name": "default"
+    }
+  }
+}
