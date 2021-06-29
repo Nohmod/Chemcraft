@@ -1,0 +1,16 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "chemcraft:sodiumcarbonate"
+    },
+    {
+      "item": "chemcraft:hno3"
+    }
+  ],
+  "result": {
+    "item": "chemcraft:sodiumnitrate",
+    "count": 1
+  }
+}

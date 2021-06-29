@@ -1,0 +1,11 @@
+{
+  "parent": "chemcraft:custom/nitrousoxidegascylinder",
+  "textures": {
+    "all": "chemcraft:blocks/cylinderchlorine",
+    "particle": "chemcraft:blocks/cylinderchlorine",
+    "culind0": "chemcraft:blocks/kkkkkkkkkkkkkkk",
+    "cylind4": "chemcraft:blocks/firediamondchlorincylinder",
+    "cylind1": "chemcraft:blocks/nitrousoxidecylind",
+    "cylind2": "chemcraft:blocks/nitrousoxidecylin2"
+  }
+}

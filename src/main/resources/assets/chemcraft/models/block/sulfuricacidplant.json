@@ -1,0 +1,15 @@
+{
+  "parent": "chemcraft:custom/sulfuricacidplant3",
+  "textures": {
+    "all": "chemcraft:blocks/topelectroliser",
+    "particle": "chemcraft:blocks/topelectroliser",
+    "1": "chemcraft:blocks/part4",
+    "2": "chemcraft:blocks/topelectroliser",
+    "3": "chemcraft:blocks/part2",
+    "4": "chemcraft:blocks/b0",
+    "5": "chemcraft:blocks/burnersulfur",
+    "6": "chemcraft:blocks/fff",
+    "7": "chemcraft:blocks/burnings",
+    "missing": "chemcraft:blocks/"
+  }
+}

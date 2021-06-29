@@ -64,7 +64,7 @@ public class ItemPbNITRATE extends ElementsChemcraft.ModElement {
 		@Override
 		public void addInformation(ItemStack itemstack, World world, List<String> list, ITooltipFlag flag) {
 			super.addInformation(itemstack, world, list, flag);
-			list.add("Toxic");
+			list.add("impure");
 		}
 	}
 }

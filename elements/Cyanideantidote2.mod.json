@@ -1,0 +1,24 @@
+{
+  "_fv": 6,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "cyanidesolution",
+    "customModelName": "Normal",
+    "name": "Cyanide antidote",
+    "creativeTab": {
+      "value": "CUSTOM:Inorganic"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 0,
+    "saturation": 0.0,
+    "eatingSpeed": 15,
+    "forDogs": false,
+    "isAlwaysEdible": true,
+    "animation": "drink",
+    "hasGlow": false,
+    "onEaten": {
+      "name": "Cyanideantidote2FoodEaten"
+    }
+  }
+}

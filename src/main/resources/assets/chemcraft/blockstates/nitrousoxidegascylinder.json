@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "chemcraft:nitrousoxidegascylinder"
+    },
+    "facing=north": {
+      "model": "chemcraft:nitrousoxidegascylinder"
+    },
+    "facing=east": {
+      "model": "chemcraft:nitrousoxidegascylinder",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "chemcraft:nitrousoxidegascylinder",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "chemcraft:nitrousoxidegascylinder",
+      "y": 270
+    }
+  }
+}

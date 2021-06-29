@@ -21,9 +21,7 @@
     "Mz": 1.0,
     "faceShape": "SOLID",
     "name": "Hydrogen fluoride",
-    "specialInfo": [
-      "Pressurised gas"
-    ],
+    "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
     "hasGravity": false,

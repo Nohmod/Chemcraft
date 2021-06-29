@@ -1,0 +1,14 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "topelectroliser",
+        "1": "part1_--_kopia_2",
+        "2": "part4",
+        "3": "part2",
+        "missing": ""
+      },
+      "name": "default"
+    }
+  }
+}

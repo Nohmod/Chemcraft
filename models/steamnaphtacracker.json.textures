@@ -1,0 +1,13 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "part1 — kopia (2)": "part1_--_kopia_2",
+        "part1": "part1",
+        "part2": "part2",
+        "part4": "part4"
+      },
+      "name": "default"
+    }
+  }
+}

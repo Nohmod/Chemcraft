@@ -1,0 +1,16 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "chemcraft:beaker"
+    },
+    {
+      "item": "chemcraft:hno3"
+    }
+  ],
+  "result": {
+    "item": "chemcraft:leadnitratetechnicalgrade",
+    "count": 1
+  }
+}

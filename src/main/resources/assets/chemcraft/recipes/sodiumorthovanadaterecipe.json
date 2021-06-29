@@ -1,0 +1,16 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "chemcraft:sodiumhydroxidesolution"
+    },
+    {
+      "item": "chemcraft:vanadiumpentoxide"
+    }
+  ],
+  "result": {
+    "item": "chemcraft:sodiumorthovanadatesolution",
+    "count": 1
+  }
+}

@@ -16,6 +16,7 @@ import net.minecraft.util.Mirror;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumBlockRenderType;
+import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.tileentity.TileEntityLockableLoot;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.network.play.server.SPacketUpdateTileEntity;
@@ -81,6 +82,12 @@ public class BlockDistiler extends ElementsChemcraft.ModElement {
 			setLightOpacity(0);
 			setCreativeTab(TabMachines.tab);
 			this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
+		}
+
+		@SideOnly(Side.CLIENT)
+		@Override
+		public BlockRenderLayer getBlockLayer() {
+			return BlockRenderLayer.TRANSLUCENT;
 		}
 
 		@Override

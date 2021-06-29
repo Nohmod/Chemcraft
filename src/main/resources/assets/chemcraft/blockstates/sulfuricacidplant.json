@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "chemcraft:sulfuricacidplant"
+    },
+    "facing=north": {
+      "model": "chemcraft:sulfuricacidplant"
+    },
+    "facing=east": {
+      "model": "chemcraft:sulfuricacidplant",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "chemcraft:sulfuricacidplant",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "chemcraft:sulfuricacidplant",
+      "y": 270
+    }
+  }
+}

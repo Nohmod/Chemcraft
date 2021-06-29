@@ -1,0 +1,17 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "part4",
+        "2": "topelectroliser",
+        "3": "part2",
+        "4": "b0",
+        "5": "burnersulfur",
+        "6": "fff",
+        "7": "burnings",
+        "missing": ""
+      },
+      "name": "default"
+    }
+  }
+}

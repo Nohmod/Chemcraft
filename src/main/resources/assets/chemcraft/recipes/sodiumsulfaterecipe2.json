@@ -1,0 +1,16 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "chemcraft:h2s04"
+    },
+    {
+      "item": "chemcraft:sodiumhydroxidesolution"
+    }
+  ],
+  "result": {
+    "item": "chemcraft:sodiumsulfate",
+    "count": 1
+  }
+}

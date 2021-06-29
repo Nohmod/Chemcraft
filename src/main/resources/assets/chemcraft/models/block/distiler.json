@@ -1,12 +1,12 @@
 {
-  "parent": "block/cube",
+  "parent": "chemcraft:custom/distilationsetup3",
   "textures": {
-    "down": "chemcraft:blocks/distside2",
-    "up": "chemcraft:blocks/distside",
-    "north": "chemcraft:blocks/dist",
-    "east": "chemcraft:blocks/side",
-    "south": "chemcraft:blocks/disttop",
-    "west": "chemcraft:blocks/side",
-    "particle": "chemcraft:blocks/distside2"
+    "all": "chemcraft:blocks/glasswarepart1",
+    "particle": "chemcraft:blocks/glasswarepart1",
+    "0": "chemcraft:blocks/glasswarepart2",
+    "1": "chemcraft:blocks/glasswarepart1",
+    "2": "chemcraft:blocks/part1",
+    "3": "chemcraft:blocks/part2",
+    "missing": "chemcraft:blocks/"
   }
 }

@@ -1,0 +1,25 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "chemcraft:hno3"
+    },
+    {
+      "item": "chemcraft:h2s04"
+    },
+    {
+      "item": "chemcraft:benzene"
+    },
+    {
+      "item": "chemcraft:beaker"
+    },
+    {
+      "item": "minecraft:ice"
+    }
+  ],
+  "result": {
+    "item": "chemcraft:nitrobenzene",
+    "count": 1
+  }
+}

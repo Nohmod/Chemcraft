@@ -1,0 +1,13 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "culind0": "kkkkkkkkkkkkkkk",
+        "cylind4": "firediamondchlorincylinder",
+        "cylind1": "nitrousoxidecylind",
+        "cylind2": "nitrousoxidecylin2"
+      },
+      "name": "default"
+    }
+  }
+}

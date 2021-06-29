@@ -1,0 +1,24 @@
+{
+  "_fv": 6,
+  "_type": "potion",
+  "definition": {
+    "name": "Cyanide solution",
+    "effectName": "Cyanide solution",
+    "icon": "cyanidesol.png",
+    "color": {
+      "value": -1,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": true,
+    "isBenefitical": false,
+    "registerPotionType": true,
+    "curativeItems": [
+      {
+        "value": "CUSTOM:Cyanideantidote2"
+      }
+    ],
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true
+  }
+}

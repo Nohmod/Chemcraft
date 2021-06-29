@@ -1,0 +1,11 @@
+{
+  "parent": "chemcraft:custom/refluxsetup",
+  "textures": {
+    "all": "chemcraft:blocks/topelectroliser",
+    "particle": "chemcraft:blocks/topelectroliser",
+    "1": "chemcraft:blocks/glasswarepart1",
+    "2": "chemcraft:blocks/part2",
+    "3": "chemcraft:blocks/topelectroliser",
+    "missing": "chemcraft:blocks/"
+  }
+}

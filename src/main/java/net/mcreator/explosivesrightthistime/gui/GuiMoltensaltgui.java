@@ -24,7 +24,9 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.gui.GuiButton;
 
-import net.mcreator.explosivesrightthistime.procedure.ProcedureBattery2;
+import net.mcreator.explosivesrightthistime.procedure.ProcedureMoltensaltelectrodes;
+import net.mcreator.explosivesrightthistime.procedure.ProcedureBatteryformoltensaltelectrolisiis;
+import net.mcreator.explosivesrightthistime.procedure.ProcedureAnodemoltensat;
 import net.mcreator.explosivesrightthistime.ElementsChemcraft;
 import net.mcreator.explosivesrightthistime.Chemcraft;
 
@@ -68,8 +70,18 @@ public class GuiMoltensaltgui extends ElementsChemcraft.ModElement {
 			this.customSlots.put(1, this.addSlotToContainer(new Slot(internal, 1, 89, 21) {
 			}));
 			this.customSlots.put(2, this.addSlotToContainer(new Slot(internal, 2, 26, 57) {
+				@Override
+				public void onSlotChanged() {
+					super.onSlotChanged();
+					GuiContainerMod.this.slotChanged(2, 0, 0);
+				}
 			}));
 			this.customSlots.put(3, this.addSlotToContainer(new Slot(internal, 3, 80, 57) {
+				@Override
+				public void onSlotChanged() {
+					super.onSlotChanged();
+					GuiContainerMod.this.slotChanged(3, 0, 0);
+				}
 			}));
 			this.customSlots.put(4, this.addSlotToContainer(new Slot(internal, 4, 134, 57) {
 				@Override
@@ -426,11 +438,25 @@ public class GuiMoltensaltgui extends ElementsChemcraft.ModElement {
 		// security measure to prevent arbitrary chunk generation
 		if (!world.isBlockLoaded(new BlockPos(x, y, z)))
 			return;
+		if (slotID == 2 && changeType == 0) {
+			{
+				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				$_dependencies.put("entity", entity);
+				ProcedureMoltensaltelectrodes.executeProcedure($_dependencies);
+			}
+		}
+		if (slotID == 3 && changeType == 0) {
+			{
+				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				$_dependencies.put("entity", entity);
+				ProcedureAnodemoltensat.executeProcedure($_dependencies);
+			}
+		}
 		if (slotID == 4 && changeType == 0) {
 			{
 				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
 				$_dependencies.put("entity", entity);
-				ProcedureBattery2.executeProcedure($_dependencies);
+				ProcedureBatteryformoltensaltelectrolisiis.executeProcedure($_dependencies);
 			}
 		}
 	}

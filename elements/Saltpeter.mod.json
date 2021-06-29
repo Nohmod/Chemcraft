@@ -83,6 +83,9 @@
     "restrictionBiomes": [
       {
         "value": "desert"
+      },
+      {
+        "value": "desert_hills"
       }
     ],
     "blocksToReplace": [
@@ -96,9 +99,9 @@
         "value": "Blocks.SANDSTONE#0"
       }
     ],
-    "frequencyPerChunks": 5,
-    "frequencyOnChunk": 10,
-    "minGenerateHeight": 40,
-    "maxGenerateHeight": 85
+    "frequencyPerChunks": 3,
+    "frequencyOnChunk": 12,
+    "minGenerateHeight": 31,
+    "maxGenerateHeight": 70
   }
 }

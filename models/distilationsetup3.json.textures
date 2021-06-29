@@ -1,0 +1,14 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "glasswarepart2",
+        "1": "glasswarepart1",
+        "2": "part1",
+        "3": "part2",
+        "missing": ""
+      },
+      "name": "default"
+    }
+  }
+}

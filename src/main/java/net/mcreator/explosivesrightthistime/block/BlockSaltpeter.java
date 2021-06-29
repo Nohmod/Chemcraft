@@ -63,13 +63,15 @@ public class BlockSaltpeter extends ElementsChemcraft.ModElement {
 		Biome biome = world.getBiome(new BlockPos(chunkX, 128, chunkZ));
 		if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("desert")))
 			biomeCriteria = true;
+		if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("desert_hills")))
+			biomeCriteria = true;
 		if (!biomeCriteria)
 			return;
-		for (int i = 0; i < 5; i++) {
+		for (int i = 0; i < 3; i++) {
 			int x = chunkX + random.nextInt(16);
-			int y = random.nextInt(45) + 40;
+			int y = random.nextInt(39) + 31;
 			int z = chunkZ + random.nextInt(16);
-			(new WorldGenMinable(block.getDefaultState(), 10, new com.google.common.base.Predicate<IBlockState>() {
+			(new WorldGenMinable(block.getDefaultState(), 12, new com.google.common.base.Predicate<IBlockState>() {
 				public boolean apply(IBlockState blockAt) {
 					boolean blockCriteria = false;
 					IBlockState require;

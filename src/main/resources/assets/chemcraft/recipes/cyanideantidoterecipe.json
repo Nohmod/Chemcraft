@@ -1,0 +1,19 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "chemcraft:sodiumthiosulfate"
+    },
+    {
+      "item": "chemcraft:sodiumnitrite"
+    },
+    {
+      "item": "chemcraft:disstiledwater"
+    }
+  ],
+  "result": {
+    "item": "chemcraft:cyanideantidote2",
+    "count": 1
+  }
+}

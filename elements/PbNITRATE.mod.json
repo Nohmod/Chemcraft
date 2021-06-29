@@ -19,7 +19,7 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
-      "Toxic"
+      "impure"
     ],
     "hasGlow": false
   }

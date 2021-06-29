@@ -67,11 +67,11 @@ public class BlockBauxite extends ElementsChemcraft.ModElement {
 			biomeCriteria = true;
 		if (!biomeCriteria)
 			return;
-		for (int i = 0; i < 2; i++) {
+		for (int i = 0; i < 3; i++) {
 			int x = chunkX + random.nextInt(16);
-			int y = random.nextInt(30) + 70;
+			int y = random.nextInt(60) + 40;
 			int z = chunkZ + random.nextInt(16);
-			(new WorldGenMinable(block.getDefaultState(), 27, new com.google.common.base.Predicate<IBlockState>() {
+			(new WorldGenMinable(block.getDefaultState(), 21, new com.google.common.base.Predicate<IBlockState>() {
 				public boolean apply(IBlockState blockAt) {
 					boolean blockCriteria = false;
 					IBlockState require;

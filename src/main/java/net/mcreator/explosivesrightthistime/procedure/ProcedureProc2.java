@@ -97,7 +97,7 @@ public class ProcedureProc2 extends ElementsChemcraft.ModElement {
 												.getItem(),
 										-1, (int) 1, null);
 							if (!world.isRemote) {
-								world.createExplosion(null, (int) x, (int) y, (int) z, (float) 0, true);
+								world.createExplosion(null, (int) x, (int) y, (int) z, (float) 1, true);
 							}
 							entity.attackEntityFrom(DamageSource.FIREWORKS, (float) 3);
 						} else if ((((new ItemStack(ItemSodiummetal.block, (int) (1)).getItem() == ((entity instanceof EntityLivingBase)
@@ -121,7 +121,7 @@ public class ProcedureProc2 extends ElementsChemcraft.ModElement {
 												.getItem(),
 										-1, (int) 1, null);
 							if (!world.isRemote) {
-								world.createExplosion(null, (int) x, (int) y, (int) z, (float) 0, true);
+								world.createExplosion(null, (int) x, (int) y, (int) z, (float) 1, true);
 							}
 							entity.attackEntityFrom(DamageSource.FIREWORKS, (float) 3);
 						}

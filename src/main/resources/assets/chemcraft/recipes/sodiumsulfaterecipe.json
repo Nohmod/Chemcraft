@@ -1,0 +1,16 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "chemcraft:dilutesulfuricacid"
+    },
+    {
+      "item": "chemcraft:sodiumhydroxidesolution"
+    }
+  ],
+  "result": {
+    "item": "chemcraft:sodiumsulfate",
+    "count": 1
+  }
+}

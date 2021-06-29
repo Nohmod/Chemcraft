@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "chemcraft:steamcracker"
+    },
+    "facing=north": {
+      "model": "chemcraft:steamcracker"
+    },
+    "facing=east": {
+      "model": "chemcraft:steamcracker",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "chemcraft:steamcracker",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "chemcraft:steamcracker",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "chemcraft:custom/steamcracker2",
+  "textures": {
+    "all": "chemcraft:blocks/topelectroliser",
+    "particle": "chemcraft:blocks/topelectroliser",
+    "0": "chemcraft:blocks/topelectroliser",
+    "1": "chemcraft:blocks/part1_--_kopia_2",
+    "2": "chemcraft:blocks/part4",
+    "3": "chemcraft:blocks/part2",
+    "missing": "chemcraft:blocks/"
+  }
+}

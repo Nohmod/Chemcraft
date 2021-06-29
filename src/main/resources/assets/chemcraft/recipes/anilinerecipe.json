@@ -1,0 +1,28 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "chemcraft:nitrobenzennpure"
+    },
+    {
+      "item": "chemcraft:condenser"
+    },
+    {
+      "item": "chemcraft:hydrochloricacid"
+    },
+    {
+      "item": "chemcraft:sodiumhydroxidesolution"
+    },
+    {
+      "item": "chemcraft:enylnmayerflask"
+    },
+    {
+      "item": "chemcraft:ironpowder"
+    }
+  ],
+  "result": {
+    "item": "chemcraft:aniline",
+    "count": 1
+  }
+}

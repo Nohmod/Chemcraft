@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "chemcraft:refluxsetup"
+    },
+    "facing=north": {
+      "model": "chemcraft:refluxsetup"
+    },
+    "facing=east": {
+      "model": "chemcraft:refluxsetup",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "chemcraft:refluxsetup",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "chemcraft:refluxsetup",
+      "y": 270
+    }
+  }
+}

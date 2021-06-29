@@ -1,0 +1,13 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "glasswarepart1",
+        "2": "part2",
+        "3": "topelectroliser",
+        "missing": ""
+      },
+      "name": "default"
+    }
+  }
+}
