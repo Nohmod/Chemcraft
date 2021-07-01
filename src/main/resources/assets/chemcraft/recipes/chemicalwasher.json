@@ -1,0 +1,32 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "chemcraft:steelplate"
+    },
+    "1": {
+      "item": "minecraft:glass"
+    },
+    "2": {
+      "item": "chemcraft:steelplate"
+    },
+    "3": {
+      "item": "chemcraft:steelplate"
+    },
+    "4": {
+      "item": "chemcraft:steelplate"
+    },
+    "5": {
+      "item": "chemcraft:steelplate"
+    }
+  },
+  "result": {
+    "item": "chemcraft:chemwasher",
+    "count": 1
+  }
+}

@@ -12,34 +12,34 @@
         "value": ""
       },
       {
-        "value": "Blocks.STONE_BUTTON"
+        "value": ""
       },
       {
         "value": ""
       },
       {
-        "value": "CUSTOM:Acidproofsteel"
+        "value": "CUSTOM:Steelplate"
       },
       {
-        "value": "CUSTOM:Stainlesssteelplate"
+        "value": ""
       },
       {
-        "value": "CUSTOM:Acidproofsteel"
+        "value": "CUSTOM:Steelplate"
       },
       {
-        "value": "CUSTOM:Acidproofsteel"
+        "value": "CUSTOM:Steelplate"
       },
       {
-        "value": "CUSTOM:Stainlesssteelplate"
+        "value": "CUSTOM:Steelplate"
       },
       {
-        "value": "CUSTOM:Acidproofsteel"
+        "value": "CUSTOM:Steelplate"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Emptygascylinder2"
+      "value": "CUSTOM:Electroliser"
     },
-    "name": "gscylinder",
+    "name": "electroliserecepie",
     "namespace": "mod"
   }
 }

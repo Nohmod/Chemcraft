@@ -1,0 +1,29 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "chemcraft:steelplate"
+    },
+    "2": {
+      "item": "chemcraft:steelplate"
+    },
+    "3": {
+      "item": "chemcraft:steelplate"
+    },
+    "4": {
+      "item": "chemcraft:steelplate"
+    },
+    "5": {
+      "item": "chemcraft:steelplate"
+    }
+  },
+  "result": {
+    "item": "chemcraft:electroliser",
+    "count": 1
+  }
+}

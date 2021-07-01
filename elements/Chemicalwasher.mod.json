@@ -9,37 +9,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Blocks.STONE_BUTTON"
-      },
-      {
-        "value": "Items.REDSTONE"
-      },
-      {
-        "value": "Blocks.STONE_BUTTON"
-      },
-      {
-        "value": "CUSTOM:Stainlesssteelplate"
-      },
-      {
-        "value": "CUSTOM:Copperpipe"
-      },
-      {
-        "value": "CUSTOM:Stainlesssteelplate"
-      },
-      {
-        "value": "CUSTOM:Stainlesssteelplate"
+        "value": ""
       },
       {
         "value": ""
       },
       {
-        "value": "CUSTOM:Stainlesssteelplate"
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Steelplate"
+      },
+      {
+        "value": "Blocks.GLASS"
+      },
+      {
+        "value": "CUSTOM:Steelplate"
+      },
+      {
+        "value": "CUSTOM:Steelplate"
+      },
+      {
+        "value": "CUSTOM:Steelplate"
+      },
+      {
+        "value": "CUSTOM:Steelplate"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Gassynthesiser"
+      "value": "CUSTOM:Chemwasher"
     },
-    "name": "gaser",
+    "name": "chemicalwasher",
     "namespace": "mod"
   }
 }
