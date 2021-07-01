@@ -12,7 +12,7 @@
     "customModelName": "chemical_drawer:default",
     "rotationMode": 0,
     "hasTransparency": true,
-    "transparencyType": "SOLID",
+    "transparencyType": "TRANSLUCENT",
     "mx": 0.0,
     "my": 0.0,
     "mz": 0.0,
