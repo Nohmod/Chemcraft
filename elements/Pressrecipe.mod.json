@@ -12,16 +12,16 @@
         "value": ""
       },
       {
-        "value": "Blocks.GLASS"
+        "value": "Blocks.PISTON"
       },
       {
-        "value": "Blocks.GLASS"
+        "value": "Blocks.LEVER"
       },
       {
         "value": ""
       },
       {
-        "value": "Blocks.GLASS"
+        "value": ""
       },
       {
         "value": ""
@@ -37,9 +37,9 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Distiler"
+      "value": "CUSTOM:Metalpress"
     },
-    "name": "distilery",
+    "name": "pressrecipe",
     "namespace": "mod"
   }
 }

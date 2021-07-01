@@ -3,18 +3,15 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     " 12",
-    " 4 ",
+    "   ",
     "678"
   ],
   "key": {
     "1": {
-      "item": "minecraft:glass"
+      "item": "minecraft:piston"
     },
     "2": {
-      "item": "minecraft:glass"
-    },
-    "4": {
-      "item": "minecraft:glass"
+      "item": "minecraft:lever"
     },
     "6": {
       "item": "minecraft:iron_ingot"
@@ -27,7 +24,7 @@
     }
   },
   "result": {
-    "item": "chemcraft:distiler",
+    "item": "chemcraft:metalpress",
     "count": 1
   }
 }

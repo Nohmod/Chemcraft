@@ -1,0 +1,45 @@
+{
+  "_fv": 6,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Ironelectrodepure"
+      },
+      {
+        "value": "CUSTOM:Ironelectrodepure"
+      },
+      {
+        "value": "CUSTOM:Ironelectrodepure"
+      },
+      {
+        "value": "CUSTOM:Emptygascylinder2"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Emptygascylinder2"
+      },
+      {
+        "value": "CUSTOM:Ironelectrodepure"
+      },
+      {
+        "value": "CUSTOM:Ironelectrodepure"
+      },
+      {
+        "value": "CUSTOM:Ironelectrodepure"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Gassynthesiser"
+    },
+    "name": "gassynthesiserecepie",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "parent": "chemcraft:custom/chemicalstoragebottle",
+  "textures": {
+    "all": "chemcraft:blocks/glass1",
+    "particle": "chemcraft:blocks/glass1",
+    "0": "chemcraft:blocks/lid2",
+    "1": "chemcraft:blocks/lid1",
+    "2": "chemcraft:blocks/glass1",
+    "missing": "chemcraft:blocks/"
+  }
+}

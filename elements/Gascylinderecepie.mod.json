@@ -4,7 +4,7 @@
   "definition": {
     "recipeType": "Crafting",
     "xpReward": 0.0,
-    "recipeRetstackSize": 1,
+    "recipeRetstackSize": 2,
     "group": "",
     "recipeShapeless": false,
     "recipeSlots": [
@@ -12,19 +12,19 @@
         "value": ""
       },
       {
-        "value": "Blocks.GLASS"
-      },
-      {
-        "value": "Blocks.GLASS"
+        "value": "Blocks.STONE_BUTTON"
       },
       {
         "value": ""
       },
       {
-        "value": "Blocks.GLASS"
+        "value": "Items.IRON_INGOT"
       },
       {
         "value": ""
+      },
+      {
+        "value": "Items.IRON_INGOT"
       },
       {
         "value": "Items.IRON_INGOT"
@@ -37,9 +37,9 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Distiler"
+      "value": "CUSTOM:Emptygascylinder2"
     },
-    "name": "distilery",
+    "name": "gascylinderecepie",
     "namespace": "mod"
   }
 }

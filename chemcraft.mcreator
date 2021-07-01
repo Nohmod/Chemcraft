@@ -4450,6 +4450,46 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "Dryingbasin",
+      "type": "block",
+      "sortid": 453,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Chemicaljar",
+      "type": "block",
+      "sortid": 454,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Gascylinderecepie",
+      "type": "recipe",
+      "sortid": 455,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Gassynthesiserecepie",
+      "type": "recipe",
+      "sortid": 456,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Pressrecipe",
+      "type": "recipe",
+      "sortid": 457,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
@@ -4469,8 +4509,8 @@
       "item.ironelectrodepure.name": "Iron electrode",
       "item.mineraloil.name": "Mineral oil",
       "item.anilinepure.name": "Aniline",
-      "item.sodiumbisulfite.name": "Sodium bisulfite",
       "item.al2o3.name": "Aluminum oxide",
+      "item.sodiumbisulfite.name": "Sodium bisulfite",
       "item.hydrochloricacid.name": "Hydrochloric acid",
       "tile.vanadinite.name": "Vanadinite",
       "tile.confined.name": "Confined explosive",
@@ -4686,6 +4726,7 @@
       "item.sodiummetal.name": "Sodium metal",
       "tile.steamcracker.name": "Steam cracker",
       "item.aniline.name": "Aniline",
+      "tile.dryingbasin.name": "Drying basin",
       "item.copperelectrodetechnicalgrade.name": "Copper electrode",
       "item.sodiumhydroxidesolution.name": "Sodium hydroxide solution",
       "item.hydrogenperoxide.name": "Hydrogen peroxide",
@@ -4716,6 +4757,7 @@
       "item.hexachloroplatinicacid.name": "Hexachloroplatinic acid",
       "item.urea.name": "Urea",
       "item.leadchloride.name": "Lead II chloride",
+      "tile.chemicaljar.name": "Chemical bottle",
       "item.naperoxide.name": "Sodium peroxide",
       "item.xylenep.name": "Xylen",
       "item.fluorosilcicacid.name": "Fluorosilicic acid",

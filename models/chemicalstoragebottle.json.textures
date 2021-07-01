@@ -1,0 +1,13 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "lid2",
+        "1": "lid1",
+        "2": "glass1",
+        "missing": ""
+      },
+      "name": "default"
+    }
+  }
+}

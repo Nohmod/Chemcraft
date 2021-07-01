@@ -1,0 +1,39 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "chemcraft:ironelectrodepure"
+    },
+    "1": {
+      "item": "chemcraft:ironelectrodepure"
+    },
+    "2": {
+      "item": "chemcraft:ironelectrodepure"
+    },
+    "3": {
+      "item": "chemcraft:emptygascylinder2"
+    },
+    "5": {
+      "item": "chemcraft:emptygascylinder2"
+    },
+    "6": {
+      "item": "chemcraft:ironelectrodepure"
+    },
+    "7": {
+      "item": "chemcraft:ironelectrodepure"
+    },
+    "8": {
+      "item": "chemcraft:ironelectrodepure"
+    }
+  },
+  "result": {
+    "item": "chemcraft:gassynthesiser",
+    "count": 1
+  }
+}
