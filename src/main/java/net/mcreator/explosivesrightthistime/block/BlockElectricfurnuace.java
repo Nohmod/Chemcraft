@@ -215,10 +215,10 @@ public class BlockElectricfurnuace extends ElementsChemcraft.ModElement {
 	}
 
 	public static class TileEntityCustom extends TileEntityLockableLoot {
-		private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(3, ItemStack.EMPTY);
+		private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(5, ItemStack.EMPTY);
 		@Override
 		public int getSizeInventory() {
-			return 3;
+			return 5;
 		}
 
 		@Override

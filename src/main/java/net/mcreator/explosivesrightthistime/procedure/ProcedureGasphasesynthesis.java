@@ -19,6 +19,7 @@ import net.mcreator.explosivesrightthistime.item.ItemLeadoxideIIpure;
 import net.mcreator.explosivesrightthistime.item.ItemLeadIIoxidetechnicalgrade;
 import net.mcreator.explosivesrightthistime.item.ItemLeadIIoxide;
 import net.mcreator.explosivesrightthistime.item.ItemHydrofluoricacid;
+import net.mcreator.explosivesrightthistime.item.ItemHydrochloricacid;
 import net.mcreator.explosivesrightthistime.item.ItemHno3;
 import net.mcreator.explosivesrightthistime.item.ItemDisstiledwater;
 import net.mcreator.explosivesrightthistime.item.ItemChlorinatedanodemud;
@@ -28,6 +29,7 @@ import net.mcreator.explosivesrightthistime.item.ItemAluminumnugget;
 import net.mcreator.explosivesrightthistime.item.ItemAluminumchlorideanhydrous;
 import net.mcreator.explosivesrightthistime.block.BlockNitrousoxidegascylinder;
 import net.mcreator.explosivesrightthistime.block.BlockNitrogendioxidecylinder;
+import net.mcreator.explosivesrightthistime.block.BlockHydrogenchloridecylinder;
 import net.mcreator.explosivesrightthistime.block.BlockHydrogenFluoride;
 import net.mcreator.explosivesrightthistime.block.BlockEmptygascylinder2;
 import net.mcreator.explosivesrightthistime.block.BlockChlorinecylinder;
@@ -326,7 +328,7 @@ public class ProcedureGasphasesynthesis extends ElementsChemcraft.ModElement {
 				}
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack((int) (1))).getItem() == new ItemStack(ItemSodiumamide.block, (int) (1)).getItem())) || (((new Object() {
+		}.getItemStack((int) (1))).getItem() == new ItemStack(ItemSodiumamide.block, (int) (1)).getItem())) || ((((new Object() {
 			public ItemStack getItemStack(int sltid) {
 				if (entity instanceof EntityPlayerMP) {
 					Container _current = ((EntityPlayerMP) entity).openContainer;
@@ -352,7 +354,59 @@ public class ProcedureGasphasesynthesis extends ElementsChemcraft.ModElement {
 				}
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack((int) (1))).getItem() == new ItemStack(ItemAluminumnugget.block, (int) (1)).getItem())))))))))))))) {
+		}.getItemStack((int) (1))).getItem() == new ItemStack(ItemAluminumnugget.block, (int) (1)).getItem())) || ((((new Object() {
+			public ItemStack getItemStack(int sltid) {
+				if (entity instanceof EntityPlayerMP) {
+					Container _current = ((EntityPlayerMP) entity).openContainer;
+					if (_current instanceof Supplier) {
+						Object invobj = ((Supplier) _current).get();
+						if (invobj instanceof Map) {
+							return ((Slot) ((Map) invobj).get(sltid)).getStack();
+						}
+					}
+				}
+				return ItemStack.EMPTY;
+			}
+		}.getItemStack((int) (0))).getItem() == new ItemStack(BlockChlorinecylinder.block, (int) (1)).getItem()) && ((new Object() {
+			public ItemStack getItemStack(int sltid) {
+				if (entity instanceof EntityPlayerMP) {
+					Container _current = ((EntityPlayerMP) entity).openContainer;
+					if (_current instanceof Supplier) {
+						Object invobj = ((Supplier) _current).get();
+						if (invobj instanceof Map) {
+							return ((Slot) ((Map) invobj).get(sltid)).getStack();
+						}
+					}
+				}
+				return ItemStack.EMPTY;
+			}
+		}.getItemStack((int) (1))).getItem() == new ItemStack(BlockCanisterred.block, (int) (1)).getItem())) || (((new Object() {
+			public ItemStack getItemStack(int sltid) {
+				if (entity instanceof EntityPlayerMP) {
+					Container _current = ((EntityPlayerMP) entity).openContainer;
+					if (_current instanceof Supplier) {
+						Object invobj = ((Supplier) _current).get();
+						if (invobj instanceof Map) {
+							return ((Slot) ((Map) invobj).get(sltid)).getStack();
+						}
+					}
+				}
+				return ItemStack.EMPTY;
+			}
+		}.getItemStack((int) (0))).getItem() == new ItemStack(BlockHydrogenchloridecylinder.block, (int) (1)).getItem()) && ((new Object() {
+			public ItemStack getItemStack(int sltid) {
+				if (entity instanceof EntityPlayerMP) {
+					Container _current = ((EntityPlayerMP) entity).openContainer;
+					if (_current instanceof Supplier) {
+						Object invobj = ((Supplier) _current).get();
+						if (invobj instanceof Map) {
+							return ((Slot) ((Map) invobj).get(sltid)).getStack();
+						}
+					}
+				}
+				return ItemStack.EMPTY;
+			}
+		}.getItemStack((int) (1))).getItem() == new ItemStack(ItemDisstiledwater.block, (int) (1)).getItem())))))))))))))))) {
 			if ((((new Object() {
 				public ItemStack getItemStack(int sltid) {
 					if (entity instanceof EntityPlayerMP) {
@@ -1528,6 +1582,210 @@ public class ProcedureGasphasesynthesis extends ElementsChemcraft.ModElement {
 						Object invobj = ((Supplier) _current).get();
 						if (invobj instanceof Map) {
 							ItemStack _setstack = new ItemStack(ItemAluminumchlorideanhydrous.block, (int) (1));
+							_setstack.setCount(((new Object() {
+								public int getAmount(int sltid) {
+									if (entity instanceof EntityPlayerMP) {
+										Container _current = ((EntityPlayerMP) entity).openContainer;
+										if (_current instanceof Supplier) {
+											Object invobj = ((Supplier) _current).get();
+											if (invobj instanceof Map) {
+												ItemStack stack = ((Slot) ((Map) invobj).get(sltid)).getStack();;
+												if (stack != null)
+													return stack.getCount();
+											}
+										}
+									}
+									return 0;
+								}
+							}.getAmount((int) (2))) + 1));
+							((Slot) ((Map) invobj).get((int) (2))).putStack(_setstack);
+							_current.detectAndSendChanges();
+						}
+					}
+				}
+				if (entity instanceof EntityPlayerMP) {
+					Container _current = ((EntityPlayerMP) entity).openContainer;
+					if (_current instanceof Supplier) {
+						Object invobj = ((Supplier) _current).get();
+						if (invobj instanceof Map) {
+							ItemStack _setstack = new ItemStack(BlockEmptygascylinder2.block, (int) (1));
+							_setstack.setCount(((new Object() {
+								public int getAmount(int sltid) {
+									if (entity instanceof EntityPlayerMP) {
+										Container _current = ((EntityPlayerMP) entity).openContainer;
+										if (_current instanceof Supplier) {
+											Object invobj = ((Supplier) _current).get();
+											if (invobj instanceof Map) {
+												ItemStack stack = ((Slot) ((Map) invobj).get(sltid)).getStack();;
+												if (stack != null)
+													return stack.getCount();
+											}
+										}
+									}
+									return 0;
+								}
+							}.getAmount((int) (3))) + 1));
+							((Slot) ((Map) invobj).get((int) (3))).putStack(_setstack);
+							_current.detectAndSendChanges();
+						}
+					}
+				}
+			}
+			if ((((new Object() {
+				public ItemStack getItemStack(int sltid) {
+					if (entity instanceof EntityPlayerMP) {
+						Container _current = ((EntityPlayerMP) entity).openContainer;
+						if (_current instanceof Supplier) {
+							Object invobj = ((Supplier) _current).get();
+							if (invobj instanceof Map) {
+								return ((Slot) ((Map) invobj).get(sltid)).getStack();
+							}
+						}
+					}
+					return ItemStack.EMPTY;
+				}
+			}.getItemStack((int) (0))).getItem() == new ItemStack(BlockChlorinecylinder.block, (int) (1)).getItem()) && ((new Object() {
+				public ItemStack getItemStack(int sltid) {
+					if (entity instanceof EntityPlayerMP) {
+						Container _current = ((EntityPlayerMP) entity).openContainer;
+						if (_current instanceof Supplier) {
+							Object invobj = ((Supplier) _current).get();
+							if (invobj instanceof Map) {
+								return ((Slot) ((Map) invobj).get(sltid)).getStack();
+							}
+						}
+					}
+					return ItemStack.EMPTY;
+				}
+			}.getItemStack((int) (1))).getItem() == new ItemStack(BlockCanisterred.block, (int) (1)).getItem()))) {
+				if (entity instanceof EntityPlayerMP) {
+					Container _current = ((EntityPlayerMP) entity).openContainer;
+					if (_current instanceof Supplier) {
+						Object invobj = ((Supplier) _current).get();
+						if (invobj instanceof Map) {
+							((Slot) ((Map) invobj).get((int) (0))).decrStackSize((int) (1));
+							_current.detectAndSendChanges();
+						}
+					}
+				}
+				if (entity instanceof EntityPlayerMP) {
+					Container _current = ((EntityPlayerMP) entity).openContainer;
+					if (_current instanceof Supplier) {
+						Object invobj = ((Supplier) _current).get();
+						if (invobj instanceof Map) {
+							((Slot) ((Map) invobj).get((int) (1))).decrStackSize((int) (1));
+							_current.detectAndSendChanges();
+						}
+					}
+				}
+				if (entity instanceof EntityPlayerMP) {
+					Container _current = ((EntityPlayerMP) entity).openContainer;
+					if (_current instanceof Supplier) {
+						Object invobj = ((Supplier) _current).get();
+						if (invobj instanceof Map) {
+							ItemStack _setstack = new ItemStack(BlockHydrogenchloridecylinder.block, (int) (1));
+							_setstack.setCount(((new Object() {
+								public int getAmount(int sltid) {
+									if (entity instanceof EntityPlayerMP) {
+										Container _current = ((EntityPlayerMP) entity).openContainer;
+										if (_current instanceof Supplier) {
+											Object invobj = ((Supplier) _current).get();
+											if (invobj instanceof Map) {
+												ItemStack stack = ((Slot) ((Map) invobj).get(sltid)).getStack();;
+												if (stack != null)
+													return stack.getCount();
+											}
+										}
+									}
+									return 0;
+								}
+							}.getAmount((int) (2))) + 1));
+							((Slot) ((Map) invobj).get((int) (2))).putStack(_setstack);
+							_current.detectAndSendChanges();
+						}
+					}
+				}
+				if (entity instanceof EntityPlayerMP) {
+					Container _current = ((EntityPlayerMP) entity).openContainer;
+					if (_current instanceof Supplier) {
+						Object invobj = ((Supplier) _current).get();
+						if (invobj instanceof Map) {
+							ItemStack _setstack = new ItemStack(BlockEmptygascylinder2.block, (int) (1));
+							_setstack.setCount(((new Object() {
+								public int getAmount(int sltid) {
+									if (entity instanceof EntityPlayerMP) {
+										Container _current = ((EntityPlayerMP) entity).openContainer;
+										if (_current instanceof Supplier) {
+											Object invobj = ((Supplier) _current).get();
+											if (invobj instanceof Map) {
+												ItemStack stack = ((Slot) ((Map) invobj).get(sltid)).getStack();;
+												if (stack != null)
+													return stack.getCount();
+											}
+										}
+									}
+									return 0;
+								}
+							}.getAmount((int) (3))) + 1));
+							((Slot) ((Map) invobj).get((int) (3))).putStack(_setstack);
+							_current.detectAndSendChanges();
+						}
+					}
+				}
+			}
+			if ((((new Object() {
+				public ItemStack getItemStack(int sltid) {
+					if (entity instanceof EntityPlayerMP) {
+						Container _current = ((EntityPlayerMP) entity).openContainer;
+						if (_current instanceof Supplier) {
+							Object invobj = ((Supplier) _current).get();
+							if (invobj instanceof Map) {
+								return ((Slot) ((Map) invobj).get(sltid)).getStack();
+							}
+						}
+					}
+					return ItemStack.EMPTY;
+				}
+			}.getItemStack((int) (0))).getItem() == new ItemStack(BlockHydrogenchloridecylinder.block, (int) (1)).getItem()) && ((new Object() {
+				public ItemStack getItemStack(int sltid) {
+					if (entity instanceof EntityPlayerMP) {
+						Container _current = ((EntityPlayerMP) entity).openContainer;
+						if (_current instanceof Supplier) {
+							Object invobj = ((Supplier) _current).get();
+							if (invobj instanceof Map) {
+								return ((Slot) ((Map) invobj).get(sltid)).getStack();
+							}
+						}
+					}
+					return ItemStack.EMPTY;
+				}
+			}.getItemStack((int) (1))).getItem() == new ItemStack(ItemDisstiledwater.block, (int) (1)).getItem()))) {
+				if (entity instanceof EntityPlayerMP) {
+					Container _current = ((EntityPlayerMP) entity).openContainer;
+					if (_current instanceof Supplier) {
+						Object invobj = ((Supplier) _current).get();
+						if (invobj instanceof Map) {
+							((Slot) ((Map) invobj).get((int) (0))).decrStackSize((int) (1));
+							_current.detectAndSendChanges();
+						}
+					}
+				}
+				if (entity instanceof EntityPlayerMP) {
+					Container _current = ((EntityPlayerMP) entity).openContainer;
+					if (_current instanceof Supplier) {
+						Object invobj = ((Supplier) _current).get();
+						if (invobj instanceof Map) {
+							((Slot) ((Map) invobj).get((int) (1))).decrStackSize((int) (1));
+							_current.detectAndSendChanges();
+						}
+					}
+				}
+				if (entity instanceof EntityPlayerMP) {
+					Container _current = ((EntityPlayerMP) entity).openContainer;
+					if (_current instanceof Supplier) {
+						Object invobj = ((Supplier) _current).get();
+						if (invobj instanceof Map) {
+							ItemStack _setstack = new ItemStack(ItemHydrochloricacid.block, (int) (1));
 							_setstack.setCount(((new Object() {
 								public int getAmount(int sltid) {
 									if (entity instanceof EntityPlayerMP) {

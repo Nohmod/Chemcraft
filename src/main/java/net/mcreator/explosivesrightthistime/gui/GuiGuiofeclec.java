@@ -72,9 +72,9 @@ public class GuiGuiofeclec extends ElementsChemcraft.ModElement {
 					return false;
 				}
 			}));
-			this.customSlots.put(3, this.addSlotToContainer(new Slot(internal, 3, 36, 21) {
+			this.customSlots.put(3, this.addSlotToContainer(new Slot(internal, 3, 35, 21) {
 			}));
-			this.customSlots.put(4, this.addSlotToContainer(new Slot(internal, 4, 10, 21) {
+			this.customSlots.put(4, this.addSlotToContainer(new Slot(internal, 4, 8, 21) {
 			}));
 			int si;
 			int sj;
@@ -288,7 +288,7 @@ public class GuiGuiofeclec extends ElementsChemcraft.ModElement {
 						return tileEntity.getTileData().getDouble(tag);
 					return 0;
 				}
-			}.getValue(new BlockPos((int) x, (int) y, (int) z), "Temp")) + "\u00B0C", 7, 65, -16777216);
+			}.getValue(new BlockPos((int) x, (int) y, (int) z), "Temp")) + "\u00B0C", 10, 70, -16777216);
 		}
 
 		@Override
