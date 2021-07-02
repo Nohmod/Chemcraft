@@ -7,24 +7,20 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 
-import net.minecraft.world.World;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
-import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.block.state.IBlockState;
 
-import net.mcreator.explosivesrightthistime.creativetab.TabExplosivesandchemicals;
+import net.mcreator.explosivesrightthistime.creativetab.TabGlassware;
 import net.mcreator.explosivesrightthistime.ElementsChemcraft;
 
-import java.util.List;
-
 @ElementsChemcraft.ModElement.Tag
-public class ItemNaOH extends ElementsChemcraft.ModElement {
-	@GameRegistry.ObjectHolder("chemcraft:naoh")
+public class ItemRoundbottomflask extends ElementsChemcraft.ModElement {
+	@GameRegistry.ObjectHolder("chemcraft:roundbottomflask")
 	public static final Item block = null;
-	public ItemNaOH(ElementsChemcraft instance) {
-		super(instance, 189);
+	public ItemRoundbottomflask(ElementsChemcraft instance) {
+		super(instance, 460);
 	}
 
 	@Override
@@ -35,15 +31,15 @@ public class ItemNaOH extends ElementsChemcraft.ModElement {
 	@SideOnly(Side.CLIENT)
 	@Override
 	public void registerModels(ModelRegistryEvent event) {
-		ModelLoader.setCustomModelResourceLocation(block, 0, new ModelResourceLocation("chemcraft:naoh", "inventory"));
+		ModelLoader.setCustomModelResourceLocation(block, 0, new ModelResourceLocation("chemcraft:roundbottomflask", "inventory"));
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
 			setMaxDamage(0);
 			maxStackSize = 64;
-			setUnlocalizedName("naoh");
-			setRegistryName("naoh");
-			setCreativeTab(TabExplosivesandchemicals.tab);
+			setUnlocalizedName("roundbottomflask");
+			setRegistryName("roundbottomflask");
+			setCreativeTab(TabGlassware.tab);
 		}
 
 		@Override
@@ -59,12 +55,6 @@ public class ItemNaOH extends ElementsChemcraft.ModElement {
 		@Override
 		public float getDestroySpeed(ItemStack par1ItemStack, IBlockState par2Block) {
 			return 1F;
-		}
-
-		@Override
-		public void addInformation(ItemStack itemstack, World world, List<String> list, ITooltipFlag flag) {
-			super.addInformation(itemstack, world, list, flag);
-			list.add("Corrosive pellets");
 		}
 	}
 }

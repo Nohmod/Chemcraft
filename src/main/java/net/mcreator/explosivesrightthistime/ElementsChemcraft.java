@@ -35,6 +35,7 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.block.Block;
 
 import net.mcreator.explosivesrightthistime.gui.GuiWasher;
+import net.mcreator.explosivesrightthistime.gui.GuiSulfuricacidplantGUI;
 import net.mcreator.explosivesrightthistime.gui.GuiSteamcrackerGUI;
 import net.mcreator.explosivesrightthistime.gui.GuiMoltensaltgui;
 import net.mcreator.explosivesrightthistime.gui.GuiMetalpressGUI;
@@ -159,6 +160,8 @@ public class ElementsChemcraft implements IFuelHandler, IWorldGenerator {
 				return new GuiMoltensaltgui.GuiContainerMod(world, x, y, z, player);
 			if (id == GuiSteamcrackerGUI.GUIID)
 				return new GuiSteamcrackerGUI.GuiContainerMod(world, x, y, z, player);
+			if (id == GuiSulfuricacidplantGUI.GUIID)
+				return new GuiSulfuricacidplantGUI.GuiContainerMod(world, x, y, z, player);
 			return null;
 		}
 
@@ -188,6 +191,8 @@ public class ElementsChemcraft implements IFuelHandler, IWorldGenerator {
 				return new GuiMoltensaltgui.GuiWindow(world, x, y, z, player);
 			if (id == GuiSteamcrackerGUI.GUIID)
 				return new GuiSteamcrackerGUI.GuiWindow(world, x, y, z, player);
+			if (id == GuiSulfuricacidplantGUI.GUIID)
+				return new GuiSulfuricacidplantGUI.GuiWindow(world, x, y, z, player);
 			return null;
 		}
 	}

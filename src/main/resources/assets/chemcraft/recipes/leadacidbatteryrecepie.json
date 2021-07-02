@@ -1,0 +1,42 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "chemcraft:steelplate"
+    },
+    "1": {
+      "item": "chemcraft:steelplate"
+    },
+    "2": {
+      "item": "chemcraft:steelplate"
+    },
+    "3": {
+      "item": "chemcraft:leadelectrode"
+    },
+    "4": {
+      "item": "chemcraft:dilutesulfuricacid"
+    },
+    "5": {
+      "item": "chemcraft:leaddioxideelectrode"
+    },
+    "6": {
+      "item": "chemcraft:steelplate"
+    },
+    "7": {
+      "item": "chemcraft:steelplate"
+    },
+    "8": {
+      "item": "chemcraft:steelplate"
+    }
+  },
+  "result": {
+    "item": "chemcraft:leadacidbattery",
+    "count": 1
+  }
+}

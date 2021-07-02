@@ -34,11 +34,11 @@ import java.util.HashMap;
 import java.io.IOException;
 
 @ElementsChemcraft.ModElement.Tag
-public class GuiElectroliser2 extends ElementsChemcraft.ModElement {
-	public static int GUIID = 7;
+public class GuiSulfuricacidplantGUI extends ElementsChemcraft.ModElement {
+	public static int GUIID = 15;
 	public static HashMap guistate = new HashMap();
-	public GuiElectroliser2(ElementsChemcraft instance) {
-		super(instance, 187);
+	public GuiSulfuricacidplantGUI(ElementsChemcraft instance) {
+		super(instance, 463);
 	}
 
 	@Override
@@ -58,43 +58,21 @@ public class GuiElectroliser2 extends ElementsChemcraft.ModElement {
 			this.x = x;
 			this.y = y;
 			this.z = z;
-			this.internal = new InventoryBasic("", true, 7);
+			this.internal = new InventoryBasic("", true, 2);
 			TileEntity ent = world.getTileEntity(new BlockPos(x, y, z));
 			if (ent instanceof IInventory)
 				this.internal = (IInventory) ent;
-			this.customSlots.put(0, this.addSlotToContainer(new Slot(internal, 0, 37, 25) {
+			this.customSlots.put(0, this.addSlotToContainer(new Slot(internal, 0, 15, 11) {
 			}));
-			this.customSlots.put(1, this.addSlotToContainer(new Slot(internal, 1, 28, 70) {
-			}));
-			this.customSlots.put(2, this.addSlotToContainer(new Slot(internal, 2, 91, 25) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
-			}));
-			this.customSlots.put(3, this.addSlotToContainer(new Slot(internal, 3, 91, 70) {
-			}));
-			this.customSlots.put(4, this.addSlotToContainer(new Slot(internal, 4, 118, 25) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
-			}));
-			this.customSlots.put(5, this.addSlotToContainer(new Slot(internal, 5, 145, 25) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
-			}));
-			this.customSlots.put(6, this.addSlotToContainer(new Slot(internal, 6, 154, 70) {
+			this.customSlots.put(1, this.addSlotToContainer(new Slot(internal, 1, 137, 34) {
 			}));
 			int si;
 			int sj;
 			for (si = 0; si < 3; ++si)
 				for (sj = 0; sj < 9; ++sj)
-					this.addSlotToContainer(new Slot(player.inventory, sj + (si + 1) * 9, 21 + 8 + sj * 18, 13 + 84 + si * 18));
+					this.addSlotToContainer(new Slot(player.inventory, sj + (si + 1) * 9, 0 + 8 + sj * 18, 0 + 84 + si * 18));
 			for (si = 0; si < 9; ++si)
-				this.addSlotToContainer(new Slot(player.inventory, si, 21 + 8 + si * 18, 13 + 142));
+				this.addSlotToContainer(new Slot(player.inventory, si, 0 + 8 + si * 18, 0 + 142));
 		}
 
 		public Map<Integer, Slot> get() {
@@ -113,18 +91,18 @@ public class GuiElectroliser2 extends ElementsChemcraft.ModElement {
 			if (slot != null && slot.getHasStack()) {
 				ItemStack itemstack1 = slot.getStack();
 				itemstack = itemstack1.copy();
-				if (index < 7) {
-					if (!this.mergeItemStack(itemstack1, 7, this.inventorySlots.size(), true)) {
+				if (index < 2) {
+					if (!this.mergeItemStack(itemstack1, 2, this.inventorySlots.size(), true)) {
 						return ItemStack.EMPTY;
 					}
 					slot.onSlotChange(itemstack1, itemstack);
-				} else if (!this.mergeItemStack(itemstack1, 0, 7, false)) {
-					if (index < 7 + 27) {
-						if (!this.mergeItemStack(itemstack1, 7 + 27, this.inventorySlots.size(), true)) {
+				} else if (!this.mergeItemStack(itemstack1, 0, 2, false)) {
+					if (index < 2 + 27) {
+						if (!this.mergeItemStack(itemstack1, 2 + 27, this.inventorySlots.size(), true)) {
 							return ItemStack.EMPTY;
 						}
 					} else {
-						if (!this.mergeItemStack(itemstack1, 7, 7 + 27, false)) {
+						if (!this.mergeItemStack(itemstack1, 2, 2 + 27, false)) {
 							return ItemStack.EMPTY;
 						}
 					}
@@ -253,10 +231,10 @@ public class GuiElectroliser2 extends ElementsChemcraft.ModElement {
 			this.y = y;
 			this.z = z;
 			this.entity = entity;
-			this.xSize = 217;
-			this.ySize = 191;
+			this.xSize = 176;
+			this.ySize = 166;
 		}
-		private static final ResourceLocation texture = new ResourceLocation("chemcraft:textures/electroliser2.png");
+		private static final ResourceLocation texture = new ResourceLocation("chemcraft:textures/sulfuricacidplantgui.png");
 		@Override
 		public void drawScreen(int mouseX, int mouseY, float partialTicks) {
 			this.drawDefaultBackground();
@@ -272,8 +250,8 @@ public class GuiElectroliser2 extends ElementsChemcraft.ModElement {
 			int l = (this.height - this.ySize) / 2;
 			this.drawTexturedModalRect(k, l, 0, 0, this.xSize, this.ySize);
 			zLevel = 100.0F;
-			this.mc.renderEngine.bindTexture(new ResourceLocation("chemcraft:textures/aro.png"));
-			this.drawTexturedModalRect(this.guiLeft + 63, this.guiTop + 24, 0, 0, 256, 256);
+			this.mc.renderEngine.bindTexture(new ResourceLocation("chemcraft:textures/nm.png"));
+			this.drawTexturedModalRect(this.guiLeft + 11, this.guiTop + 21, 0, 0, 256, 256);
 		}
 
 		@Override
@@ -293,11 +271,6 @@ public class GuiElectroliser2 extends ElementsChemcraft.ModElement {
 
 		@Override
 		protected void drawGuiContainerForegroundLayer(int par1, int par2) {
-			this.fontRenderer.drawString("Electrolite", 18, 15, -16777216);
-			this.fontRenderer.drawString("Electroliser", 72, 6, -16777216);
-			this.fontRenderer.drawString("Electrode", 18, 51, -16777216);
-			this.fontRenderer.drawString("Cylinder", 81, 51, -16777216);
-			this.fontRenderer.drawString("Battery", 144, 51, -16777216);
 		}
 
 		@Override
@@ -309,8 +282,8 @@ public class GuiElectroliser2 extends ElementsChemcraft.ModElement {
 		@Override
 		public void initGui() {
 			super.initGui();
-			this.guiLeft = (this.width - 217) / 2;
-			this.guiTop = (this.height - 191) / 2;
+			this.guiLeft = (this.width - 176) / 2;
+			this.guiTop = (this.height - 166) / 2;
 			Keyboard.enableRepeatEvents(true);
 			this.buttonList.clear();
 		}

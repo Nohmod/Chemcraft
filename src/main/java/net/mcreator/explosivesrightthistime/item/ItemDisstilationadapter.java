@@ -12,15 +12,15 @@ import net.minecraft.item.Item;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.block.state.IBlockState;
 
-import net.mcreator.explosivesrightthistime.creativetab.TabExplosivesandchemicals;
+import net.mcreator.explosivesrightthistime.creativetab.TabGlassware;
 import net.mcreator.explosivesrightthistime.ElementsChemcraft;
 
 @ElementsChemcraft.ModElement.Tag
-public class ItemCopperelectrode extends ElementsChemcraft.ModElement {
-	@GameRegistry.ObjectHolder("chemcraft:copperelectrode")
+public class ItemDisstilationadapter extends ElementsChemcraft.ModElement {
+	@GameRegistry.ObjectHolder("chemcraft:disstilationadapter")
 	public static final Item block = null;
-	public ItemCopperelectrode(ElementsChemcraft instance) {
-		super(instance, 185);
+	public ItemDisstilationadapter(ElementsChemcraft instance) {
+		super(instance, 461);
 	}
 
 	@Override
@@ -31,15 +31,15 @@ public class ItemCopperelectrode extends ElementsChemcraft.ModElement {
 	@SideOnly(Side.CLIENT)
 	@Override
 	public void registerModels(ModelRegistryEvent event) {
-		ModelLoader.setCustomModelResourceLocation(block, 0, new ModelResourceLocation("chemcraft:copperelectrode", "inventory"));
+		ModelLoader.setCustomModelResourceLocation(block, 0, new ModelResourceLocation("chemcraft:disstilationadapter", "inventory"));
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
 			setMaxDamage(0);
 			maxStackSize = 64;
-			setUnlocalizedName("copperelectrode");
-			setRegistryName("copperelectrode");
-			setCreativeTab(TabExplosivesandchemicals.tab);
+			setUnlocalizedName("disstilationadapter");
+			setRegistryName("disstilationadapter");
+			setCreativeTab(TabGlassware.tab);
 		}
 
 		@Override

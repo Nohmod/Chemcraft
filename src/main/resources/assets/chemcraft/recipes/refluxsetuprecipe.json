@@ -2,15 +2,12 @@
   "group": "chemcraft",
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    " 12",
+    " 1 ",
     " 4 ",
     "678"
   ],
   "key": {
     "1": {
-      "item": "chemcraft:disstilationadapter"
-    },
-    "2": {
       "item": "chemcraft:condenser"
     },
     "4": {
@@ -27,7 +24,7 @@
     }
   },
   "result": {
-    "item": "chemcraft:distiler",
+    "item": "chemcraft:refluxsetup",
     "count": 1
   }
 }

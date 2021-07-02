@@ -12,10 +12,10 @@
         "value": ""
       },
       {
-        "value": "CUSTOM:Disstilationadapter"
+        "value": "CUSTOM:Condenser"
       },
       {
-        "value": "CUSTOM:Condenser"
+        "value": ""
       },
       {
         "value": ""
@@ -37,9 +37,9 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Distiler"
+      "value": "CUSTOM:Refluxsetup"
     },
-    "name": "distilery",
+    "name": "refluxsetuprecipe",
     "namespace": "mod"
   }
 }

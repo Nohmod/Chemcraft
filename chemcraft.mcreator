@@ -1,6 +1,6 @@
 {
   "id_map": {
-    "GUI": 14
+    "GUI": 15
   },
   "mod_elements": [
     {
@@ -3097,7 +3097,8 @@
       "locked_code": false,
       "ids": {
         "0": 12
-      }
+      },
+      "registry_name": "electricfurnuacegui"
     },
     {
       "name": "Pigiron",
@@ -4482,6 +4483,96 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "Roundbottomflask",
+      "type": "item",
+      "sortid": 460,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Disstilationadapter",
+      "type": "item",
+      "sortid": 461,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Refluxsetuprecipe",
+      "type": "recipe",
+      "sortid": 462,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "SulfuricacidplantGUI",
+      "type": "gui",
+      "sortid": 463,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 15
+      }
+    },
+    {
+      "name": "Leadacidbatteryrecepie",
+      "type": "recipe",
+      "sortid": 464,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Aluminumchlorideanhydrous",
+      "type": "item",
+      "sortid": 465,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Anhydrousaluminumchloride",
+      "type": "procedure",
+      "sortid": 466,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Electricfurnuacerecipe",
+      "type": "recipe",
+      "sortid": 467,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
@@ -4489,6 +4580,7 @@
   "language_map": {
     "en_us": {
       "tile.hydrogenfluoride.name": "Hydrogen fluoride",
+      "item.aluminumchlorideanhydrous.name": "Aluminum chloride anhydrous",
       "item.ammoniasolution.name": "Ammonia solution ",
       "item.leadacidbattery.name": "Lead acid battery",
       "item.h2s04.name": "Sulfuric acid 98%",
@@ -4535,6 +4627,7 @@
       "tile.fermenter.name": "Fermenter",
       "tile.hematite.name": "Hematite",
       "tile.isomsper.name": "Isomer separator",
+      "item.roundbottomflask.name": "Round bottom flask",
       "item.anodemudironabseed.name": "Anode mud",
       "item.antimonytrichloride.name": "Antimony trichloride",
       "item.leadelectrode.name": "Lead electrode",
@@ -4563,6 +4656,7 @@
       "item.sodiumnitrite.name": "Sodium nitrite",
       "item.methanol.name": "Methanol",
       "item.borosilicateglassmix.name": "Borosilicate glass mix",
+      "item.disstilationadapter.name": "Disstilation adapter",
       "item.metalhydroxides.name": "Metal hydroxides",
       "item.graphitedust.name": "Graphite dust",
       "item.toluene.name": "Toluene",

@@ -9,37 +9,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": ""
+        "value": "Blocks.CONCRETE#8"
       },
       {
-        "value": "CUSTOM:Disstilationadapter"
+        "value": "Blocks.IRON_TRAPDOOR"
       },
       {
-        "value": "CUSTOM:Condenser"
+        "value": "Blocks.CONCRETE#8"
       },
       {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:Roundbottomflask"
+        "value": "Blocks.CONCRETE#8"
       },
       {
         "value": ""
+      },
+      {
+        "value": "Blocks.CONCRETE#8"
       },
       {
         "value": "Items.IRON_INGOT"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "Blocks.STONE_BUTTON"
       },
       {
         "value": "Items.IRON_INGOT"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Distiler"
+      "value": "CUSTOM:Electricfurnuace"
     },
-    "name": "distilery",
+    "name": "electricfurnuacerecipe",
     "namespace": "mod"
   }
 }

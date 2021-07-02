@@ -1,0 +1,43 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:concrete",
+      "data": 8
+    },
+    "1": {
+      "item": "minecraft:iron_trapdoor"
+    },
+    "2": {
+      "item": "minecraft:concrete",
+      "data": 8
+    },
+    "3": {
+      "item": "minecraft:concrete",
+      "data": 8
+    },
+    "5": {
+      "item": "minecraft:concrete",
+      "data": 8
+    },
+    "6": {
+      "item": "minecraft:iron_ingot"
+    },
+    "7": {
+      "item": "minecraft:stone_button"
+    },
+    "8": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "chemcraft:electricfurnuace",
+    "count": 1
+  }
+}
