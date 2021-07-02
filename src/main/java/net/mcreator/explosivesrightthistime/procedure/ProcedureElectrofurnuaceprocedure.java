@@ -95,7 +95,7 @@ public class ProcedureElectrofurnuaceprocedure extends ElementsChemcraft.ModElem
 								}
 								return 0;
 							}
-						}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (0))) <= 63) && ((new Object() {
+						}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (0))) <= 63) && (((new Object() {
 							public int getAmount(BlockPos pos, int sltid) {
 								TileEntity inv = world.getTileEntity(pos);
 								if (inv instanceof TileEntityLockableLoot) {
@@ -105,7 +105,27 @@ public class ProcedureElectrofurnuaceprocedure extends ElementsChemcraft.ModElem
 								}
 								return 0;
 							}
-						}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (1))) == 1))) || ((new Object() {
+						}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (1))) == 1) && (((new Object() {
+							public int getAmount(BlockPos pos, int sltid) {
+								TileEntity inv = world.getTileEntity(pos);
+								if (inv instanceof TileEntityLockableLoot) {
+									ItemStack stack = ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
+									if (stack != null)
+										return stack.getCount();
+								}
+								return 0;
+							}
+						}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (3))) == 0) && ((new Object() {
+							public int getAmount(BlockPos pos, int sltid) {
+								TileEntity inv = world.getTileEntity(pos);
+								if (inv instanceof TileEntityLockableLoot) {
+									ItemStack stack = ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
+									if (stack != null)
+										return stack.getCount();
+								}
+								return 0;
+							}
+						}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (4))) == 0))))) || ((new Object() {
 							public int getAmount(BlockPos pos, int sltid) {
 								TileEntity inv = world.getTileEntity(pos);
 								if (inv instanceof TileEntityLockableLoot) {
@@ -148,7 +168,7 @@ public class ProcedureElectrofurnuaceprocedure extends ElementsChemcraft.ModElem
 						return ItemStack.EMPTY;
 					}
 				}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (2))).getItem() == new ItemStack(ItemCrucible.block, (int) (1))
-						.getItem()) && ((new Object() {
+						.getItem()) && (((new Object() {
 							public int getAmount(BlockPos pos, int sltid) {
 								TileEntity inv = world.getTileEntity(pos);
 								if (inv instanceof TileEntityLockableLoot) {
@@ -158,7 +178,27 @@ public class ProcedureElectrofurnuaceprocedure extends ElementsChemcraft.ModElem
 								}
 								return 0;
 							}
-						}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (0))) <= 63)) || ((new Object() {
+						}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (0))) <= 63) && (((new Object() {
+							public int getAmount(BlockPos pos, int sltid) {
+								TileEntity inv = world.getTileEntity(pos);
+								if (inv instanceof TileEntityLockableLoot) {
+									ItemStack stack = ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
+									if (stack != null)
+										return stack.getCount();
+								}
+								return 0;
+							}
+						}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (3))) == 0) && ((new Object() {
+							public int getAmount(BlockPos pos, int sltid) {
+								TileEntity inv = world.getTileEntity(pos);
+								if (inv instanceof TileEntityLockableLoot) {
+									ItemStack stack = ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
+									if (stack != null)
+										return stack.getCount();
+								}
+								return 0;
+							}
+						}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (4))) == 0)))) || ((new Object() {
 							public int getAmount(BlockPos pos, int sltid) {
 								TileEntity inv = world.getTileEntity(pos);
 								if (inv instanceof TileEntityLockableLoot) {
@@ -201,7 +241,7 @@ public class ProcedureElectrofurnuaceprocedure extends ElementsChemcraft.ModElem
 						return ItemStack.EMPTY;
 					}
 				}.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (2))).getItem() == new ItemStack(ItemAl2o3.block, (int) (1)).getItem())
-						&& ((new Object() {
+						&& (((new Object() {
 							public int getAmount(BlockPos pos, int sltid) {
 								TileEntity inv = world.getTileEntity(pos);
 								if (inv instanceof TileEntityLockableLoot) {
@@ -211,7 +251,27 @@ public class ProcedureElectrofurnuaceprocedure extends ElementsChemcraft.ModElem
 								}
 								return 0;
 							}
-						}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (0))) <= 63)) || ((new Object() {
+						}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (0))) <= 63) && (((new Object() {
+							public int getAmount(BlockPos pos, int sltid) {
+								TileEntity inv = world.getTileEntity(pos);
+								if (inv instanceof TileEntityLockableLoot) {
+									ItemStack stack = ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
+									if (stack != null)
+										return stack.getCount();
+								}
+								return 0;
+							}
+						}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (3))) == 0) && ((new Object() {
+							public int getAmount(BlockPos pos, int sltid) {
+								TileEntity inv = world.getTileEntity(pos);
+								if (inv instanceof TileEntityLockableLoot) {
+									ItemStack stack = ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
+									if (stack != null)
+										return stack.getCount();
+								}
+								return 0;
+							}
+						}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (4))) == 0)))) || ((new Object() {
 							public int getAmount(BlockPos pos, int sltid) {
 								TileEntity inv = world.getTileEntity(pos);
 								if (inv instanceof TileEntityLockableLoot) {
@@ -273,7 +333,7 @@ public class ProcedureElectrofurnuaceprocedure extends ElementsChemcraft.ModElem
 								}
 								return 0;
 							}
-						}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (0))) <= 63) && ((new Object() {
+						}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (0))) <= 63) && (((new Object() {
 							public int getAmount(BlockPos pos, int sltid) {
 								TileEntity inv = world.getTileEntity(pos);
 								if (inv instanceof TileEntityLockableLoot) {
@@ -283,7 +343,27 @@ public class ProcedureElectrofurnuaceprocedure extends ElementsChemcraft.ModElem
 								}
 								return 0;
 							}
-						}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (1))) == 1))) || ((new Object() {
+						}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (1))) == 1) && (((new Object() {
+							public int getAmount(BlockPos pos, int sltid) {
+								TileEntity inv = world.getTileEntity(pos);
+								if (inv instanceof TileEntityLockableLoot) {
+									ItemStack stack = ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
+									if (stack != null)
+										return stack.getCount();
+								}
+								return 0;
+							}
+						}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (3))) == 0) && ((new Object() {
+							public int getAmount(BlockPos pos, int sltid) {
+								TileEntity inv = world.getTileEntity(pos);
+								if (inv instanceof TileEntityLockableLoot) {
+									ItemStack stack = ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
+									if (stack != null)
+										return stack.getCount();
+								}
+								return 0;
+							}
+						}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (4))) == 0))))) || ((new Object() {
 							public int getAmount(BlockPos pos, int sltid) {
 								TileEntity inv = world.getTileEntity(pos);
 								if (inv instanceof TileEntityLockableLoot) {
@@ -345,7 +425,7 @@ public class ProcedureElectrofurnuaceprocedure extends ElementsChemcraft.ModElem
 								}
 								return 0;
 							}
-						}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (0))) <= 63) && ((new Object() {
+						}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (0))) <= 63) && (((new Object() {
 							public int getAmount(BlockPos pos, int sltid) {
 								TileEntity inv = world.getTileEntity(pos);
 								if (inv instanceof TileEntityLockableLoot) {
@@ -355,7 +435,27 @@ public class ProcedureElectrofurnuaceprocedure extends ElementsChemcraft.ModElem
 								}
 								return 0;
 							}
-						}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (1))) == 1))) || ((new Object() {
+						}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (1))) == 1) && (((new Object() {
+							public int getAmount(BlockPos pos, int sltid) {
+								TileEntity inv = world.getTileEntity(pos);
+								if (inv instanceof TileEntityLockableLoot) {
+									ItemStack stack = ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
+									if (stack != null)
+										return stack.getCount();
+								}
+								return 0;
+							}
+						}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (3))) == 0) && ((new Object() {
+							public int getAmount(BlockPos pos, int sltid) {
+								TileEntity inv = world.getTileEntity(pos);
+								if (inv instanceof TileEntityLockableLoot) {
+									ItemStack stack = ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
+									if (stack != null)
+										return stack.getCount();
+								}
+								return 0;
+							}
+						}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (4))) == 0))))) || ((new Object() {
 							public int getAmount(BlockPos pos, int sltid) {
 								TileEntity inv = world.getTileEntity(pos);
 								if (inv instanceof TileEntityLockableLoot) {
@@ -417,7 +517,7 @@ public class ProcedureElectrofurnuaceprocedure extends ElementsChemcraft.ModElem
 								}
 								return 0;
 							}
-						}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (0))) <= 63) && ((new Object() {
+						}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (0))) <= 63) && (((new Object() {
 							public int getAmount(BlockPos pos, int sltid) {
 								TileEntity inv = world.getTileEntity(pos);
 								if (inv instanceof TileEntityLockableLoot) {
@@ -427,7 +527,27 @@ public class ProcedureElectrofurnuaceprocedure extends ElementsChemcraft.ModElem
 								}
 								return 0;
 							}
-						}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (1))) == 1))) || ((new Object() {
+						}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (1))) == 1) && (((new Object() {
+							public int getAmount(BlockPos pos, int sltid) {
+								TileEntity inv = world.getTileEntity(pos);
+								if (inv instanceof TileEntityLockableLoot) {
+									ItemStack stack = ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
+									if (stack != null)
+										return stack.getCount();
+								}
+								return 0;
+							}
+						}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (3))) == 0) && ((new Object() {
+							public int getAmount(BlockPos pos, int sltid) {
+								TileEntity inv = world.getTileEntity(pos);
+								if (inv instanceof TileEntityLockableLoot) {
+									ItemStack stack = ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
+									if (stack != null)
+										return stack.getCount();
+								}
+								return 0;
+							}
+						}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (4))) == 0))))) || ((new Object() {
 							public int getAmount(BlockPos pos, int sltid) {
 								TileEntity inv = world.getTileEntity(pos);
 								if (inv instanceof TileEntityLockableLoot) {
@@ -489,7 +609,7 @@ public class ProcedureElectrofurnuaceprocedure extends ElementsChemcraft.ModElem
 								}
 								return 0;
 							}
-						}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (0))) <= 63) && ((new Object() {
+						}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (0))) <= 63) && (((new Object() {
 							public int getAmount(BlockPos pos, int sltid) {
 								TileEntity inv = world.getTileEntity(pos);
 								if (inv instanceof TileEntityLockableLoot) {
@@ -499,7 +619,27 @@ public class ProcedureElectrofurnuaceprocedure extends ElementsChemcraft.ModElem
 								}
 								return 0;
 							}
-						}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (1))) == 1))) || ((new Object() {
+						}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (1))) == 1) && (((new Object() {
+							public int getAmount(BlockPos pos, int sltid) {
+								TileEntity inv = world.getTileEntity(pos);
+								if (inv instanceof TileEntityLockableLoot) {
+									ItemStack stack = ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
+									if (stack != null)
+										return stack.getCount();
+								}
+								return 0;
+							}
+						}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (3))) == 0) && ((new Object() {
+							public int getAmount(BlockPos pos, int sltid) {
+								TileEntity inv = world.getTileEntity(pos);
+								if (inv instanceof TileEntityLockableLoot) {
+									ItemStack stack = ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
+									if (stack != null)
+										return stack.getCount();
+								}
+								return 0;
+							}
+						}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (4))) == 0))))) || ((new Object() {
 							public int getAmount(BlockPos pos, int sltid) {
 								TileEntity inv = world.getTileEntity(pos);
 								if (inv instanceof TileEntityLockableLoot) {
@@ -561,7 +701,7 @@ public class ProcedureElectrofurnuaceprocedure extends ElementsChemcraft.ModElem
 								}
 								return 0;
 							}
-						}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (0))) <= 63) && ((new Object() {
+						}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (0))) <= 63) && (((new Object() {
 							public int getAmount(BlockPos pos, int sltid) {
 								TileEntity inv = world.getTileEntity(pos);
 								if (inv instanceof TileEntityLockableLoot) {
@@ -571,7 +711,27 @@ public class ProcedureElectrofurnuaceprocedure extends ElementsChemcraft.ModElem
 								}
 								return 0;
 							}
-						}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (1))) == 1))) || ((new Object() {
+						}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (1))) == 1) && (((new Object() {
+							public int getAmount(BlockPos pos, int sltid) {
+								TileEntity inv = world.getTileEntity(pos);
+								if (inv instanceof TileEntityLockableLoot) {
+									ItemStack stack = ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
+									if (stack != null)
+										return stack.getCount();
+								}
+								return 0;
+							}
+						}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (3))) == 0) && ((new Object() {
+							public int getAmount(BlockPos pos, int sltid) {
+								TileEntity inv = world.getTileEntity(pos);
+								if (inv instanceof TileEntityLockableLoot) {
+									ItemStack stack = ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
+									if (stack != null)
+										return stack.getCount();
+								}
+								return 0;
+							}
+						}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (4))) == 0))))) || ((new Object() {
 							public int getAmount(BlockPos pos, int sltid) {
 								TileEntity inv = world.getTileEntity(pos);
 								if (inv instanceof TileEntityLockableLoot) {
