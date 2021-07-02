@@ -1,0 +1,16 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "chemcraft:sulfurtrioxideampule"
+    },
+    {
+      "item": "chemcraft:h2s04"
+    }
+  ],
+  "result": {
+    "item": "chemcraft:oleum",
+    "count": 1
+  }
+}

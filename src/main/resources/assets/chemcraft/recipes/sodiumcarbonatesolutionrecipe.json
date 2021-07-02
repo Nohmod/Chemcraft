@@ -1,0 +1,19 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "chemcraft:beaker"
+    },
+    {
+      "item": "chemcraft:disstiledwater"
+    },
+    {
+      "item": "chemcraft:sodiumcarbonate"
+    }
+  ],
+  "result": {
+    "item": "chemcraft:sodiumcarbonatesolution",
+    "count": 1
+  }
+}

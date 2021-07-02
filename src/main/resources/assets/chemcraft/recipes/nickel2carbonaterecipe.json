@@ -1,0 +1,16 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "chemcraft:nickelchloridesolution"
+    },
+    {
+      "item": "chemcraft:sodiumcarbonatesolution"
+    }
+  ],
+  "result": {
+    "item": "chemcraft:nickel2carbonate",
+    "count": 1
+  }
+}
