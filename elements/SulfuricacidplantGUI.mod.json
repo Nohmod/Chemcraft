@@ -27,8 +27,8 @@
           },
           "id": 1,
           "name": "Slot #1",
-          "x": 523,
-          "y": 140
+          "x": 480,
+          "y": 150
         }
       },
       {
@@ -38,6 +38,27 @@
           "name": "nm.png",
           "x": 272,
           "y": 116
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 2,
+          "name": "Slot #2",
+          "x": 390,
+          "y": 96
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 3,
+          "name": "Slot #3",
+          "x": 552,
+          "y": 150
         }
       }
     ]

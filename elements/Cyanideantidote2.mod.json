@@ -16,9 +16,6 @@
     "forDogs": false,
     "isAlwaysEdible": true,
     "animation": "drink",
-    "hasGlow": false,
-    "onEaten": {
-      "name": "Cyanideantidote2FoodEaten"
-    }
+    "hasGlow": false
   }
 }

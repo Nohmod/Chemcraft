@@ -9,13 +9,13 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:Ironelectrodepure"
+        "value": "CUSTOM:Steelplate"
       },
       {
-        "value": "CUSTOM:Ironelectrodepure"
+        "value": "CUSTOM:Steelplate"
       },
       {
-        "value": "CUSTOM:Ironelectrodepure"
+        "value": "CUSTOM:Steelplate"
       },
       {
         "value": "CUSTOM:Emptygascylinder2"
@@ -27,13 +27,13 @@
         "value": "CUSTOM:Emptygascylinder2"
       },
       {
-        "value": "CUSTOM:Ironelectrodepure"
+        "value": "CUSTOM:Steelplate"
       },
       {
-        "value": "CUSTOM:Ironelectrodepure"
+        "value": "CUSTOM:Steelplate"
       },
       {
-        "value": "CUSTOM:Ironelectrodepure"
+        "value": "CUSTOM:Steelplate"
       }
     ],
     "recipeReturnStack": {

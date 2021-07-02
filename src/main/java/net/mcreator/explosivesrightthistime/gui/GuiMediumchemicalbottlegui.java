@@ -34,11 +34,11 @@ import java.util.HashMap;
 import java.io.IOException;
 
 @ElementsChemcraft.ModElement.Tag
-public class GuiSulfuricacidplantGUI extends ElementsChemcraft.ModElement {
-	public static int GUIID = 15;
+public class GuiMediumchemicalbottlegui extends ElementsChemcraft.ModElement {
+	public static int GUIID = 17;
 	public static HashMap guistate = new HashMap();
-	public GuiSulfuricacidplantGUI(ElementsChemcraft instance) {
-		super(instance, 463);
+	public GuiMediumchemicalbottlegui(ElementsChemcraft instance) {
+		super(instance, 470);
 	}
 
 	@Override
@@ -58,21 +58,11 @@ public class GuiSulfuricacidplantGUI extends ElementsChemcraft.ModElement {
 			this.x = x;
 			this.y = y;
 			this.z = z;
-			this.internal = new InventoryBasic("", true, 4);
+			this.internal = new InventoryBasic("", true, 1);
 			TileEntity ent = world.getTileEntity(new BlockPos(x, y, z));
 			if (ent instanceof IInventory)
 				this.internal = (IInventory) ent;
-			this.customSlots.put(0, this.addSlotToContainer(new Slot(internal, 0, 15, 11) {
-			}));
-			this.customSlots.put(1, this.addSlotToContainer(new Slot(internal, 1, 116, 39) {
-			}));
-			this.customSlots.put(2, this.addSlotToContainer(new Slot(internal, 2, 71, 12) {
-			}));
-			this.customSlots.put(3, this.addSlotToContainer(new Slot(internal, 3, 152, 39) {
-				@Override
-				public boolean isItemValid(ItemStack stack) {
-					return false;
-				}
+			this.customSlots.put(0, this.addSlotToContainer(new Slot(internal, 0, 77, 27) {
 			}));
 			int si;
 			int sj;
@@ -99,18 +89,18 @@ public class GuiSulfuricacidplantGUI extends ElementsChemcraft.ModElement {
 			if (slot != null && slot.getHasStack()) {
 				ItemStack itemstack1 = slot.getStack();
 				itemstack = itemstack1.copy();
-				if (index < 4) {
-					if (!this.mergeItemStack(itemstack1, 4, this.inventorySlots.size(), true)) {
+				if (index < 1) {
+					if (!this.mergeItemStack(itemstack1, 1, this.inventorySlots.size(), true)) {
 						return ItemStack.EMPTY;
 					}
 					slot.onSlotChange(itemstack1, itemstack);
-				} else if (!this.mergeItemStack(itemstack1, 0, 4, false)) {
-					if (index < 4 + 27) {
-						if (!this.mergeItemStack(itemstack1, 4 + 27, this.inventorySlots.size(), true)) {
+				} else if (!this.mergeItemStack(itemstack1, 0, 1, false)) {
+					if (index < 1 + 27) {
+						if (!this.mergeItemStack(itemstack1, 1 + 27, this.inventorySlots.size(), true)) {
 							return ItemStack.EMPTY;
 						}
 					} else {
-						if (!this.mergeItemStack(itemstack1, 4, 4 + 27, false)) {
+						if (!this.mergeItemStack(itemstack1, 1, 1 + 27, false)) {
 							return ItemStack.EMPTY;
 						}
 					}
@@ -242,7 +232,7 @@ public class GuiSulfuricacidplantGUI extends ElementsChemcraft.ModElement {
 			this.xSize = 176;
 			this.ySize = 166;
 		}
-		private static final ResourceLocation texture = new ResourceLocation("chemcraft:textures/sulfuricacidplantgui.png");
+		private static final ResourceLocation texture = new ResourceLocation("chemcraft:textures/mediumchemicalbottlegui.png");
 		@Override
 		public void drawScreen(int mouseX, int mouseY, float partialTicks) {
 			this.drawDefaultBackground();
@@ -258,8 +248,6 @@ public class GuiSulfuricacidplantGUI extends ElementsChemcraft.ModElement {
 			int l = (this.height - this.ySize) / 2;
 			this.drawTexturedModalRect(k, l, 0, 0, this.xSize, this.ySize);
 			zLevel = 100.0F;
-			this.mc.renderEngine.bindTexture(new ResourceLocation("chemcraft:textures/nm.png"));
-			this.drawTexturedModalRect(this.guiLeft + 11, this.guiTop + 21, 0, 0, 256, 256);
 		}
 
 		@Override
@@ -279,6 +267,7 @@ public class GuiSulfuricacidplantGUI extends ElementsChemcraft.ModElement {
 
 		@Override
 		protected void drawGuiContainerForegroundLayer(int par1, int par2) {
+			this.fontRenderer.drawString("Chemical bottle ", 47, 7, -16777216);
 		}
 
 		@Override

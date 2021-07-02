@@ -39,6 +39,7 @@ import net.mcreator.explosivesrightthistime.gui.GuiSulfuricacidplantGUI;
 import net.mcreator.explosivesrightthistime.gui.GuiSteamcrackerGUI;
 import net.mcreator.explosivesrightthistime.gui.GuiMoltensaltgui;
 import net.mcreator.explosivesrightthistime.gui.GuiMetalpressGUI;
+import net.mcreator.explosivesrightthistime.gui.GuiMediumchemicalbottlegui;
 import net.mcreator.explosivesrightthistime.gui.GuiIsomerseparator;
 import net.mcreator.explosivesrightthistime.gui.GuiGuiofeclec;
 import net.mcreator.explosivesrightthistime.gui.GuiGassynth;
@@ -165,6 +166,8 @@ public class ElementsChemcraft implements IFuelHandler, IWorldGenerator {
 				return new GuiSulfuricacidplantGUI.GuiContainerMod(world, x, y, z, player);
 			if (id == GuiChemicaljargui.GUIID)
 				return new GuiChemicaljargui.GuiContainerMod(world, x, y, z, player);
+			if (id == GuiMediumchemicalbottlegui.GUIID)
+				return new GuiMediumchemicalbottlegui.GuiContainerMod(world, x, y, z, player);
 			return null;
 		}
 
@@ -198,6 +201,8 @@ public class ElementsChemcraft implements IFuelHandler, IWorldGenerator {
 				return new GuiSulfuricacidplantGUI.GuiWindow(world, x, y, z, player);
 			if (id == GuiChemicaljargui.GUIID)
 				return new GuiChemicaljargui.GuiWindow(world, x, y, z, player);
+			if (id == GuiMediumchemicalbottlegui.GUIID)
+				return new GuiMediumchemicalbottlegui.GuiWindow(world, x, y, z, player);
 			return null;
 		}
 	}
