@@ -46,6 +46,7 @@ import net.mcreator.explosivesrightthistime.gui.GuiGasphasesynthesiser;
 import net.mcreator.explosivesrightthistime.gui.GuiFermenterGUI;
 import net.mcreator.explosivesrightthistime.gui.GuiElectroliserGUI;
 import net.mcreator.explosivesrightthistime.gui.GuiDistillery;
+import net.mcreator.explosivesrightthistime.gui.GuiChemicaljargui;
 import net.mcreator.explosivesrightthistime.gui.GuiBlast;
 
 import java.util.function.Supplier;
@@ -162,6 +163,8 @@ public class ElementsChemcraft implements IFuelHandler, IWorldGenerator {
 				return new GuiSteamcrackerGUI.GuiContainerMod(world, x, y, z, player);
 			if (id == GuiSulfuricacidplantGUI.GUIID)
 				return new GuiSulfuricacidplantGUI.GuiContainerMod(world, x, y, z, player);
+			if (id == GuiChemicaljargui.GUIID)
+				return new GuiChemicaljargui.GuiContainerMod(world, x, y, z, player);
 			return null;
 		}
 
@@ -193,6 +196,8 @@ public class ElementsChemcraft implements IFuelHandler, IWorldGenerator {
 				return new GuiSteamcrackerGUI.GuiWindow(world, x, y, z, player);
 			if (id == GuiSulfuricacidplantGUI.GUIID)
 				return new GuiSulfuricacidplantGUI.GuiWindow(world, x, y, z, player);
+			if (id == GuiChemicaljargui.GUIID)
+				return new GuiChemicaljargui.GuiWindow(world, x, y, z, player);
 			return null;
 		}
 	}
