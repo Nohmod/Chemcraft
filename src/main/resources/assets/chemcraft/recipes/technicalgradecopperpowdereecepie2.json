@@ -1,0 +1,16 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "chemcraft:impurecoppersulfatesolution"
+    },
+    {
+      "item": "chemcraft:zincdust"
+    }
+  ],
+  "result": {
+    "item": "chemcraft:copperpowdertechnicalgrade",
+    "count": 1
+  }
+}

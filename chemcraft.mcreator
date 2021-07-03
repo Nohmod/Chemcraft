@@ -4671,6 +4671,38 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "Metaloxides",
+      "type": "item",
+      "sortid": 480,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Impurecoppersulfatesolution",
+      "type": "item",
+      "sortid": 481,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Technicalgradecopperpoweder",
+      "type": "recipe",
+      "sortid": 482,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Technicalgradecopperpowdereecepie2",
+      "type": "recipe",
+      "sortid": 483,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
@@ -4754,6 +4786,7 @@
       "tile.sulfur.name": "Sulfur",
       "item.leadpowdertechnicalgrade.name": "Lead powder",
       "item.ironsulfatesolution.name": "Iron II sulfate solution",
+      "item.metaloxides.name": "Metal oxides",
       "item.sodiumnitrite.name": "Sodium nitrite",
       "item.methanol.name": "Methanol",
       "item.borosilicateglassmix.name": "Borosilicate glass mix",
@@ -4834,6 +4867,7 @@
       "item.rhodiumnugget.name": "Rhodium nugget",
       "item.cyanuricacid.name": "Cyanuric acid",
       "item.purelead.name": "Lead",
+      "item.impurecoppersulfatesolution.name": "Copper sulfate solution",
       "itemGroup.tabmachines": "Machines",
       "item.coalpile.name": "Bituminous coal",
       "tile.calcite.name": "Calcite",
