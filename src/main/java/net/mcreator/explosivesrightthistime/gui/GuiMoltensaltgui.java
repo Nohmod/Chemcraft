@@ -83,7 +83,7 @@ public class GuiMoltensaltgui extends ElementsChemcraft.ModElement {
 					GuiContainerMod.this.slotChanged(3, 0, 0);
 				}
 			}));
-			this.customSlots.put(4, this.addSlotToContainer(new Slot(internal, 4, 134, 57) {
+			this.customSlots.put(4, this.addSlotToContainer(new Slot(internal, 4, 134, 61) {
 				@Override
 				public void onSlotChanged() {
 					super.onSlotChanged();

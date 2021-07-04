@@ -9,13 +9,13 @@
     "recipeShapeless": true,
     "recipeSlots": [
       {
-        "value": "CUSTOM:Agno3"
+        "value": "CUSTOM:SilverInitratesolution"
       },
       {
         "value": "CUSTOM:Sodiumchloridesolution"
       },
       {
-        "value": "CUSTOM:Beaker"
+        "value": ""
       },
       {
         "value": ""

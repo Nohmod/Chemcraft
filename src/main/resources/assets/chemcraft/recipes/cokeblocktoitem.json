@@ -1,0 +1,13 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "chemcraft:cokeblock"
+    }
+  ],
+  "result": {
+    "item": "chemcraft:coke",
+    "count": 9
+  }
+}

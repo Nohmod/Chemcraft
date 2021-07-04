@@ -54,7 +54,7 @@ public class ProcedureBatteryformoltensaltelectrolisiis extends ElementsChemcraf
 				}
 				return 0;
 			}
-		}.getAmount((int) (2))) == 1) && ((new Object() {
+		}.getAmount((int) (2))) > 0) && ((new Object() {
 			public int getAmount(int sltid) {
 				if (entity instanceof EntityPlayerMP) {
 					Container _current = ((EntityPlayerMP) entity).openContainer;
@@ -69,7 +69,7 @@ public class ProcedureBatteryformoltensaltelectrolisiis extends ElementsChemcraf
 				}
 				return 0;
 			}
-		}.getAmount((int) (3))) == 1)))) {
+		}.getAmount((int) (3))) > 0)))) {
 			if (entity instanceof EntityPlayerMP) {
 				Container _current = ((EntityPlayerMP) entity).openContainer;
 				if (_current instanceof Supplier) {

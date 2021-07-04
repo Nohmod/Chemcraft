@@ -1,0 +1,16 @@
+{
+  "group": "chemcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "chemcraft:metaloxides"
+    },
+    {
+      "item": "chemcraft:dilutesulfuricacid"
+    }
+  ],
+  "result": {
+    "item": "chemcraft:impurecoppersulfatesolution",
+    "count": 1
+  }
+}

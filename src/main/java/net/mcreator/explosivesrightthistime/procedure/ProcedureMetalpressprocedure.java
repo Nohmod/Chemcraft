@@ -6,9 +6,12 @@ import net.minecraft.inventory.Container;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.entity.Entity;
 
+import net.mcreator.explosivesrightthistime.item.ItemTechnicalgradesilverelectrode;
 import net.mcreator.explosivesrightthistime.item.ItemSteelplate;
 import net.mcreator.explosivesrightthistime.item.ItemSteel;
 import net.mcreator.explosivesrightthistime.item.ItemStainlesssteelplate;
+import net.mcreator.explosivesrightthistime.item.ItemSilverPowderTechnicalGrade;
+import net.mcreator.explosivesrightthistime.item.ItemSilver;
 import net.mcreator.explosivesrightthistime.item.ItemPigiron;
 import net.mcreator.explosivesrightthistime.item.ItemLeadtechnicalgrade;
 import net.mcreator.explosivesrightthistime.item.ItemLeadpure;
@@ -17,6 +20,7 @@ import net.mcreator.explosivesrightthistime.item.ItemLeadelectrodepure;
 import net.mcreator.explosivesrightthistime.item.ItemLeadelectrode;
 import net.mcreator.explosivesrightthistime.item.ItemLead;
 import net.mcreator.explosivesrightthistime.item.ItemIronelectrodeimpure;
+import net.mcreator.explosivesrightthistime.item.ItemImpuresilverelectrode;
 import net.mcreator.explosivesrightthistime.item.ItemGraphiteelectrode;
 import net.mcreator.explosivesrightthistime.item.ItemGraphitedustpure;
 import net.mcreator.explosivesrightthistime.item.ItemElectrode;
@@ -175,7 +179,7 @@ public class ProcedureMetalpressprocedure extends ElementsChemcraft.ModElement {
 				}
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack((int) (0))).getItem() == new ItemStack(ItemLead.block, (int) (1)).getItem()) || ((new Object() {
+		}.getItemStack((int) (0))).getItem() == new ItemStack(ItemLead.block, (int) (1)).getItem()) || (((new Object() {
 			public ItemStack getItemStack(int sltid) {
 				if (entity instanceof EntityPlayerMP) {
 					Container _current = ((EntityPlayerMP) entity).openContainer;
@@ -188,7 +192,33 @@ public class ProcedureMetalpressprocedure extends ElementsChemcraft.ModElement {
 				}
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack((int) (0))).getItem() == new ItemStack(ItemSteel.block, (int) (1)).getItem()))))))))) {
+		}.getItemStack((int) (0))).getItem() == new ItemStack(ItemSteel.block, (int) (1)).getItem()) || (((new Object() {
+			public ItemStack getItemStack(int sltid) {
+				if (entity instanceof EntityPlayerMP) {
+					Container _current = ((EntityPlayerMP) entity).openContainer;
+					if (_current instanceof Supplier) {
+						Object invobj = ((Supplier) _current).get();
+						if (invobj instanceof Map) {
+							return ((Slot) ((Map) invobj).get(sltid)).getStack();
+						}
+					}
+				}
+				return ItemStack.EMPTY;
+			}
+		}.getItemStack((int) (0))).getItem() == new ItemStack(ItemSilver.block, (int) (1)).getItem()) || ((new Object() {
+			public ItemStack getItemStack(int sltid) {
+				if (entity instanceof EntityPlayerMP) {
+					Container _current = ((EntityPlayerMP) entity).openContainer;
+					if (_current instanceof Supplier) {
+						Object invobj = ((Supplier) _current).get();
+						if (invobj instanceof Map) {
+							return ((Slot) ((Map) invobj).get(sltid)).getStack();
+						}
+					}
+				}
+				return ItemStack.EMPTY;
+			}
+		}.getItemStack((int) (0))).getItem() == new ItemStack(ItemSilverPowderTechnicalGrade.block, (int) (1)).getItem()))))))))))) {
 			if (((new Object() {
 				public ItemStack getItemStack(int sltid) {
 					if (entity instanceof EntityPlayerMP) {
@@ -552,6 +582,80 @@ public class ProcedureMetalpressprocedure extends ElementsChemcraft.ModElement {
 						Object invobj = ((Supplier) _current).get();
 						if (invobj instanceof Map) {
 							ItemStack _setstack = new ItemStack(ItemSteelplate.block, (int) (1));
+							_setstack.setCount(1);
+							((Slot) ((Map) invobj).get((int) (1))).putStack(_setstack);
+							_current.detectAndSendChanges();
+						}
+					}
+				}
+			}
+			if (((new Object() {
+				public ItemStack getItemStack(int sltid) {
+					if (entity instanceof EntityPlayerMP) {
+						Container _current = ((EntityPlayerMP) entity).openContainer;
+						if (_current instanceof Supplier) {
+							Object invobj = ((Supplier) _current).get();
+							if (invobj instanceof Map) {
+								return ((Slot) ((Map) invobj).get(sltid)).getStack();
+							}
+						}
+					}
+					return ItemStack.EMPTY;
+				}
+			}.getItemStack((int) (0))).getItem() == new ItemStack(ItemSilver.block, (int) (1)).getItem())) {
+				if (entity instanceof EntityPlayerMP) {
+					Container _current = ((EntityPlayerMP) entity).openContainer;
+					if (_current instanceof Supplier) {
+						Object invobj = ((Supplier) _current).get();
+						if (invobj instanceof Map) {
+							((Slot) ((Map) invobj).get((int) (0))).decrStackSize((int) (1));
+							_current.detectAndSendChanges();
+						}
+					}
+				}
+				if (entity instanceof EntityPlayerMP) {
+					Container _current = ((EntityPlayerMP) entity).openContainer;
+					if (_current instanceof Supplier) {
+						Object invobj = ((Supplier) _current).get();
+						if (invobj instanceof Map) {
+							ItemStack _setstack = new ItemStack(ItemImpuresilverelectrode.block, (int) (1));
+							_setstack.setCount(1);
+							((Slot) ((Map) invobj).get((int) (1))).putStack(_setstack);
+							_current.detectAndSendChanges();
+						}
+					}
+				}
+			}
+			if (((new Object() {
+				public ItemStack getItemStack(int sltid) {
+					if (entity instanceof EntityPlayerMP) {
+						Container _current = ((EntityPlayerMP) entity).openContainer;
+						if (_current instanceof Supplier) {
+							Object invobj = ((Supplier) _current).get();
+							if (invobj instanceof Map) {
+								return ((Slot) ((Map) invobj).get(sltid)).getStack();
+							}
+						}
+					}
+					return ItemStack.EMPTY;
+				}
+			}.getItemStack((int) (0))).getItem() == new ItemStack(ItemSilverPowderTechnicalGrade.block, (int) (1)).getItem())) {
+				if (entity instanceof EntityPlayerMP) {
+					Container _current = ((EntityPlayerMP) entity).openContainer;
+					if (_current instanceof Supplier) {
+						Object invobj = ((Supplier) _current).get();
+						if (invobj instanceof Map) {
+							((Slot) ((Map) invobj).get((int) (0))).decrStackSize((int) (1));
+							_current.detectAndSendChanges();
+						}
+					}
+				}
+				if (entity instanceof EntityPlayerMP) {
+					Container _current = ((EntityPlayerMP) entity).openContainer;
+					if (_current instanceof Supplier) {
+						Object invobj = ((Supplier) _current).get();
+						if (invobj instanceof Map) {
+							ItemStack _setstack = new ItemStack(ItemTechnicalgradesilverelectrode.block, (int) (1));
 							_setstack.setCount(1);
 							((Slot) ((Map) invobj).get((int) (1))).putStack(_setstack);
 							_current.detectAndSendChanges();

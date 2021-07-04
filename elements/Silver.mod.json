@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "silver",
+    "texture": "impuresilvernuggets",
     "customModelName": "Normal",
     "name": "Silver",
     "creativeTab": {
@@ -18,7 +18,9 @@
     "stayInGridWhenCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "specialInfo": [],
+    "specialInfo": [
+      "Impure"
+    ],
     "hasGlow": false
   }
 }

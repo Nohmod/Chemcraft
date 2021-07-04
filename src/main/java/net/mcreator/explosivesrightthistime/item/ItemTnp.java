@@ -62,12 +62,6 @@ public class ItemTnp extends ElementsChemcraft.ModElement {
 		}
 
 		@Override
-		@SideOnly(Side.CLIENT)
-		public boolean hasEffect(ItemStack itemstack) {
-			return true;
-		}
-
-		@Override
 		public void addInformation(ItemStack itemstack, World world, List<String> list, ITooltipFlag flag) {
 			super.addInformation(itemstack, world, list, flag);
 			list.add("shitty explosive");

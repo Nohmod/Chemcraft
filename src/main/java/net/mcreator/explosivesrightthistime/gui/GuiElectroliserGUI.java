@@ -94,7 +94,7 @@ public class GuiElectroliserGUI extends ElementsChemcraft.ModElement {
 			}));
 			this.customSlots.put(5, this.addSlotToContainer(new Slot(internal, 5, 95, 70) {
 			}));
-			this.customSlots.put(6, this.addSlotToContainer(new Slot(internal, 6, 140, 70) {
+			this.customSlots.put(6, this.addSlotToContainer(new Slot(internal, 6, 140, 72) {
 				@Override
 				public void onSlotChanged() {
 					super.onSlotChanged();

@@ -37,7 +37,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Agno3"
+      "value": "CUSTOM:ImpureSilverNitrateSolution"
     },
     "name": "agno32",
     "namespace": "mod"

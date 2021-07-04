@@ -23,6 +23,7 @@ import net.mcreator.explosivesrightthistime.item.ItemLeadtechnicalgrade;
 import net.mcreator.explosivesrightthistime.item.ItemLeadnitratetechnicalgrade;
 import net.mcreator.explosivesrightthistime.item.ItemLead;
 import net.mcreator.explosivesrightthistime.item.ItemKno3;
+import net.mcreator.explosivesrightthistime.item.ItemImpureSilverNitrateSolution;
 import net.mcreator.explosivesrightthistime.item.ItemHydrochloricacid;
 import net.mcreator.explosivesrightthistime.item.ItemHno3;
 import net.mcreator.explosivesrightthistime.item.ItemH2s04;
@@ -34,7 +35,6 @@ import net.mcreator.explosivesrightthistime.item.ItemCopper;
 import net.mcreator.explosivesrightthistime.item.ItemCoke;
 import net.mcreator.explosivesrightthistime.item.ItemCaF2;
 import net.mcreator.explosivesrightthistime.item.ItemAmmoniumsulfate;
-import net.mcreator.explosivesrightthistime.item.ItemAgno3;
 import net.mcreator.explosivesrightthistime.block.BlockSulfurdioxidecylinder;
 import net.mcreator.explosivesrightthistime.block.BlockNitrousoxidegascylinder;
 import net.mcreator.explosivesrightthistime.block.BlockNitrogendioxidecylinder;
@@ -1225,7 +1225,7 @@ public class ProcedureGassnth extends ElementsChemcraft.ModElement {
 					if (_current instanceof Supplier) {
 						Object invobj = ((Supplier) _current).get();
 						if (invobj instanceof Map) {
-							ItemStack _setstack = new ItemStack(ItemAgno3.block, (int) (1));
+							ItemStack _setstack = new ItemStack(ItemImpureSilverNitrateSolution.block, (int) (1));
 							_setstack.setCount(((new Object() {
 								public int getAmount(int sltid) {
 									if (entity instanceof EntityPlayerMP) {

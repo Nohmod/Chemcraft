@@ -1371,22 +1371,24 @@ public class ProcedureElectrolissiprocedure extends ElementsChemcraft.ModElement
 						return -1;
 					}
 				}.getValue(new BlockPos((int) x, (int) y, (int) z), "recipe")) == 3)) {
-					{
-						TileEntity inv = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
-						if (inv != null && (inv instanceof TileEntityLockableLoot)) {
-							ItemStack _setstack = new ItemStack(ItemCopperbasedanodemud.block, (int) (1));
-							_setstack.setCount(((new Object() {
-								public int getAmount(BlockPos pos, int sltid) {
-									TileEntity inv = world.getTileEntity(pos);
-									if (inv instanceof TileEntityLockableLoot) {
-										ItemStack stack = ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
-										if (stack != null)
-											return stack.getCount();
+					if ((Math.random() < 0.5)) {
+						{
+							TileEntity inv = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
+							if (inv != null && (inv instanceof TileEntityLockableLoot)) {
+								ItemStack _setstack = new ItemStack(ItemCopperbasedanodemud.block, (int) (1));
+								_setstack.setCount(((new Object() {
+									public int getAmount(BlockPos pos, int sltid) {
+										TileEntity inv = world.getTileEntity(pos);
+										if (inv instanceof TileEntityLockableLoot) {
+											ItemStack stack = ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
+											if (stack != null)
+												return stack.getCount();
+										}
+										return 0;
 									}
-									return 0;
-								}
-							}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (1))) + 1));
-							((TileEntityLockableLoot) inv).setInventorySlotContents((int) (1), _setstack);
+								}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (1))) + 1));
+								((TileEntityLockableLoot) inv).setInventorySlotContents((int) (1), _setstack);
+							}
 						}
 					}
 					{
@@ -1415,22 +1417,24 @@ public class ProcedureElectrolissiprocedure extends ElementsChemcraft.ModElement
 						return -1;
 					}
 				}.getValue(new BlockPos((int) x, (int) y, (int) z), "recipe")) == 4)) {
-					{
-						TileEntity inv = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
-						if (inv != null && (inv instanceof TileEntityLockableLoot)) {
-							ItemStack _setstack = new ItemStack(ItemAnodemudironabseed.block, (int) (1));
-							_setstack.setCount(((new Object() {
-								public int getAmount(BlockPos pos, int sltid) {
-									TileEntity inv = world.getTileEntity(pos);
-									if (inv instanceof TileEntityLockableLoot) {
-										ItemStack stack = ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
-										if (stack != null)
-											return stack.getCount();
+					if ((Math.random() < 0.5)) {
+						{
+							TileEntity inv = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
+							if (inv != null && (inv instanceof TileEntityLockableLoot)) {
+								ItemStack _setstack = new ItemStack(ItemAnodemudironabseed.block, (int) (1));
+								_setstack.setCount(((new Object() {
+									public int getAmount(BlockPos pos, int sltid) {
+										TileEntity inv = world.getTileEntity(pos);
+										if (inv instanceof TileEntityLockableLoot) {
+											ItemStack stack = ((TileEntityLockableLoot) inv).getStackInSlot(sltid);
+											if (stack != null)
+												return stack.getCount();
+										}
+										return 0;
 									}
-									return 0;
-								}
-							}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (1))) + 1));
-							((TileEntityLockableLoot) inv).setInventorySlotContents((int) (1), _setstack);
+								}.getAmount(new BlockPos((int) x, (int) y, (int) z), (int) (1))) + 1));
+								((TileEntityLockableLoot) inv).setInventorySlotContents((int) (1), _setstack);
+							}
 						}
 					}
 					{

@@ -9,37 +9,37 @@
     "recipeShapeless": true,
     "recipeSlots": [
       {
-        "value": "Blocks.LOG#2"
+        "value": "CUSTOM:Metaloxides"
       },
       {
-        "value": "Blocks.LOG#2"
+        "value": "CUSTOM:Dilutesulfuricacid"
       },
       {
-        "value": "CUSTOM:Disstiledwater"
+        "value": ""
       },
       {
-        "value": "Blocks.LOG#2"
+        "value": ""
       },
       {
-        "value": "Blocks.LOG#2"
+        "value": ""
       },
       {
-        "value": "Blocks.LOG#2"
+        "value": ""
       },
       {
-        "value": "Blocks.LOG#2"
+        "value": ""
       },
       {
-        "value": "Blocks.LOG#2"
+        "value": ""
       },
       {
-        "value": "Blocks.LOG#2"
+        "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Salicilicacid"
+      "value": "CUSTOM:Impurecoppersulfatesolution"
     },
-    "name": "saliclic",
+    "name": "impurecoppersulfatesolutionrecipe",
     "namespace": "mod"
   }
 }

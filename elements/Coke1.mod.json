@@ -8,12 +8,12 @@
     "group": "",
     "recipeShapeless": false,
     "smeltingInputStack": {
-      "value": "CUSTOM:Salicilicacid"
+      "value": "CUSTOM:Bitominouscoalblock"
     },
     "smeltingReturnStack": {
-      "value": "CUSTOM:Phenol"
+      "value": "CUSTOM:Cokeblock"
     },
-    "name": "phenol2",
+    "name": "coke1",
     "namespace": "mod"
   }
 }

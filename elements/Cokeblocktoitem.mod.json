@@ -4,18 +4,18 @@
   "definition": {
     "recipeType": "Crafting",
     "xpReward": 0.0,
-    "recipeRetstackSize": 1,
+    "recipeRetstackSize": 9,
     "group": "",
     "recipeShapeless": true,
     "recipeSlots": [
       {
-        "value": "Items.COAL#1"
+        "value": ""
       },
       {
-        "value": "Items.COAL#1"
+        "value": "CUSTOM:Cokeblock"
       },
       {
-        "value": "Items.WATER_BUCKET"
+        "value": ""
       },
       {
         "value": ""
@@ -37,9 +37,9 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Sodiumcarbonate"
+      "value": "CUSTOM:Coke"
     },
-    "name": "soda",
+    "name": "cokeblocktoitem",
     "namespace": "mod"
   }
 }
